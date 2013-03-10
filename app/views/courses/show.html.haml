@@ -1,11 +1,13 @@
 - content_for :title_section, "Курс #{@course.name}"
 
 .row
-  .span8
-    %h1=@course.name
-    %div=@course.description
-  .span4
-    %div=@course.organisation
+  %h1=@course.name
+.row
+  .span3
+    %ul.nav.nav-tabs.nav-stacked
+      -@course.course_sections.each do |course_section|
+        %li
+          =link_to course_section.name, :course_section
+  .span9
     %div
-      #{@course.start_date} - #{@course.end_date}
-      =link_to 'Вступить', 'apply_for_course',{class:'btn'}
+      %iframe{width:'420', height:'315', src:'http://www.youtube.com/embed/{{ lecture.data }}', frameborder:'0', allowfullscreen:''}         
