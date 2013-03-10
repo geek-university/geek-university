@@ -54,3 +54,6 @@ gem 'paperclip'
 gem 'haml'
 gem 'haml-rails'
 gem 'seed_dump'
+
+# web server for heroku
+gem 'thin'
