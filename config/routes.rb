@@ -1,7 +1,19 @@
 GeekUniversity::Application.routes.draw do
+  resources :courses, only: %w(show)
+
+  get "home/index"
+  get "home/about"
+
+  resources :feedbacks, only: %w(new create)
+
+  devise_for :users
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
+
+  root :to => "home#index"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -49,10 +61,6 @@ GeekUniversity::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 

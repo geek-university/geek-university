@@ -1,0 +1,22 @@
+- content_for :title_section, 'Вход'
+
+.row
+  = form_for resource, as: resource_name, url: session_path(resource_name), :html => {:class => 'form-horizontal'} do |f|
+    %fieldset
+      %legend Вход
+      .span6{style:'border-right: 1px solid #e5e5e5;'}
+        .control-group
+          = f.label :email, {class:'control-label'}
+          .controls= f.email_field :email, autofocus: true
+        .control-group
+          = f.label :password, {class:'control-label'}
+          .controls= f.password_field :password
+        .control-group
+          - if devise_mapping.rememberable?
+            .controls
+              = f.check_box :remember_me, {style: 'float: left; margin-right: 10px;'}
+              = f.label :remember_me, {style: 'float: left;'}
+        .control-group
+          .controls
+            = f.submit "Войти", {class:'btn btn-primary'}
+    = render 'devise/shared/links'

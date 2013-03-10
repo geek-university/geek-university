@@ -1,0 +1,9 @@
+ru:
+  about:
+    title: "О нас"
+  feedback:
+    title: "Отзыв о работе сайта"
+  activerecord:
+    attributes:
+      feedback:
+        body: "Текст сообщения"

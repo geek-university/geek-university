@@ -1,0 +1,13 @@
+- content_for :title_section, 'Отзыв о работе сайта'
+
+.row
+  .span12
+    = form_for @feedback, html: {class: 'form-horizontal'} do |f|
+      %fieldset
+        %legend=t('feedback.title')
+        .control-group
+          = f.label :body, {class:'control-label'}
+          .controls= f.text_area :body, {class: 'span6', rows: '6', autofocus: true}
+        .control-group
+          .controls
+            = f.submit 'Отправить', class: 'btn btn-primary'

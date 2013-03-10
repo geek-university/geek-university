@@ -1,0 +1,9 @@
+en:
+  about:
+    title: "About"
+  feedback:
+    title: "Feedback"
+  activerecord:
+    attributes:
+      feedback:
+        body: "Feedback message"
