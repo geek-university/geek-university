@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130310120924) do
+ActiveRecord::Schema.define(:version => 20130310225248) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -55,6 +55,26 @@ ActiveRecord::Schema.define(:version => 20130310120924) do
   end
 
   add_index "course_sections", ["course_id"], :name => "index_course_sections_on_course_id"
+
+  create_table "course_students", :force => true do |t|
+    t.integer  "course_id"
+    t.integer  "student_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "course_students", ["course_id"], :name => "index_course_students_on_course_id"
+  add_index "course_students", ["student_id"], :name => "index_course_students_on_student_id"
+
+  create_table "course_teachers", :force => true do |t|
+    t.integer  "course_id"
+    t.integer  "teacher_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "course_teachers", ["course_id"], :name => "index_course_teachers_on_course_id"
+  add_index "course_teachers", ["teacher_id"], :name => "index_course_teachers_on_teacher_id"
 
   create_table "courses", :force => true do |t|
     t.string   "name"
@@ -103,6 +123,7 @@ ActiveRecord::Schema.define(:version => 20130310120924) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "type"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
