@@ -1,5 +1,7 @@
 GeekUniversity::Application.routes.draw do
-  resources :courses, only: %w(show)
+  resources :courses, only: %w(show) do
+    get :preview, on: :member
+  end
 
   get "home/index"
   get "home/about"
