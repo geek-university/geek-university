@@ -8,4 +8,4 @@
     %div=@course.organisation
     %div
       #{@course.start_date} - #{@course.end_date}
-      =link_to 'Вступить', 'apply_for_course',{class:'btn'}
+      =link_to 'Вступить', apply_course_path(@course), {class:'btn', method: :post}
