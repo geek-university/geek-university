@@ -11,6 +11,7 @@ class Ability
       can :manage, Course if user.teacher?
     else
       can :read, Course
+      can :preview, Course
     end
 
     #
