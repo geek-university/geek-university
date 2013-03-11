@@ -6,6 +6,8 @@ GeekUniversity::Application.routes.draw do
     end
   end
 
+  match "/courses/:course_id/sections/:section_id/study_materials/:id(.:format)", controller: :courses, action: :show, as: :study_material, via: :get
+
   get "home/index"
   get "home/about"
 

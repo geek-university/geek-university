@@ -7,6 +7,10 @@ class Ability
 
     #user ||= User.new # guest user (not logged in)
 
+    can :apply, Course if user.student?
+    can :show, Course if user.student?
+    can :preview, Course if user.student?
+
     if user
       can :manage, Course if user.teacher?
     else
