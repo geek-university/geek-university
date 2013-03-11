@@ -3,7 +3,7 @@
 .row
   .span8
     %h1=@course.name
-    %div=@course.description
+    %div=raw(@course.description)
   .span4
     %div=@course.organisation
     %div
