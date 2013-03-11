@@ -75,6 +75,9 @@ GEM
     fastercsv (1.5.5)
     formtastic (2.2.1)
       actionpack (>= 3.0)
+    formtastic-bootstrap (2.0.0)
+      formtastic (~> 2.2)
+      formtastic-bootstrap
     haml (4.0.0)
       tilt
     haml-rails (0.4)
@@ -191,6 +194,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   execjs
+  formtastic-bootstrap
   haml
   haml-rails
   jquery-rails

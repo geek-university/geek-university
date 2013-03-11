@@ -1,2 +1,3 @@
 %li{class: ('active' if material == @material)}
   = link_to material.name, [@course, @section, material]
+  = link_to 'Edit', [:edit, @course, @section, material]

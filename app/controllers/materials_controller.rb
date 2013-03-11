@@ -10,4 +10,8 @@ class MaterialsController < ApplicationController
 
     render 'courses/show'
   end
+
+  def edit
+
+  end
 end
