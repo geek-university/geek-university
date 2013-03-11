@@ -11,12 +11,11 @@ class CoursesController < ApplicationController
   end
 
   def show
-    #@course = Course.includes(:sections).find(params[:id])
-    @sections = @course.sections.order('"order ASC"')
+    @sections = @course.sections
     @section ||= @sections.first
 
-    logger.debug @section
-    @material ||= @section.materials.first
+    @materials = @section.materials
+    @material ||= @materials.first
   end
 
   def apply

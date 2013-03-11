@@ -9,7 +9,7 @@ class Ability
 
     if user
       can :manage, Course if user.teacher?
-      can [:show, :apply], Course if user.student?
+      can [:show, :apply], [Course, Section, Material]  if user.student?
     end
 
     can [:index, :preview], Course

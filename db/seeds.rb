@@ -13,14 +13,14 @@ Course.create([
 
 
 Section.create([
-  {course_id: 1, name: 'Django: the basics', date: '2013-06-08'},
-  {course_id: 1, name: 'Django: advanced topics', date: '2013-07-05'},
+  {course_id: 1, name: 'Django: the basics', date: '2013-06-08', position: 1},
+  {course_id: 1, name: 'Django: advanced topics', date: '2013-07-05', position: 2},
 ])
 
 Material.create([
-    {section_id: 1, name: '1', order: 1},
-    {section_id: 1, name: '2', order: 1},
-    {section_id: 2, name: '1', order: 1}
+    {section_id: 1, name: '1', position: 2},
+    {section_id: 1, name: '2', position: 1},
+    {section_id: 2, name: '1', position: 1}
 ])
 
 Student.create({ :username => 'Student', :email => 'student@example.com', :password => 'password'})

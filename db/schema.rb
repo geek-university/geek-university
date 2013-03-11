@@ -90,7 +90,7 @@ ActiveRecord::Schema.define(:version => 20130310225248) do
 
   create_table "materials", :force => true do |t|
     t.string   "name"
-    t.float    "order"
+    t.float    "position"
     t.text     "data"
     t.integer  "section_id"
     t.datetime "created_at", :null => false
@@ -102,6 +102,7 @@ ActiveRecord::Schema.define(:version => 20130310225248) do
   create_table "sections", :force => true do |t|
     t.string   "name"
     t.date     "date"
+    t.float    "position"
     t.integer  "course_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
