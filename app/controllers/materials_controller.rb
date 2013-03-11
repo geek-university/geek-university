@@ -11,7 +11,11 @@ class MaterialsController < ApplicationController
     render 'courses/show'
   end
 
-  def edit
-
+  def update
+    if @material.update_attributes(params[:material])
+      redirect_to [@course, @section, @material]
+    else
+      render :edit
+    end
   end
 end
