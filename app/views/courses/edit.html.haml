@@ -1,0 +1,14 @@
+- content_for :title_section, "Редактировать информацию о курсе #{@course.name}"
+
+= semantic_form_for @course do |f|
+  = f.inputs do
+    = f.input :name
+    = f.input :short_summary
+    = f.input :description
+    = f.input :start_date
+    = f.input :end_date
+    = f.input :organisation
+    = f.input :logo
+    = f.input :published
+  = f.actions do
+    = f.action :submit, as: :button
