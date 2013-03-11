@@ -14,7 +14,7 @@ class CoursesController < ApplicationController
   def apply
     current_user.courses << @course
     if current_user.save
-      redirect_to show_path(params[:id])
+      redirect_to course(params[:id])
     else
       render :preview
     end
