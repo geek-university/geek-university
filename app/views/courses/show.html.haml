@@ -2,6 +2,7 @@
 
 .row
   %h1=@course.name
+  = link_to 'Редактировать', :edit_course if can? :edit, @course
 .row
   .span3
     %ul.nav.nav-tabs.nav-stacked

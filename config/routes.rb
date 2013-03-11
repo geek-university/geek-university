@@ -1,7 +1,7 @@
 GeekUniversity::Application.routes.draw do
   #match "/courses/:course_id/sections/:section_id/study_materials/:id(.:format)", controller: :courses, action: :show, as: :study_material, via: :get
 
-  resources :courses, only: %w(show) do
+  resources :courses, only: %w(show edit update) do
     resources :sections do
       resources :materials
     end
