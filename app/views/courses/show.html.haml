@@ -5,23 +5,15 @@
 .row
   .span3
     %ul.nav.nav-tabs.nav-stacked
-      -@course_sections.each do |course_section|
-        -if current_page? study_material_path(@course, @selected_course_section, 0)
-          %li.active
-            =link_to course_section.name, study_material_path(@course, @selected_course_section, 0)
-        -else
-          %li
-            =link_to course_section.name, study_material_path(@course, @selected_course_section, 0)
+      -@sections.each do |section|
+        %li{class: ('active' if section == @section)}
+          = link_to section.name, [@course, section]
   .span9
     .row
       %ul.nav.nav-pills
-        -@selected_course_section.study_materials.each do |study_material|
-          -if current_page? study_material_path(@course, @selected_course_section, study_material)
-            %li.active
-              =link_to study_material.name, study_material_path(@course, @selected_course_section, study_material)
-          -else
-            %li
-              =link_to study_material.name, study_material_path(@course, @selected_course_section, study_material)
+        -@section.materials.each do |material|
+          %li{class: ('active' if material == @material)}
+            = link_to material.name, [@course, @section, material]
     .row
     %div
-      =@selected_study_material.data
+      =@material.data

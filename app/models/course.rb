@@ -3,7 +3,7 @@ class Course < ActiveRecord::Base
 
   has_attached_file :logo, :styles => { :thumb => '280x170>'}, :default_url => '/assets/:style/missing.jpg'
 
-  has_many :course_sections
+  has_many :sections
 
 
   has_many :course_students

@@ -1,5 +1,7 @@
 class CoursesController < ApplicationController
   load_and_authorize_resource
+  load_resource :section, :through => :course
+  load_resource :material, :through => :section
 
   def preview
     authorize! :preview, @course
@@ -9,10 +11,12 @@ class CoursesController < ApplicationController
   end
 
   def show
-    @course = Course.find(params[:course_id] || params[:id])
-    @course_sections = @course.course_sections.order('"course_sections.order"')
-    @selected_course_section = params[:section_id].nil? ? @course_sections.first : @course_sections.find(params[:section_id])
-    @selected_study_material = params[:id] != 0 ? @selected_course_section.study_materials.find(params[:id]) : @selected_course_section.study_materials.first
+    #@course = Course.includes(:sections).find(params[:id])
+    @sections = @course.sections.order('"order ASC"')
+    @section ||= @sections.first
+
+    logger.debug @section
+    @material ||= @section.materials.first
   end
 
   def apply

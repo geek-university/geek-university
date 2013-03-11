@@ -46,16 +46,6 @@ ActiveRecord::Schema.define(:version => 20130310225248) do
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
-  create_table "course_sections", :force => true do |t|
-    t.string   "name"
-    t.date     "date"
-    t.integer  "course_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "course_sections", ["course_id"], :name => "index_course_sections_on_course_id"
-
   create_table "course_students", :force => true do |t|
     t.integer  "course_id"
     t.integer  "student_id"
@@ -81,15 +71,15 @@ ActiveRecord::Schema.define(:version => 20130310225248) do
     t.string   "short_summary"
     t.text     "description"
     t.string   "organisation"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
     t.date     "start_date"
     t.date     "end_date"
     t.integer  "published"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
-    t.string   "logo_file_name"
-    t.string   "logo_content_type"
-    t.integer  "logo_file_size"
-    t.datetime "logo_updated_at"
   end
 
   create_table "feedbacks", :force => true do |t|
@@ -98,19 +88,30 @@ ActiveRecord::Schema.define(:version => 20130310225248) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "study_materials", :force => true do |t|
+  create_table "materials", :force => true do |t|
     t.string   "name"
     t.float    "order"
     t.text     "data"
-    t.integer  "course_section_id"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.integer  "section_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
-  add_index "study_materials", ["course_section_id"], :name => "index_study_materials_on_course_section_id"
+  add_index "materials", ["section_id"], :name => "index_materials_on_section_id"
+
+  create_table "sections", :force => true do |t|
+    t.string   "name"
+    t.date     "date"
+    t.integer  "course_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "sections", ["course_id"], :name => "index_sections_on_course_id"
 
   create_table "users", :force => true do |t|
     t.string   "username"
+    t.string   "type"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "email",                  :default => "", :null => false
@@ -123,7 +124,6 @@ ActiveRecord::Schema.define(:version => 20130310225248) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.string   "type"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

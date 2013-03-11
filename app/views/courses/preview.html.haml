@@ -9,6 +9,6 @@
     %div
       #{@course.start_date} - #{@course.end_date}
       - if can? :apply, @course
-        =link_to 'Вступить', apply_course_path(@course), {class:'btn', method: :post}
+        =link_to 'Вступить', apply_course_path(@course), {class:'btn', method: 'post'}
       - else
-        =link_to 'Вступить', new_user_session_path, {class:'btn', method: :post}
+        =link_to 'Вступить', new_user_session_path, {class:'btn'}

@@ -5,7 +5,7 @@ class CreateCourses < ActiveRecord::Migration
       t.string :short_summary
       t.text :description
       t.string :organisation
-      t.string :logo
+      t.attachment :logo
       t.date :start_date
       t.date :end_date
       t.integer :published

@@ -1,15 +1,22 @@
 GeekUniversity::Application.routes.draw do
+  #match "/courses/:course_id/sections/:section_id/study_materials/:id(.:format)", controller: :courses, action: :show, as: :study_material, via: :get
+
   resources :courses, only: %w(show) do
+    resources :sections, controller: 'courses' do
+      resources :materials, controller: 'courses'
+    end
+
     member do
       get :preview
       post :apply
     end
   end
 
-  match "/courses/:course_id/sections/:section_id/study_materials/:id(.:format)", controller: :courses, action: :show, as: :study_material, via: :get
 
-  get "home/index"
-  get "home/about"
+
+  scope :home, controller: :home, path: '/' do
+    get 'index', 'about'
+  end
 
   resources :feedbacks, only: %w(new create)
 
