@@ -9,9 +9,9 @@ class Ability
 
     if user
       can :manage, Course if user.teacher?
+      can :apply, Course if user.student?
     else
-      can :read, Course
-      can :preview, Course
+      can [:index, :preview], Course
     end
 
     #
