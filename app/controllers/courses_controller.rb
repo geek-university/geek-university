@@ -1,17 +1,19 @@
 class CoursesController < ApplicationController
+  load_and_authorize_resource
+
   def preview
-    @course = Course.find(params[:id])
+  end
+
+  def index
   end
 
   def show
-    @course = Course.find(params[:id])
   end
 
   def apply
-    course = Course.find(params[:id])
-    current_user.courses<<course
+    current_user.courses << @course
     if current_user.save
-      redirect_to show_path(id: params[:id])
+      redirect_to show_path(params[:id])
     else
       render :preview
     end

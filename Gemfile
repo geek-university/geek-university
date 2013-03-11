@@ -8,7 +8,10 @@ gem 'rails', '3.2.12'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'quiet_assets'
+  gem 'seed_dump'
 end
+
 group :production do
   gem 'pg'
 end
@@ -53,7 +56,7 @@ gem 'activeadmin'
 gem 'paperclip'
 gem 'haml'
 gem 'haml-rails'
-gem 'seed_dump'
+gem 'cancan'
 
 # web server for heroku
 gem 'thin'

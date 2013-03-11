@@ -50,6 +50,7 @@ GEM
       sass (>= 3.2.0)
       thor
     builder (3.0.4)
+    cancan (1.6.9)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.1)
@@ -118,6 +119,8 @@ GEM
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
+    quiet_assets (1.0.2)
+      railties (>= 3.1, < 5.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -184,6 +187,7 @@ DEPENDENCIES
   activeadmin
   arbre
   bootstrap-sass (~> 2.3.0.1)
+  cancan
   coffee-rails (~> 3.2.1)
   devise
   execjs
@@ -192,6 +196,7 @@ DEPENDENCIES
   jquery-rails
   paperclip
   pg
+  quiet_assets
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
   seed_dump
