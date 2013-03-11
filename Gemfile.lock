@@ -51,6 +51,8 @@ GEM
       thor
     builder (3.0.4)
     cancan (1.6.9)
+    ckeditor_rails (4.0.2)
+      railties (>= 3.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.1)
@@ -191,6 +193,7 @@ DEPENDENCIES
   arbre
   bootstrap-sass (~> 2.3.0.1)
   cancan
+  ckeditor_rails
   coffee-rails (~> 3.2.1)
   devise
   execjs

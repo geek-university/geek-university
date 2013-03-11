@@ -61,3 +61,5 @@ gem 'cancan'
 
 # web server for heroku
 gem 'thin'
+
+gem 'ckeditor_rails'
