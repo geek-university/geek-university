@@ -10,10 +10,9 @@ class Ability
     if user
       can :manage, Course if user.teacher?
       can :apply, Course if user.student?
-    else
-      can [:index, :preview], Course
     end
 
+    can [:index, :preview], Course
     #
     # The first argument to `can` is the action you are giving the user 
     # permission to do.

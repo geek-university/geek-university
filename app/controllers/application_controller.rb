@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   rescue_from CanCan::AccessDenied do |exception|
+    logger.debug exception
     redirect_to root_url, :alert => exception.message
   end
 
