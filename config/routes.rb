@@ -13,7 +13,7 @@ GeekUniversity::Application.routes.draw do
 
   resources :feedbacks, only: %w(new create)
 
-  devise_for :users
+  devise_for :users, :path => "auth", :path_names => { :sign_in => 'login', :sign_out => 'logout'}
 
   ActiveAdmin.routes(self)
 

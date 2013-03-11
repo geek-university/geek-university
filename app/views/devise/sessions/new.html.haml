@@ -5,6 +5,7 @@
     %fieldset
       %legend Вход
       .span6{style:'border-right: 1px solid #e5e5e5;'}
+        = hidden_field_tag :return_url, request.referer
         .control-group
           = f.label :email, {class:'control-label'}
           .controls= f.email_field :email, autofocus: true
