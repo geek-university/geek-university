@@ -1,16 +1,18 @@
 - content_for :title_section, "Курс #{@course.name}"
+#course
+  .row
+    %h2=@course.name
+    - if can? :edit, @course
+      = link_to '[Edit]', [:edit, @course]
 
-.row
-  %h1=@course.name
-  = link_to 'Редактировать', :edit_course if can? :edit, @course
-.row
-  .span3
-    %ul.nav.nav-tabs.nav-stacked
-      = render @sections
-  .span9
-    .row
+
+  .row
+    .span3
+      %ul.nav.nav-tabs.nav-stacked
+        = render @sections
+
+    .span8
       %ul.nav.nav-pills
         = render @materials
-    .row
-    %div
-      =@material.data
+      %div
+        =@material.data

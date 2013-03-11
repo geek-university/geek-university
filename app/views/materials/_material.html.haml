@@ -1,3 +1,6 @@
 %li{class: ('active' if material == @material)}
   = link_to material.name, [@course, @section, material]
-  = link_to 'Edit', [:edit, @course, @section, material]
+  - if can? :edit, material
+    .edit-link
+      = link_to [:edit, @course, @section, material] do
+        = content_tag 'i', '', class: 'icon-pencil'
