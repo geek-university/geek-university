@@ -10,4 +10,12 @@ class SectionsController < ApplicationController
 
     render 'courses/show'
   end
+
+  def update
+    if @section.update_attributes(params[:section])
+      redirect_to [@course, @section]
+    else
+      render :edit
+    end
+  end
 end
