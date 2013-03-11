@@ -11,5 +11,11 @@ class ApplicationController < ActionController::Base
     I18n.locale = params[:locale] || I18n.default_locale
   end
 
+
+  def after_sign_in_path_for(resource)
+    request.params[:return_url] || root_url
+  end
+
+
   protect_from_forgery
 end

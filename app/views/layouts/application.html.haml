@@ -19,7 +19,7 @@
               -if user_signed_in?
                 %li= link_to 'Выйти', :destroy_user_session, class: 'btn btn-link', method: :delete
               -else
-                %li= link_to 'Войти', :user_session, class: 'btn btn-link'
+                %li= link_to 'Войти', :new_user_session, class: 'btn btn-link'
     %header.container.clearfix{style: 'padding-top: 55px;margin-bottom: 10px;'}
       %div{style: 'float: left; display: block;'}
         = link_to image_tag( 'logo.png', {alt: 'logo', width: "120"}), :root, {id: 'logo'}
