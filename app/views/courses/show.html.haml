@@ -5,15 +5,11 @@
 .row
   .span3
     %ul.nav.nav-tabs.nav-stacked
-      -@sections.each do |section|
-        %li{class: ('active' if section == @section)}
-          = link_to section.name, [@course, section]
+      = render @sections
   .span9
     .row
       %ul.nav.nav-pills
-        -@section.materials.each do |material|
-          %li{class: ('active' if material == @material)}
-            = link_to material.name, [@course, @section, material]
+        = render @materials
     .row
     %div
       =@material.data
