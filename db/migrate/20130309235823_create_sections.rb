@@ -3,7 +3,6 @@ class CreateSections < ActiveRecord::Migration
     create_table :sections do |t|
       t.string :name
       t.date :date
-      t.float :position
       t.references :course
 
 
