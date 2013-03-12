@@ -8,7 +8,12 @@ class Ability
     #user ||= User.new # guest user (not logged in)
 
     if user
-      can :manage, [Course, Section, Material] if user.teacher?
+      can :manage, Course do |course|
+        course && course.teachers.include?(user)
+      end
+      #
+      # , Section, Material] if user.teacher?
+      #end
       can [:show, :apply], [Course, Section, Material]  if user.student?
     end
 

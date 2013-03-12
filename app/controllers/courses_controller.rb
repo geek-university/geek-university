@@ -5,6 +5,8 @@ class CoursesController < ApplicationController
 
   def preview
     authorize! :preview, @course
+
+    redirect_to @course if (@course.subscibe?(current_user) || @course.owner?(current_user))
   end
 
   def index

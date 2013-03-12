@@ -13,8 +13,8 @@ Course.create([
 
 
 Section.create([
-  {course_id: 1, name: 'Django: the basics', date: '2013-06-08', position: 1},
-  {course_id: 1, name: 'Django: advanced topics', date: '2013-07-05', position: 2},
+  {course_id: 1, name: 'Django: the basics', date: '2013-06-08'},
+  {course_id: 1, name: 'Django: advanced topics', date: '2013-07-05'},
 ])
 
 Material.create([
