@@ -13,15 +13,19 @@ Course.create([
 
 
 Section.create([
-  {course_id: 1, name: 'Django: the basics', date: '2013-06-08', position: 1},
-  {course_id: 1, name: 'Django: advanced topics', date: '2013-07-05', position: 2},
+  {course_id: 1, name: 'Django: the basics', date: '2013-06-08'},
+  {course_id: 1, name: 'Django: advanced topics', date: '2013-07-05'},
 ])
 
 Material.create([
-    {section_id: 1, name: '1', position: 2, data: 'p-WXiqrzAf8'},
-    {section_id: 1, name: '2', position: 1, data: 'tOMOM8QbfuY'},
-    {section_id: 2, name: '1', position: 1, data: 'JU2SeliQvMM'}
+    {section_id: 1, name: '1', position: 2},
+    {section_id: 1, name: '2', position: 1},
+    {section_id: 2, name: '1', position: 1}
 ])
-
+=begin
+youtube_link: 'p-WXiqrzAf8'
+youtube_link: 'tOMOM8QbfuY'
+youtube_link: 'JU2SeliQvMM'
+=end
 Student.create({ :username => 'Student', :email => 'student@example.com', :password => 'password'})
 Teacher.create({ :username => 'Teacher', :email => 'teacher@example.com', :password => 'password'})
