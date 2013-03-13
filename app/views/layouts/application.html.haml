@@ -8,30 +8,20 @@
     = stylesheet_link_tag    "application"
     = csrf_meta_tags
   %body
-
-    #wrap
-      .navbar.navbar-fixed-top
-        .navbar-inner
-          .container
-            %ul.inline{style: 'text-align: right;'}
-              %li= link_to t('feedback.title'), :new_feedback, class: 'btn btn-link'
-              %li= link_to t('about.title'), about_path, class: 'btn btn-link'
-              -if user_signed_in?
-                %li= link_to 'Выйти', :destroy_user_session, class: 'btn btn-link', method: :delete
-              -else
-                %li= link_to 'Войти', :new_user_session, class: 'btn btn-link'
-    %header.container.clearfix{style: 'padding-top: 55px;margin-bottom: 10px;'}
-      %div{style: 'float: left; display: block;'}
-        = link_to image_tag( 'logo.png', {alt: 'logo', width: "120"}), :root, {id: 'logo'}
-      %div{style: "float: left; padding-left: 50px; font-family: 'Helvetica Neue'; color: #444444; font-size: 60px;"}
-        %h1#header Geek University
-        %p.lead We will geek u
+    = render 'shared/header'
     .container
+      -if !user_signed_in?
+        .row
+          .span2
+            = link_to image_tag( 'logo.png', {alt: 'logo', width: "120"}), :root, {id: 'logo'}
+          .span8{style: "font-family: 'Helvetica Neue'; color: #444444; font-size: 60px;"}
+            %h1#header Geek University
+            %p.lead We will geek u
       .row
-      -if notice
-        %p.notice.alert.alert-info= notice
-      -if alert
-        %p.alert.alert-error= alert
-      = yield
+        -if notice
+          %p.notice.alert.alert-info= notice
+        -if alert
+          %p.alert.alert-error= alert
+        = yield
 
 = javascript_include_tag "application"

@@ -1,9 +1,9 @@
 ru:
-  about:
-    title: "О нас"
-  feedback:
-    title: "Отзыв о работе сайта"
   activerecord:
     attributes:
       feedback:
         body: "Текст сообщения"
+  navbar:
+    courses: "Все курсы"
+    about: "О нас"
+    feedback: "Отзыв о работе сайта"

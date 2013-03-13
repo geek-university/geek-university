@@ -1,13 +1,16 @@
 class CoursesController < ApplicationController
   load_and_authorize_resource
-  load_resource :section, :through => :course
-  load_resource :material, :through => :section
+  load_resource :section, :through => :course, :shallow => true
+  load_resource :material, :through => :section, :shallow => true
 
   def preview
     authorize! :preview, @course
+
+    redirect_to @course if (@course.subscibe?(current_user) || @course.owner?(current_user))
   end
 
   def index
+    @courses = Course.all
   end
 
   def show

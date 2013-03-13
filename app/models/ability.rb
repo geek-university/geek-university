@@ -8,8 +8,30 @@ class Ability
     #user ||= User.new # guest user (not logged in)
 
     if user
-      can :manage, [Course, Section, Material] if user.teacher?
-      can [:show, :apply], [Course, Section, Material]  if user.student?
+      can :manage, Course do |course|
+        CourseTeacher.where(course_id: course.id, teacher_id: user.id).count >= 1
+      end
+      can :manage, Section, course: {teachers: {id: user.id}}
+      can :manage, Material, section: {course: {teachers: {id: user.id}}}
+
+      can :show, Course do |course|
+        CourseStudent.where(course_id: course.id, student_id: user.id).count >= 1
+      end
+
+      #can :apply, Course if user.student?
+      can :apply, Course do |course|
+        CourseStudent.where(course_id: course.id, student_id: user.id).count == 0
+      end
+
+      can :show, Section, course: {students: {id: user.id}}
+      can :manage, Material, section: {course: {students: {id: user.id}}}
+
+
+
+      #
+      # , Section, Material] if user.teacher?
+      #end
+      #can [:show, :apply], [Course, Section, Material]  if user.student?
     end
 
     can [:index, :preview], Course

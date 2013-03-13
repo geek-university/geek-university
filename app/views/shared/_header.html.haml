@@ -1,0 +1,16 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      -if user_signed_in?
+        .nav
+          .logo.pull-left= link_to image_tag( 'logo.png'), :root
+          %li.divider-vertical
+          %li= link_to t('navbar.courses'), :courses
+      %ul.nav.pull-right
+        %li
+        %li= link_to t('navbar.feedback'), :new_feedback
+        %li= link_to t('navbar.about'), about_path
+        -if user_signed_in?
+          %li= link_to 'Выйти', :destroy_user_session, method: :delete
+        -else
+          %li= link_to 'Войти', :new_user_session

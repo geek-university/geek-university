@@ -3,6 +3,9 @@ class Course < ActiveRecord::Base
 
   has_attached_file :logo, :styles => { :thumb => '280x170>'}, :default_url => '/assets/:style/missing.jpg'
 
+  #scope :owner?, ->(user) { where(teacher: user) }
+
+
   has_many :sections, order: :date
 
 
@@ -11,4 +14,13 @@ class Course < ActiveRecord::Base
 
   has_many :students, through: :course_students
   has_many :teachers, through: :course_teachers
+
+
+  def owner?(user)
+    teachers.include?(user)
+  end
+
+  def subscibe?(user)
+    students.include?(user)
+  end
 end
