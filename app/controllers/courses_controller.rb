@@ -22,8 +22,8 @@ class CoursesController < ApplicationController
   end
 
   def apply
-    current_user.courses << @course
-    if current_user.save
+    @course.students << current_user
+    if @course.save
       redirect_to @course
     else
       render :preview

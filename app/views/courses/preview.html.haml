@@ -1,8 +1,9 @@
 - content_for :title_section, "Курс #{@course.name}"
 
+
 .row
   .span8
-    %h1=@course.name
+    .page-title=@course.name
     %div=raw(@course.description)
   .span4
     %div=@course.organisation
