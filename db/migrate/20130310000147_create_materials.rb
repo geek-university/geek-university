@@ -1,9 +1,8 @@
 class CreateMaterials < ActiveRecord::Migration
   def change
-    create_table :materials do |t|
+    create_table :materials, as_relation_superclass: true do |t|
       t.string :name
       t.float :position
-      t.text :data
       t.references :section
 
       t.timestamps

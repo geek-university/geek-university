@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130310225248) do
+ActiveRecord::Schema.define(:version => 20130312005014) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -82,19 +82,32 @@ ActiveRecord::Schema.define(:version => 20130310225248) do
     t.datetime "updated_at",        :null => false
   end
 
+  create_table "documents", :force => true do |t|
+    t.text     "body"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "feedbacks", :force => true do |t|
     t.string   "body"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
+  create_table "lectures", :force => true do |t|
+    t.string   "youtube_link"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
   create_table "materials", :force => true do |t|
+    t.integer  "as_material_id"
+    t.string   "as_material_type"
     t.string   "name"
     t.float    "position"
-    t.text     "data"
     t.integer  "section_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   add_index "materials", ["section_id"], :name => "index_materials_on_section_id"
@@ -102,7 +115,6 @@ ActiveRecord::Schema.define(:version => 20130310225248) do
   create_table "sections", :force => true do |t|
     t.string   "name"
     t.date     "date"
-    t.float    "position"
     t.integer  "course_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

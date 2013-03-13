@@ -19,12 +19,17 @@ Section.create([
   {course_id: 2, name: 'Rest Ext', date: '2013-07-05'}
 ])
 
-Material.create([
-    {section_id: 1, name: '1', position: 2, data: 'p-WXiqrzAf8'},
-    {section_id: 2, name: '2', position: 1, data: 'JU2SeliQvMM'},
-    {section_id: 2, name: '2', position: 1, data: 'tOMOM8QbfuY'},
-    {section_id: 3, name: '1', position: 1, data: 'JU2SeliQvMM'},
-    {section_id: 4, name: 'asd', position: 2, data: 'tOMOM8QbfuY'}
+Lecture.create([
+    {section_id: 1, name: '1', position: 2, youtube_link: 'p-WXiqrzAf8'},
+    {section_id: 2, name: '2', position: 1, youtube_link: 'JU2SeliQvMM'},
+    {section_id: 2, name: '2', position: 1, youtube_link: 'tOMOM8QbfuY'},
+    {section_id: 3, name: '1', position: 1, youtube_link: 'JU2SeliQvMM'},
+    {section_id: 4, name: 'asd', position: 2, youtube_link: 'tOMOM8QbfuY'}
+])
+
+Document.create([
+    {section_id: 1, name: 'doc', position: 3, body: 'this is document'},
+    {section_id: 2, name: 'doc2', position: 5, body: 'this is another document'}
 ])
 
 Course.first.students.create({:username => 'Student', :email => 'student@example.com', :password => 'password'})

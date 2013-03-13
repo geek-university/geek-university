@@ -1,4 +1,5 @@
 class Material < ActiveRecord::Base
   belongs_to :section
-  attr_accessible :data, :name, :position, :section_id
+  acts_as_superclass
+  attr_accessible :name, :position, :section_id
 end
