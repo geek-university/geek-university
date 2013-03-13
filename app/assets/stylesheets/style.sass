@@ -9,6 +9,23 @@
 body > .container
   padding-top: 55px
 
+.page-title
+  font-size: 24px
+  line-height: 40px
+  color: #333333
+  border-bottom: 1px solid #e5e5e5
+  margin-bottom: 20px
+  a
+    font-size: 14px
+
+.course-preview
+  .table
+    border: 1px solid #e5e5e5
+    //border-top: 0
+    td
+      border: 0
+
+// preview
 .course
   position: relative
   .caption
@@ -22,11 +39,13 @@ body > .container
       //border-top: 1px solid #ddd
       .item
         float: left
-        box-sizing: border-box
-        width: 50%
-        text-align: center
+        padding: 2px 10px
+        //box-sizing: border-box
+        //width: 50%
+        //text-align: center
         &:first-child
           border-right: 1px solid #ddd
+
 #course
   .row:first-child
     position: relative
@@ -36,6 +55,10 @@ body > .container
       display: inline-block
     a
       vertical-align: super
+  .add
+    .btn:hover
+      background-position: 0 0
+      background-image: -webkit-linear-gradient(top, #0044cc, #0044cc)
 
 .nav-pills, .nav-tabs
   li

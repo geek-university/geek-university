@@ -1,14 +1,26 @@
 - content_for :title_section, "Курс #{@course.name}"
 
-.row
+.page-title=@course.name
+.row.course-preview
   .span8
-    %h1=@course.name
     %div=raw(@course.description)
   .span4
-    %div=@course.organisation
-    %div
-      #{@course.start_date} - #{@course.end_date}
-      - if can? :apply, @course
-        =link_to 'Вступить', apply_course_path(@course), {class:'btn', method: 'post'}
-      - else
-        =link_to 'Вступить', new_user_session_path, {class:'btn'}
+    %table.table
+      -#%tr
+      -#  %th{colspan: 2}
+      -#    Описание
+      %tr
+        %td Организация
+        %td= @course.organisation
+      %tr
+        %td Начало курса
+        %td= l @course.start_date, format: :long
+      %tr
+        %td Конец курса
+        %td= l @course.end_date, format: :long
+      %tr
+        %td{colspan: 2}
+          - if can? :apply, @course
+            =link_to 'Вступить', apply_course_path(@course), {class:'btn', method: 'post'}
+          - else
+            =link_to 'Вступить', new_user_session_path, {class:'btn'}
