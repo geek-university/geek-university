@@ -1,6 +1,6 @@
 %li.editable-item{class: ('active' if material == @material)}
   = link_to material.name, [@course, @section, material]
-  - if can? :edit, @course
+  - if can? :manage, @course
     .action-group
       .edit-link
         = link_to [:edit, @course, @section, material] do

@@ -32,8 +32,9 @@ Document.create([
     {section_id: 2, name: 'doc2', position: 5, body: 'this is another document'}
 ])
 
-Course.first.students.create({:username => 'Student', :email => 'student@example.com', :password => 'password'})
-Course.find(2).students.create({:username => 'Student2', :email => 'student2@example.com', :password => 'password'})
+Course.first.users.create({:username => 'Student', :email => 'student@example.com', :password => 'password'})
+Course.find(2).users.create({:username => 'Student2', :email => 'student2@example.com', :password => 'password'})
 
-Course.first.teachers.create({:username => 'Teacher', :email => 'teacher@example.com', :password => 'password'})
-Course.find(2).teachers.create({:username => 'Teacher2', :email => 'teacher2@example.com', :password => 'password'})
+Course.first.users.create({username: 'Teacher', email: 'teacher@example.com', password: 'password'})
+CourseUser.last.update_attributes({can_manage: true}, :without_protection => true)
+#Course.find(2).teachers.create({:username => 'Teacher2', :email => 'teacher2@example.com', :password => 'password'})

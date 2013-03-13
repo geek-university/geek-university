@@ -6,7 +6,9 @@ class CoursesController < ApplicationController
   def preview
     authorize! :preview, @course
 
-    redirect_to @course if (@course.subscibe?(current_user) || @course.owner?(current_user))
+    if user_signed_in?
+      redirect_to @course if @course.subscibe?(current_user)
+    end
   end
 
   def index
@@ -22,7 +24,7 @@ class CoursesController < ApplicationController
   end
 
   def apply
-    @course.students << current_user
+    @course.users << current_user
     if @course.save
       redirect_to @course
     else

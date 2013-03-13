@@ -1,5 +1,6 @@
 class Course < ActiveRecord::Base
-  attr_accessible :description, :end_date, :logo, :name, :organisation, :published, :short_summary, :start_date
+  attr_accessible :description, :end_date, :logo, :name,
+                  :organisation, :published, :short_summary, :start_date
 
   has_attached_file :logo, :styles => { :thumb => '280x170>'}, :default_url => '/assets/:style/missing.jpg'
 
@@ -9,18 +10,12 @@ class Course < ActiveRecord::Base
   has_many :sections, order: :date, dependent: :destroy
 
 
-  has_many :course_students
-  has_many :course_teachers
+  has_many :course_users
 
-  has_many :students, through: :course_students
-  has_many :teachers, through: :course_teachers
+  has_many :users, through: :course_users
 
-
-  def owner?(user)
-    teachers.include?(user)
-  end
 
   def subscibe?(user)
-    students.include?(user)
+    course_users.where(user_id: user.id).count >= 1
   end
 end
