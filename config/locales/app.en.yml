@@ -7,3 +7,6 @@ en:
     courses: "All courses"
     about: "About"
     feedback: "Feedback"
+  course:
+    section:
+      add: "Add course section"

@@ -10,12 +10,20 @@
     .span3
       %ul.nav.nav-tabs.nav-stacked
         = render @sections
+        - if can? :manage, @course
+          %li
+            = link_to new_course_section_path(@course), {class: 'btn btn-primary'} do
+              %span=I18n.t('course.section.add')
+              .edit-link
+                = content_tag 'i', '', class: 'icon-plus icon-white'
+
 
     .span8
       %ul.nav.nav-pills
         = render @materials
       %div
-        - if @material.as_material_type == 'Lecture'
-          %iframe{width: "420", height: "315", src: "http://www.youtube.com/embed/#{@material.specific.youtube_link}", frameborder: "0", allowfullscreen: ''}
-        - elsif @material.as_material_type == 'Document'
-          = @material.specific.body
+        - if !@material.nil?
+          - if @material.as_material_type == 'Lecture'
+            %iframe{width: "420", height: "315", src: "http://www.youtube.com/embed/#{@material.specific.youtube_link}", frameborder: "0", allowfullscreen: ''}
+          - elsif @material.as_material_type == 'Document'
+            = @material.specific.body

@@ -18,4 +18,13 @@ class SectionsController < ApplicationController
       render :edit
     end
   end
+
+  def create
+    @section = Section.new(params[:section])
+    if @section.save
+      redirect_to [@course, @section]
+    else
+      render :new
+    end
+  end
 end

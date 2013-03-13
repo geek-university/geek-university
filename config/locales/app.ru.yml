@@ -7,3 +7,6 @@ ru:
     courses: "Все курсы"
     about: "О нас"
     feedback: "Отзыв о работе сайта"
+  course:
+    section:
+      add: "Добавить раздел курса"
