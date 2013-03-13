@@ -13,12 +13,4 @@ class User < ActiveRecord::Base
   has_many :course_users
   has_many :courses, through: :course_users
 
-
-  def student?
-    type == 'Student'
-  end
-
-  def teacher?
-    type == 'Teacher'
-  end
 end

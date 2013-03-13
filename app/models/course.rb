@@ -4,9 +4,6 @@ class Course < ActiveRecord::Base
 
   has_attached_file :logo, :styles => { :thumb => '280x170>'}, :default_url => '/assets/:style/missing.jpg'
 
-  #scope :owner?, ->(user) { where(teacher: user) }
-
-
   has_many :sections, order: :date, dependent: :destroy
 
 

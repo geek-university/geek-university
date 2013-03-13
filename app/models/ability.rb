@@ -18,7 +18,6 @@ class Ability
         CourseUser.where(course_id: course.id, user_id: user.id).count >= 1
       end
 
-      #can :apply, Course if user.student?
       can :apply, Course do |course|
         CourseUser.where(course_id: course.id, user_id: user.id).count == 0
       end
