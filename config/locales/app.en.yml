@@ -1,9 +1,9 @@
 en:
-  about:
-    title: "About"
-  feedback:
-    title: "Feedback"
   activerecord:
     attributes:
       feedback:
         body: "Feedback message"
+  navbar:
+    courses: "All courses"
+    about: "About"
+    feedback: "Feedback"

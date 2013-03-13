@@ -1,0 +1,7 @@
+%li.span4
+  =link_to preview_course_path(course), {class: 'thumbnail course-card', style:'text-decoration: none;'} do
+    = image_tag(course.logo, {alt:course.name, class:'course-logo'})
+    .caption{style:'border-top: 1px solid #dddddd; margin-top: 5px;'}
+      %h4=course.name
+      %p.course-short-description=course.short_summary
+      %p #{course.organisation} | #{course.start_date}

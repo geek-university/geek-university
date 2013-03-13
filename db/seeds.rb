@@ -15,13 +15,20 @@ Course.create([
 Section.create([
   {course_id: 1, name: 'Django: the basics', date: '2013-06-08'},
   {course_id: 1, name: 'Django: advanced topics', date: '2013-07-05'},
+  {course_id: 2, name: 'Rest in life', date: '2013-07-02'},
+  {course_id: 2, name: 'Rest Ext', date: '2013-07-05'}
 ])
 
 Material.create([
     {section_id: 1, name: '1', position: 2, data: 'p-WXiqrzAf8'},
-    {section_id: 1, name: '2', position: 1, data: 'tOMOM8QbfuY'},
-    {section_id: 2, name: '1', position: 1, data: 'JU2SeliQvMM'}
+    {section_id: 2, name: '2', position: 1, data: 'JU2SeliQvMM'},
+    {section_id: 2, name: '2', position: 1, data: 'tOMOM8QbfuY'},
+    {section_id: 3, name: '1', position: 1, data: 'JU2SeliQvMM'},
+    {section_id: 4, name: 'asd', position: 2, data: 'tOMOM8QbfuY'}
 ])
 
-Student.create({ :username => 'Student', :email => 'student@example.com', :password => 'password'})
-Teacher.create({ :username => 'Teacher', :email => 'teacher@example.com', :password => 'password'})
+Course.first.students.create({:username => 'Student', :email => 'student@example.com', :password => 'password'})
+Course.find(2).students.create({:username => 'Student2', :email => 'student2@example.com', :password => 'password'})
+
+Course.first.teachers.create({:username => 'Teacher', :email => 'teacher@example.com', :password => 'password'})
+Course.find(2).teachers.create({:username => 'Teacher2', :email => 'teacher2@example.com', :password => 'password'})
