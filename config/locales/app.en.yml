@@ -10,3 +10,6 @@ en:
   course:
     section:
       add: "Add course section"
+      material:
+        add: "Add study material"
+

@@ -18,4 +18,18 @@ class MaterialsController < ApplicationController
       render :edit
     end
   end
+
+  def create
+    @material = !params[:lecture].nil? ? Lecture.new(params[:lecture]) : Document.new(params[:document])
+    if @material.save
+      redirect_to [@course, @section]
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    @material.destroy
+    redirect_to [@course, @section]
+  end
 end

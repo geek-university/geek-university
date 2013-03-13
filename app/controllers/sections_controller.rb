@@ -27,4 +27,9 @@ class SectionsController < ApplicationController
       render :new
     end
   end
+
+  def destroy
+    @section.destroy
+    redirect_to [@course]
+  end
 end

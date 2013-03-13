@@ -6,7 +6,7 @@ class Course < ActiveRecord::Base
   #scope :owner?, ->(user) { where(teacher: user) }
 
 
-  has_many :sections, order: :date
+  has_many :sections, order: :date, dependent: :destroy
 
 
   has_many :course_students

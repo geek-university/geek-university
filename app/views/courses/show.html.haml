@@ -12,7 +12,7 @@
         = render @sections
         - if can? :manage, @course
           %li
-            = link_to new_course_section_path(@course), {class: 'btn btn-primary'} do
+            = link_to [:new, @course, 'section'], {class: 'btn btn-primary'} do
               %span=I18n.t('course.section.add')
               .edit-link
                 = content_tag 'i', '', class: 'icon-plus icon-white'
@@ -21,6 +21,11 @@
     .span8
       %ul.nav.nav-pills
         = render @materials
+        - if can? :manage, @course
+          %li
+            = link_to [:new, @course, @section, 'material'], {class: 'btn btn-primary'} do
+              .edit-link
+                = content_tag 'i', '', class: 'icon-plus icon-white'
       %div
         - if !@material.nil?
           - if @material.as_material_type == 'Lecture'
