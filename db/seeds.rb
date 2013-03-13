@@ -17,15 +17,15 @@ Section.create([
   {course_id: 1, name: 'Django: advanced topics', date: '2013-07-05'},
 ])
 
-Material.create([
-    {section_id: 1, name: '1', position: 2},
-    {section_id: 1, name: '2', position: 1},
-    {section_id: 2, name: '1', position: 1}
+Lecture.create([
+    {section_id: 1, name: '1', position: 2, youtube_link: 'p-WXiqrzAf8'},
+    {section_id: 1, name: '2', position: 1, youtube_link: 'tOMOM8QbfuY'},
+    {section_id: 2, name: '1', position: 1, youtube_link: 'JU2SeliQvMM'}
 ])
-=begin
-youtube_link: 'p-WXiqrzAf8'
-youtube_link: 'tOMOM8QbfuY'
-youtube_link: 'JU2SeliQvMM'
-=end
+
+Document.create([
+    {section_id: 1, name: 'doc', position: 3, body: 'this is document'},
+                ])
+
 Student.create({ :username => 'Student', :email => 'student@example.com', :password => 'password'})
 Teacher.create({ :username => 'Teacher', :email => 'teacher@example.com', :password => 'password'})

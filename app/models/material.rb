@@ -1,5 +1,5 @@
 class Material < ActiveRecord::Base
   belongs_to :section
-  belongs_to :content, polymorphic: true
-  attr_accessible :name, :position, :section_id, :content
+  acts_as_superclass
+  attr_accessible :name, :position, :section_id
 end

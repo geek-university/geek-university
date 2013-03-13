@@ -96,20 +96,18 @@ ActiveRecord::Schema.define(:version => 20130312005014) do
 
   create_table "lectures", :force => true do |t|
     t.string   "youtube_link"
-    t.integer  "content_id"
-    t.string   "content_type"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
 
   create_table "materials", :force => true do |t|
+    t.integer  "as_material_id"
+    t.string   "as_material_type"
     t.string   "name"
     t.float    "position"
-    t.string   "content_type"
-    t.integer  "content_id"
     t.integer  "section_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   add_index "materials", ["section_id"], :name => "index_materials_on_section_id"

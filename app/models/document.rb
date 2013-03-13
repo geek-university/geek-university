@@ -1,4 +1,4 @@
 class Document < ActiveRecord::Base
-  has_one :material, as: content, dependent: :destroy
+  acts_as :material
   attr_accessible :body
 end
