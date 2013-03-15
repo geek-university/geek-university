@@ -13,10 +13,10 @@ Course.create([
 
 
 Section.create([
-  {course_id: 1, name: 'Django: the basics', date: '2013-06-08'},
-  {course_id: 1, name: 'Django: advanced topics', date: '2013-07-05'},
-  {course_id: 2, name: 'Rest in life', date: '2013-07-02'},
-  {course_id: 2, name: 'Rest Ext', date: '2013-07-05'}
+  {course_id: 1, name: 'Django: the basics', date: '2013-03-15'},
+  {course_id: 1, name: 'Django: advanced topics', date: '2013-03-25'},
+  {course_id: 2, name: 'Rest in life', date: '2013-04-10'},
+  {course_id: 2, name: 'Rest Ext', date: '2013-04-20'}
 ])
 
 Material.create([

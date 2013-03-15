@@ -21,7 +21,7 @@ class MaterialsController < ApplicationController
 
   def new
     @material.study_material_type = params[:study_material_type]
-    @material.data = {}
+    @material.data = {}                      #move to constructor
   end
 
   def create
