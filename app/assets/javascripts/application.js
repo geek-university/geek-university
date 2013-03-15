@@ -15,3 +15,40 @@
 //= require ckeditor-jquery
 //= require bootstrap
 //= require_tree .
+
+
+$(function () {
+
+
+    var $datePickerStart = $('.ui-datepicker-start'),
+        $datePickerEnd = $('.ui-datepicker-end')
+
+    $datePickerStart.datepicker({
+        altField: $datePickerStart.next('.date-input'),
+        altFormat: "yy-mm-dd",
+        onSelect: function( selectedDate ) {
+            $datePickerStart.datepicker( "option", "minDate", selectedDate );
+            $datePickerEnd.datepicker( "option", "minDate", selectedDate );
+        }
+    });
+    $datePickerEnd.datepicker({
+        altField: $datePickerEnd.next('.date-input'),
+        altFormat: "yy-mm-dd",
+        onSelect: function( selectedDate ) {
+            $datePickerEnd.datepicker( "option", "maxDate", selectedDate );
+            $datePickerStart.datepicker( "option", "maxDate", selectedDate );
+        }
+    });
+
+
+    // Range datapicker
+
+    var $datePicker = $('.ui-datepicker-range')
+
+    $datePicker.datepicker({
+        altField: $datePicker.next('.date-input'),
+        altFormat: "yy-mm-dd",
+        minDate: $datePicker.data('minDate'),
+        maxDate: $datePicker.data('maxDate')
+    })
+})

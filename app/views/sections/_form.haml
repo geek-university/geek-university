@@ -1,3 +1,15 @@
-= semantic_form_for [@course, @section], html: { class: 'form-horizontal' } do |f|
-  = f.inputs
-  = f.actions
+= form_for [@course, @section], html: { class: 'form-horizontal' } do |f|
+
+  .control-group
+    = f.label :name, class: 'control-label'
+    .controls= f.text_field :name
+
+  .control-group
+    = f.label :date, class: 'control-label'
+    .controls.ui-datepicker-range{data: {min_date: @course.start_date, max_date: @course.end_date}}
+    = f.hidden_field :date, id: 'date-input'
+
+  = f.hidden_field :course_id
+
+
+  %fieldset.form-actions= f.submit class: 'btn'

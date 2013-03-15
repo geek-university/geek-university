@@ -1,0 +1,37 @@
+= form_for @course, html: { class: 'form-horizontal' } do |f|
+
+  .control-group
+    = f.label :name, class: 'control-label'
+    .controls= f.text_field :name
+
+  .control-group
+    = f.label :short_summary, class: 'control-label'
+    .controls= f.text_area :short_summary
+
+  .control-group
+    = f.label :description, class: 'control-label'
+    .controls= f.text_area :description, class: 'ckeditor'
+
+  .control-group
+    %table
+      %tr
+        %th= f.label :start_date
+        %th= f.label :end_date
+
+      %tr
+        %td
+          .controls.ui-datepicker-start
+          = f.hidden_field :start_date, class: 'date-input'
+        %td
+          .controls.ui-datepicker-end
+          = f.hidden_field :end_date, class: 'date-input'
+
+  .control-group
+    = f.label :organisation, class: 'control-label'
+    .controls= f.text_field :organisation
+
+  .control-group
+    = f.label :logo, class: 'control-label'
+    .controls= f.file_field :logo
+
+  %fieldset.form-actions= f.submit class: 'btn'
