@@ -63,5 +63,3 @@ gem 'cancan'
 gem 'thin'
 
 gem 'ckeditor_rails'
-
-gem 'acts_as_relation'

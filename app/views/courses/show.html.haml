@@ -14,21 +14,22 @@
           %li.add
             = link_to [:new, @course, 'section'], {class: 'btn btn-primary'} do
               %span=I18n.t('course.section.add')
-              .edit-link
-                = content_tag 'i', '', class: 'icon-plus icon-white'
 
 
     .span8
       %ul.nav.nav-pills
         = render @materials
         - if can? :manage, @course
-          %li
-            = link_to [:new, @course, @section, 'material'], {class: 'btn btn-primary'} do
+          %li.add
+            = link_to new_course_section_material_path(@course, @section, study_material_type: 'Lecture'), {class: 'btn btn-primary'} do
+              %span Добавить лекцию
+              .edit-link
+                = content_tag 'i', '', class: 'icon-plus icon-white'
+          %li.add
+            = link_to new_course_section_material_path(@course, @section, study_material_type: 'Document'), {class: 'btn btn-primary'} do
+              %span Добавить документ
               .edit-link
                 = content_tag 'i', '', class: 'icon-plus icon-white'
       %div
         - if !@material.nil?
-          - if @material.as_material_type == 'Lecture'
-            %iframe{width: "420", height: "315", src: "http://www.youtube.com/embed/#{@material.specific.youtube_link}", frameborder: "0", allowfullscreen: ''}
-          - elsif @material.as_material_type == 'Document'
-            = @material.specific.body
+          = render "/materials/#{@material.study_material_type.downcase}_show"

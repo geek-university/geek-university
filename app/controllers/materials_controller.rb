@@ -19,8 +19,12 @@ class MaterialsController < ApplicationController
     end
   end
 
+  def new
+    @material.study_material_type = params[:study_material_type]
+    @material.data = {}
+  end
+
   def create
-    @material = !params[:lecture].nil? ? Lecture.new(params[:lecture]) : Document.new(params[:document])
     if @material.save
       redirect_to [@course, @section]
     else
