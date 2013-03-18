@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require ckeditor-jquery
 //= require bootstrap
 //= require_tree .
@@ -45,10 +46,14 @@ $(function () {
 
     var $datePicker = $('.ui-datepicker-range')
 
+    console.log(Date.parse($datePicker.data('minDate')))
+    var currentDate = $('#date-input').val()
     $datePicker.datepicker({
-        altField: $datePicker.next('.date-input'),
+//        dateField: $datePicker.next('#date-input'),
+        altField: $datePicker.next('#date-input'),
         altFormat: "yy-mm-dd",
+        dateFormat: "yy-mm-dd",
         minDate: $datePicker.data('minDate'),
         maxDate: $datePicker.data('maxDate')
-    })
+    }).datepicker('setDate', currentDate)
 })

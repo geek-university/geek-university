@@ -3,12 +3,28 @@ class SectionsController < ApplicationController
   load_and_authorize_resource :section, :through => :course
   load_and_authorize_resource :material, :through => :section
 
+  #add_breadcrumb 'Course', course_path(@course)
+
+  before_filter only: [:edit, :new] do |action|
+    add_breadcrumb @course.name, @course
+  end
+
+
+
   def show
     @sections = @course.sections
     @materials = @section.materials
     @material = @materials.first
 
     render 'courses/show'
+  end
+
+  def edit
+    add_breadcrumb t('breadcrumbs.sections.edit', section: @section.name), [@section]
+  end
+
+  def new
+    add_breadcrumb :new
   end
 
   def update

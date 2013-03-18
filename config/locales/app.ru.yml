@@ -12,3 +12,11 @@ ru:
       add: "Добавить раздел курса"
       material:
         add: "Добавить учебный материал"
+  breadcrumbs:
+    sections:
+      edit: 'Секция - %{section} - [Редактирование]'
+      new: 'Создание новой секции'
+    material:
+      edit: '%{type} - %{material} -  [Редактирование]'
+      new: 'Создание - %{type}'
+

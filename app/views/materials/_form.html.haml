@@ -1,8 +1,10 @@
+= render_breadcrumbs
+
 = semantic_form_for [@course, @section, @material], html: { class: 'form-horizontal' } do |f|
   = f.inputs do
     = f.input :section_id, as: :hidden
     = f.input :name
     = f.input :position
     = f.input :study_material_type, as: :hidden
-    = render "/materials/#{@material.study_material_type.downcase}_form", material: @material
+    = render "/materials/#{@material.study_material_type.downcase}_form", material: @material, f: f
   = f.actions
