@@ -6,6 +6,4 @@ class CourseUser < ActiveRecord::Base
                                      message: 'ASDASDASDASDASDSA'}
 
   attr_accessible :material_id, :last_viewed
-
-
 end

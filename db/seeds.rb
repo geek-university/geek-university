@@ -26,7 +26,14 @@ Material.create([
     {section_id: 3, name: '1', position: 1, study_material_type: :Lecture, data: {youtube_link: 'JU2SeliQvMM'}},
     {section_id: 4, name: 'asd', position: 2, study_material_type: :Lecture, data: {youtube_link: 'tOMOM8QbfuY'}},
     {section_id: 1, name: 'doc', position: 3, study_material_type: :Document, data: {body: 'this is document'}},
-    {section_id: 2, name: 'doc2', position: 5, study_material_type: :Document, data: {body: 'this is another document'}}
+    {section_id: 2, name: 'doc2', position: 5, study_material_type: :Document, data: {body: 'this is another document'}},
+    {section_id: 2, name: 'quiz', position: 2, study_material_type: :Quiz, data: {
+        questions: [
+          { body: 'Какие из этих языков динамические?', answers: %w(ruby python java English), correct_answers: [0, 1], select_multiple: true },
+          { body: 'Солнце звезда?', answers: %w(да нет), correct_answers: [0] }
+        ]
+      }
+    }
 ])
 
 Course.first.users.create({:username => 'Student', :email => 'student@example.com', :password => 'password'})

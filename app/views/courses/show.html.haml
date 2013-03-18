@@ -30,6 +30,11 @@
               %span Добавить документ
               .edit-link
                 = content_tag 'i', '', class: 'icon-plus icon-white'
+          %li.add
+            = link_to new_course_section_material_path(@course, @section, study_material_type: 'Quiz'), {class: 'btn btn-primary'} do
+              %span Добавить тест
+              .edit-link
+                = content_tag 'i', '', class: 'icon-plus icon-white'
       %div
         - if !@material.nil?
           = render "/materials/#{@material.study_material_type.downcase}_show"

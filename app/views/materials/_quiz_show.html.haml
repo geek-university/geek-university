@@ -1,0 +1,17 @@
+= semantic_form_for [@course, @section, @material], html: { class: 'form-horizontal' } do |f|
+  = f.inputs do
+    -@material.data['questions'].each_with_index do |question, i|
+      .question
+        =i+1
+        = raw(question['body'])
+        -if question['select_multiple']
+          -question['answers'].each do |answer|
+            %label
+              =check_box_tag "questions[#{i}][answers][]"
+              =answer
+        -else
+          -question['answers'].each_with_index do |answer, j|
+            %label
+              =radio_button_tag "questions[#{i}][answers]", j
+              =answer
+  = f.actions

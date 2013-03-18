@@ -3,10 +3,8 @@ class CreateCourseUsers < ActiveRecord::Migration
     create_table :course_users do |t|
       t.references :course
       t.references :user
-      t.references :material
+      t.integer :last_viewed_material
       t.boolean :can_manage
-      t.date :last_viewed
-
 
       t.timestamps
     end

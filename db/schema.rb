@@ -49,11 +49,10 @@ ActiveRecord::Schema.define(:version => 20130310222250) do
   create_table "course_users", :force => true do |t|
     t.integer  "course_id"
     t.integer  "user_id"
-    t.integer  "material_id"
+    t.integer  "last_viewed_material"
     t.boolean  "can_manage"
-    t.date     "last_viewed"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
   end
 
   add_index "course_users", ["course_id", "user_id"], :name => "index_course_users_on_course_id_and_user_id"
