@@ -1,5 +1,3 @@
-:javascript
-
 .accordion#accordion
   -@material.data['questions'].each_with_index do |question, i|
     .accordion-group
@@ -12,36 +10,20 @@
           %label
             разрешить множественные ответы?
             =check_box_tag "material[data][questions][][select_multiple]", true, question['select_multiple']
-          -question['answers'].each_with_index do |answer, j|
-            =text_field_tag "material[data][questions][][answers][]", answer
-            =check_box_tag "material[data][questions][][correct_answers][]", j, question['correct_answers'].include?(j.to_s)
-            %a{href: "javascript:addAnswerToQuestion(#{i})"} delete
+          %div{class: "question#{i}"}
+            -question['answers'].each_with_index do |answer, j|
+              %div{class: "answer#{j}"}
+                =text_field_tag "material[data][questions][][answers][]", answer
+                =check_box_tag "material[data][questions][][correct_answers][]", j, question['correct_answers'].include?(j.to_s)
+                %a{href: "javascript:deleteAnswer(#{i}, #{j})"} delete
+          %a{href: "javascript:addAnswerToQuestion(#{i})"} add
 
--#
--#  =f.inputs do
--#    -if @material.data['time_limit']
--#      %div
--#        Quiz time limit
--#        =@material.data['time_limit']
--#    -if @material.data['max_attempts']
--#      %div
--#        Quiz max attempts
--#        =@material.data['max_attempts']
--#    -@material.data['questions'].each_with_index do |question, i|
--#      .question
--#        =i+1
--#        =question['body']
--#        -if question['select_multiple']
--#          -question['answers'].each do |answer|
--#            %label
--#              =check_box_tag "questions[#{i}][answers][]"
--#              =answer
--#        -else
--#          -question['answers'].each_with_index do |answer, j|
--#            %label
--#              =radio_button_tag "questions[#{i}][answers]", j
--#              =answer
--#
--#
--#:javascript
--#  5 +2
+
+:javascript
+  function deleteAnswer(questionNumber, answerNumber) {
+    $(".question" + questionNumber + " .answer" + answerNumber).remove()
+  }
+
+  function addAnswerToQuestion(questionNumber) {
+    $(".question" + questionNumber).append("<div>new answer</div>")
+  }
