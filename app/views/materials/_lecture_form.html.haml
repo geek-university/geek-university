@@ -1,2 +1,3 @@
-%label Скопируйте ссылку с youtube
-= text_field_tag 'material[data[youtube_link]]', material.data['youtube_link']
+.control-group
+  = f.label 'Скопируйте ссылку с youtube', class: 'control-label'
+  .controls= text_field_tag 'material[data[youtube_link]]', material.data['youtube_link']
