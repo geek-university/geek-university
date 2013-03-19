@@ -11,6 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require ckeditor-jquery
@@ -20,6 +21,17 @@
 
 $(function () {
 
+
+    // Course show
+
+    // add material link
+    $('#course .materials .add').click(function(){
+        $('.links', this).slideToggle(200)
+    })
+
+    // tooltip
+    $('#course .materials li > a').tooltip()
+//    $().tooltip
 
     var $datePickerStart = $('.ui-datepicker-start'),
         $datePickerEnd = $('.ui-datepicker-end')
@@ -46,7 +58,6 @@ $(function () {
 
     var $datePicker = $('.ui-datepicker-range')
 
-    console.log(Date.parse($datePicker.data('minDate')))
     var currentDate = $('#date-input').val()
     $datePicker.datepicker({
 //        dateField: $datePicker.next('#date-input'),

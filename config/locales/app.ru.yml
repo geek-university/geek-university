@@ -1,4 +1,6 @@
 ru:
+  confirm:
+    'Вы уверены?'
   activerecord:
     attributes:
       feedback:

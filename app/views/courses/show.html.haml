@@ -17,19 +17,21 @@
 
 
     .span8
-      %ul.nav.nav-pills
+      %ul.materials
         = render @materials
         - if can? :manage, @course
           %li.add
-            = link_to new_course_section_material_path(@course, @section, study_material_type: 'Lecture'), {class: 'btn btn-primary'} do
-              %span Добавить лекцию
-              .edit-link
-                = content_tag 'i', '', class: 'icon-plus icon-white'
-          %li.add
-            = link_to new_course_section_material_path(@course, @section, study_material_type: 'Document'), {class: 'btn btn-primary'} do
-              %span Добавить документ
-              .edit-link
-                = content_tag 'i', '', class: 'icon-plus icon-white'
-      %div
+            %a
+              %i.icon-plus
+            .links
+              = link_to 'Лекция', new_course_section_material_path(@course, @section, study_material_type: 'Lecture')
+              = link_to 'Документ', new_course_section_material_path(@course, @section, study_material_type: 'Document')
+      .material
         - if !@material.nil?
+          - if can? :manage, @course
+            .admin-links
+              = link_to [:edit, @course, @section, @material] do
+                = content_tag 'i', '', class: 'icon-pencil'
+              = link_to [@course, @section, @material], method: :delete, confirm: t('confirm') do
+                = content_tag 'i', '', class: 'icon-remove'
           = render "/materials/#{@material.study_material_type.downcase}_show"

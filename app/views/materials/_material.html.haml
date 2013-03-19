@@ -1,10 +1,4 @@
-%li.editable-item{class: ('active' if material == @material)}
-  = link_to material.name, [@course, @section, material]
-  - if can? :manage, @course
-    .action-group
-      .edit-link
-        = link_to [:edit, @course, @section, material] do
-          = content_tag 'i', '', class: 'icon-pencil'
-      .delete-link
-        = link_to [@course, @section, material], method: :delete do
-          = content_tag 'i', '', class: 'icon-remove'
+%li{class: ('active' if material == @material)}
+  = link_to [@course, @section, material], title: material.name do
+    -#= material.name
+    = content_tag 'i', '', class: "icon-#{material.study_material_type.downcase}"

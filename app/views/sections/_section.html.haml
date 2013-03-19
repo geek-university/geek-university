@@ -1,10 +1,8 @@
 %li.editable-item{class: ('active' if section == @section)}
   = link_to section.name, [@course, section]
   - if can? :manage, @course
-    .action-group
-      .edit-link
-        = link_to [:edit, @course, section] do
-          = content_tag 'i', '', class: 'icon-pencil'
-      .delete-link
-        = link_to [@course, section], method: :delete do
-          = content_tag 'i', '', class: 'icon-remove'
+    .admin-links
+      = link_to [:edit, @course, section] do
+        = content_tag 'i', '', class: 'icon-pencil'
+      = link_to [@course, section], method: :delete, confirm: t('confirm') do
+        = content_tag 'i', '', class: 'icon-remove'
