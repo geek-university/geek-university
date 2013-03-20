@@ -9,7 +9,7 @@
       %ul.nav.pull-right
         %li
         %li= link_to t('navbar.feedback'), :new_feedback
-        %li= link_to t('navbar.about'), about_path
+        -#%li= link_to t('navbar.about'), about_path
         -if user_signed_in?
           %li= link_to 'Выйти', :destroy_user_session, method: :delete
         -else

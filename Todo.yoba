@@ -3,6 +3,7 @@
 тестовые данные
 quiz
 forgot password убрал                             :recoverable в User
+убрал ссылку на страничку о нас
 
 
 добавить email в Feedback
