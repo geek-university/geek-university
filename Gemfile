@@ -68,3 +68,4 @@ gem 'thin'
 gem 'ckeditor_rails'
 
 gem 'yaml_db'
+gem 'seed_dump'
