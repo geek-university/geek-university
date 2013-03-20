@@ -12,7 +12,7 @@ class CoursesController < ApplicationController
   end
 
   def index
-    @courses = Course.all
+    @courses = Course.order('start_date desc')
   end
 
   def show
