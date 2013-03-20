@@ -12,4 +12,5 @@ en:
       add: "Add course section"
       material:
         add: "Add study material"
-
+  feedback:
+    thank_you: "Thank you for your feedback!"

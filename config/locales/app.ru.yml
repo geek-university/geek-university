@@ -21,4 +21,5 @@ ru:
     material:
       edit: '%{type} - %{material} -  [Редактирование]'
       new: 'Создание - %{type}'
-
+  feedback:
+    thank_you: "Спасибо за ваш отзыв"

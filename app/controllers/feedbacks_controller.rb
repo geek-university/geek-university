@@ -6,6 +6,7 @@ class FeedbacksController < ApplicationController
   def create
     @feedback = Feedback.new(params[:feedback])
     if @feedback.save
+      flash[:notice] = t('feedback.thank_you')
       redirect_to :root
     else
       render :new

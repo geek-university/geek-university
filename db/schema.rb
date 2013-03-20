@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(:version => 20130310222250) do
 
   create_table "feedbacks", :force => true do |t|
     t.string   "body"
+    t.string   "email"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
