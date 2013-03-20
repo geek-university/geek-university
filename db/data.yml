@@ -1,0 +1,2230 @@
+
+---
+admin_users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - admin@example.com
+    - $2a$10$ZBZ9ELH1Z0upwxgvpJEXGO.9Oj5h7hGNcouz.4QlHw5jid66LvCcG
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - '2013-03-20 01:00:43.310180'
+    - '2013-03-20 01:00:43.310180'
+
+---
+users:
+  columns:
+  - id
+  - username
+  - created_at
+  - updated_at
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  records: 
+  - - 1
+    - Student
+    - '2013-03-20 01:00:44.258406'
+    - '2013-03-20 01:00:44.258406'
+    - student@example.com
+    - $2a$10$tUBKTLq5GG4JIbK8gMm9xeFOU1RutvEt6dhllpyz1TFiq3JvEoBlS
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+  - - 2
+    - Teacher
+    - '2013-03-20 01:00:44.370144'
+    - '2013-03-20 01:10:34.053313'
+    - teacher@example.com
+    - $2a$10$tRfMViqqnUn6mcA9RlYJye.gnZd5jeHc.cvBs.mwLAEnDqMBSnn/6
+    - 
+    - 
+    - 
+    - 2
+    - '2013-03-20 01:10:34.052629'
+    - '2013-03-20 01:02:40.506240'
+    - 127.0.0.1
+    - 127.0.0.1
+  - - 3
+    - 
+    - '2013-03-20 01:09:05.421658'
+    - '2013-03-20 01:09:05.455644'
+    - alexandrepavlova@gmail.com
+    - $2a$10$4yuxfrQ.JJ11mrVUnygJdOopwR5kTxb6rjmlUKs2OZuShHKDGbVNW
+    - 
+    - 
+    - 
+    - 1
+    - '2013-03-20 01:09:05.454826'
+    - '2013-03-20 01:09:05.454826'
+    - 127.0.0.1
+    - 127.0.0.1
+
+---
+courses:
+  columns:
+  - id
+  - name
+  - short_summary
+  - description
+  - organisation
+  - logo_file_name
+  - logo_content_type
+  - logo_file_size
+  - logo_updated_at
+  - start_date
+  - end_date
+  - published
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Веб разработка на Django
+    - ! 'С помощью простой и надежной платформы Django, основанной на языке Python,
+      можно создавать мощные веб-решения, написав всего несколько строк кода. '
+    - ! "<h3 style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0); font-family:
+      Verdana, sans-serif; line-height: 20px;\">С помощью простой и надежной платформы
+      Django, основанной на языке Python, можно создавать мощные веб-решения, написав
+      всего несколько строк кода. Ее использование позволяет обеспечить высокую скорость
+      и гибкость разработки, а также решать широкий спектр прикладных задач. Авторы,
+      опытные разработчики, описывают все приемы, инструменты и концепции, которые
+      необходимо знать, чтобы оптимально использовать Django 1.0, включая все основные
+      особенности новой версии.</span><br style=\"color: rgb(0, 0, 0); font-family:
+      Verdana, sans-serif; line-height: 20px;\" />\r\n<span style=\"color: rgb(0,
+      0, 0); font-family: Verdana, sans-serif; line-height: 20px;\">Это полное руководство
+      начинается с введения в Python, затем подробно обсуждаются основные компоненты
+      Django (модели, представления и шаблоны) и порядок организации взаимодействия
+      между ними. Описываются методы разработки конкретных приложений: блог, фотогалерея,
+      система управления содержимым, инструмент публикации фрагментов кода с подсветкой
+      синтаксиса. После этого рассматриваются более сложные темы: расширение системы
+      шаблонов, синдицирование, настройка приложения администрирования и тестирование
+      веб-приложений. Авторы раскрывают разработчику секреты Django, давая подробные
+      разъяснения и предоставляя большое количество примеров программного кода, сопровождая
+      их построчным описанием и иллюстрациями.</span></h3>\r\n"
+    - Django unchained
+    - html5css33.png
+    - image/png
+    - 18680
+    - '2013-03-10 12:15:08.000000'
+    - '2013-03-20'
+    - '2013-03-20'
+    - 1
+    - '2013-03-20 01:00:43.345383'
+    - '2013-03-20 01:36:13.817975'
+  - - 2
+    - Веб-разработка с удовольствием
+    - Ruby on Rails - веб-ориентированная среда разработки с открытым кодом, оптимизированная
+      для удобства программирования и устойчивой производительности.
+    - ! "<div class=\"sub\" style=\"float: left; width: 200px; text-align: right;
+      font-family: verdana, Lucida Grande, arial, helvetica, sans-serif; font-size:
+      medium; line-height: normal;\">\r\n<h1 style=\"padding: 0px; margin: 0px 0px
+      20px; color: rgb(0, 0, 0); font-size: 28px; line-height: 33px; font-family:
+      georgia;\">Что входит<br />\r\nв Rails?</h1>\r\n</div>\r\n\r\n<div class=\"main\"
+      style=\"float: right; width: 450px; font-family: verdana, Lucida Grande, arial,
+      helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<p style=\"font-size:
+      18px; line-height: 25px; margin-top: 0px; font-family: georgia; margin-bottom:
+      25px;\">Rails&nbsp;\x97 это полноценный, многоуровневый фреймворк для построения&nbsp;<span
+      class=\"highlight\" style=\"background-color: rgb(255, 255, 204);\">веб-приложений,
+      использующих базы данных</span>, который основан на&nbsp;архитектуре Модель-Представление-Контроллер
+      (Model-View-Controller, MVC).</p>\r\n\r\n<p style=\"font-size: 18px; line-height:
+      25px; margin-top: 0px; font-family: georgia; margin-bottom: 25px;\">Динамичный
+      AJAX-интерфейс, обработка запросов и&nbsp;выдача данных в&nbsp;контроллерах,
+      предметная область, отраженная в&nbsp;базе данных,&nbsp;&mdash; для всего этого
+      Rails предоставляет однородную среду разработки на&nbsp;Ruby. Все, что необходимо
+      для начала&nbsp;&mdash; база данных и&nbsp;веб-сервер.</p>\r\n</div>\r\n\r\n<div
+      class=\"clearall\" style=\"margin: 0px 0px 10px; padding: 10px 0px 0px; clear:
+      both; font-size: 2px; font-family: verdana, Lucida Grande, arial, helvetica,
+      sans-serif; line-height: normal;\">&nbsp;</div>\r\n\r\n<div class=\"sub\" style=\"float:
+      left; width: 200px; text-align: right; font-family: verdana, Lucida Grande,
+      arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<h1
+      style=\"padding: 0px; margin: 0px 0px 20px; color: rgb(0, 0, 0); font-size:
+      28px; line-height: 33px; font-family: georgia;\">Кто пользуется<br />\r\nRails?</h1>\r\n</div>\r\n\r\n<div
+      class=\"main\" style=\"float: right; width: 450px; font-family: verdana, Lucida
+      Grande, arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<p
+      style=\"font-size: 18px; line-height: 25px; margin-top: 0px; font-family: georgia;
+      margin-bottom: 25px;\">Rails используют все&nbsp;&mdash; от&nbsp;стартапов и&nbsp;некоммерческих
+      организаций до&nbsp;крупного бизнеса. Rails&nbsp;&mdash; это прежде всего инфраструктура,
+      поэтому среда великолепно подходит для любого типа веб-приложений, будь это
+      программы для&nbsp;<span class=\"highlight\" style=\"background-color: rgb(255,
+      255, 204);\">организации совместной работы, поддержки сообществ, электронного
+      бизнеса, управления содержанием, статистики, управления...</span></p>\r\n</div>\r\n"
+    - David Heinemeier Hansson
+    - ruby_on_rails-100021058-large.jpg
+    - image/jpeg
+    - 10339
+    - '2013-03-20 01:02:49.728661'
+    - '2013-03-20'
+    - '2013-03-20'
+    - 2
+    - '2013-03-20 01:00:43.381560'
+    - '2013-03-20 01:02:49.844958'
+  - - 3
+    - Разработка компьютерных игр
+    - Разработка игр – это особая область разработки программного обеспечения. Для
+      наилучшего восприятия доклада желательно иметь опыт разработчика игр или хотя
+      бы базовый игровой опыт.
+    - ! '<p>Разработка игр &ndash; это особая область разработки программного обеспечения.
+      С одной стороны, все как обычно: фичи, баги, майлстоуны, пользовательский интерфейс,
+      смена ТЗ и даже тесты. Но создание интерактивной виртуальной реальности ставит
+      весьма специфические задачи и требования, от очень больших до совсем маленьких.</p><p><br
+      />Вот несколько примеров: освещение сцены должно быть реалистичным (вы должны
+      знать физические основы процессов), враги не должны тупить (искусственный интеллект
+      агентов должен быть на высоте), в игру должно быть в меру сложно играть (игровые
+      настройки должны быть тонко сбалансированы), при попадании пуль в стены должны
+      оставаться следы, мимика персонажа не должна вызывать отторжения&hellip;<br
+      />В этом докладе мы разберем процесс создания игр на запчасти: посмотрим на
+      команду, которая делает игру, заглянем вглубь игровых скриншотов, вывернем наизнанку
+      игровой арт, посмотрим на игру суровым взглядом продюсера. А потом увидим, как
+      теория преломляется в практике на примере игрового движка Unity.</p><p><br />Для
+      наилучшего восприятия доклада желательно иметь опыт разработчика игр или хотя
+      бы базовый игровой опыт. Например, неплохо знать как выглядит <a href="http://en.wikipedia.org/wiki/Doom_II:_Hell_on_Earth">вот
+      такая игра</a>.</p>'
+    - Сообщество "CodeFreeze"
+    - images_(8).jpg
+    - image/jpeg
+    - 8984
+    - '2013-03-20 00:17:38.000000'
+    - '2013-03-15'
+    - '2013-05-15'
+    - 1
+    - '2013-03-20 01:00:43.421274'
+    - '2013-03-20 01:00:43.421274'
+
+---
+sections:
+  columns:
+  - id
+  - name
+  - date
+  - course_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Введение
+    - '2013-03-20'
+    - 1
+    - '2013-03-20 01:00:43.470965'
+    - '2013-03-20 01:37:57.981946'
+  - - 2
+    - Продвинутый материал
+    - '2013-03-20'
+    - 1
+    - '2013-03-20 01:00:43.506901'
+    - '2013-03-20 01:38:06.368389'
+  - - 3
+    - Установка Ruby on Rails
+    - '2013-03-20'
+    - 2
+    - '2013-03-20 01:00:43.530237'
+    - '2013-03-20 01:28:34.509393'
+  - - 4
+    - Создание простейшего приложения
+    - '2013-03-20'
+    - 2
+    - '2013-03-20 01:00:43.545365'
+    - '2013-03-20 01:29:12.541785'
+  - - 7
+    - Неделя 1
+    - '2013-03-15'
+    - 3
+    - '2013-03-20 01:00:43.607452'
+    - '2013-03-20 01:00:43.607452'
+  - - 8
+    - Неделя 2
+    - '2013-03-22'
+    - 3
+    - '2013-03-20 01:00:43.641439'
+    - '2013-03-20 01:00:43.641439'
+
+---
+materials:
+  columns:
+  - id
+  - name
+  - position
+  - section_id
+  - study_material_type
+  - data
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Введение
+    - 2.0
+    - 1
+    - Lecture
+    - ! '{"youtube_link":"p-WXiqrzAf8"}'
+    - '2013-03-20 01:00:43.681686'
+    - '2013-03-20 01:37:13.773186'
+  - - 3
+    - Как устроены Django приложения
+    - 1.0
+    - 2
+    - Lecture
+    - ! '{"youtube_link":"JU2SeliQvMM"}'
+    - '2013-03-20 01:00:43.750149'
+    - '2013-03-20 01:38:20.209927'
+  - - 4
+    - Создание блога за 30 минут
+    - 2.0
+    - 2
+    - Lecture
+    - ! '{"youtube_link":"srHZoj3ASmk"}'
+    - '2013-03-20 01:00:43.781630'
+    - '2013-03-20 01:38:51.708567'
+  - - 7
+    - Архитектура
+    - 3.0
+    - 1
+    - Document
+    - ! '{"body":"<p style=\"margin: 0.4em 0px 0.5em; line-height: 19.1875px; color:
+      rgb(0, 0, 0); font-family: sans-serif;\">\u0410\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u0443\u0440\u0430
+      Django \u043f\u043e\u0445\u043e\u0436\u0430 \u043d\u0430 &laquo;<a class=\"mw-redirect\"
+      href=\"http://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C-%D0%9F%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80\"
+      style=\"text-decoration: none; color: rgb(11, 0, 128); background-image: none;
+      background-position: initial initial; background-repeat: initial initial;\"
+      title=\"\u041c\u043e\u0434\u0435\u043b\u044c-\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435-\u041a\u043e\u043d\u0442\u0440\u043e\u043b\u043b\u0435\u0440\">\u041c\u043e\u0434\u0435\u043b\u044c-\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435-\u041a\u043e\u043d\u0442\u0440\u043e\u043b\u043b\u0435\u0440</a>&raquo;
+      (MVC). \u041a\u043e\u043d\u0442\u0440\u043e\u043b\u043b\u0435\u0440 \u043a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u043e\u0439
+      \u043c\u043e\u0434\u0435\u043b\u0438 MVC \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e
+      \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442
+      \u0443\u0440\u043e\u0432\u043d\u044e, \u043a\u043e\u0442\u043e\u0440\u044b\u0439
+      \u0432 Django \u043d\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435
+      (<a href=\"http://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA\"
+      style=\"text-decoration: none; color: rgb(11, 0, 128); background-image: none;
+      background-position: initial initial; background-repeat: initial initial;\"
+      title=\"\u0410\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0438\u0439 \u044f\u0437\u044b\u043a\">\u0430\u043d\u0433\u043b.</a>&nbsp;<i>View</i>),
+      \u0430 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u043e\u043d\u043d\u0430\u044f
+      \u043b\u043e\u0433\u0438\u043a\u0430 \u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u044f
+      \u0440\u0435\u0430\u043b\u0438\u0437\u0443\u0435\u0442\u0441\u044f \u0432 Django
+      \u0443\u0440\u043e\u0432\u043d\u0435\u043c \u0428\u0430\u0431\u043b\u043e\u043d\u043e\u0432
+      (<a href=\"http://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA\"
+      style=\"text-decoration: none; color: rgb(11, 0, 128); background-image: none;
+      background-position: initial initial; background-repeat: initial initial;\"
+      title=\"\u0410\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0438\u0439 \u044f\u0437\u044b\u043a\">\u0430\u043d\u0433\u043b.</a>&nbsp;<i>Template</i>).
+      \u0418\u0437-\u0437\u0430 \u044d\u0442\u043e\u0433\u043e \u0443\u0440\u043e\u0432\u043d\u0435\u0432\u0443\u044e
+      \u0430\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u0443\u0440\u0443 Django \u0447\u0430\u0441\u0442\u043e
+      \u043d\u0430\u0437\u044b\u0432\u0430\u044e\u0442 &laquo;\u041c\u043e\u0434\u0435\u043b\u044c-\u0428\u0430\u0431\u043b\u043e\u043d-\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435&raquo;
+      (MTV).</p>\r\n\r\n<p style=\"margin: 0.4em 0px 0.5em; line-height: 19.1875px;
+      color: rgb(0, 0, 0); font-family: sans-serif;\">\u041f\u0435\u0440\u0432\u043e\u043d\u0430\u0447\u0430\u043b\u044c\u043d\u0430\u044f
+      \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430 Django, \u043a\u0430\u043a
+      \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0434\u043b\u044f \u0440\u0430\u0431\u043e\u0442\u044b
+      \u043d\u043e\u0432\u043e\u0441\u0442\u043d\u044b\u0445 \u0440\u0435\u0441\u0443\u0440\u0441\u043e\u0432,
+      \u0434\u043e\u0441\u0442\u0430\u0442\u043e\u0447\u043d\u043e \u0441\u0438\u043b\u044c\u043d\u043e
+      \u043e\u0442\u0440\u0430\u0437\u0438\u043b\u0430\u0441\u044c \u043d\u0430 \u0435\u0433\u043e
+      \u0430\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u0443\u0440\u0435: \u043e\u043d
+      \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442
+      \u0440\u044f\u0434 \u0441\u0440\u0435\u0434\u0441\u0442\u0432, \u043a\u043e\u0442\u043e\u0440\u044b\u0435
+      \u043f\u043e\u043c\u043e\u0433\u0430\u044e\u0442 \u0432 \u0431\u044b\u0441\u0442\u0440\u043e\u0439
+      \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u043e\u0432
+      \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u043e\u043d\u043d\u043e\u0433\u043e
+      \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0430. \u0422\u0430\u043a,
+      \u043d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0443
+      \u043d\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u0441\u043e\u0437\u0434\u0430\u0432\u0430\u0442\u044c
+      \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u043b\u0435\u0440\u044b \u0438 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b
+      \u0434\u043b\u044f \u0430\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0439
+      \u0447\u0430\u0441\u0442\u0438 \u0441\u0430\u0439\u0442\u0430, \u0432 Django
+      \u0435\u0441\u0442\u044c \u0432\u0441\u0442\u0440\u043e\u0435\u043d\u043d\u043e\u0435
+      \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0434\u043b\u044f
+      \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u043c\u044b\u043c,
+      \u043a\u043e\u0442\u043e\u0440\u043e\u0435 \u043c\u043e\u0436\u043d\u043e \u0432\u043a\u043b\u044e\u0447\u0438\u0442\u044c
+      \u0432 \u043b\u044e\u0431\u043e\u0439 \u0441\u0430\u0439\u0442, \u0441\u0434\u0435\u043b\u0430\u043d\u043d\u044b\u0439
+      \u043d\u0430 Django, \u0438 \u043a\u043e\u0442\u043e\u0440\u043e\u0435 \u043c\u043e\u0436\u0435\u0442
+      \u0443\u043f\u0440\u0430\u0432\u043b\u044f\u0442\u044c \u0441\u0440\u0430\u0437\u0443
+      \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u043c\u0438 \u0441\u0430\u0439\u0442\u0430\u043c\u0438
+      \u043d\u0430 \u043e\u0434\u043d\u043e\u043c \u0441\u0435\u0440\u0432\u0435\u0440\u0435.
+      \u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0435
+      \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442
+      \u0441\u043e\u0437\u0434\u0430\u0432\u0430\u0442\u044c, \u0438\u0437\u043c\u0435\u043d\u044f\u0442\u044c
+      \u0438 \u0443\u0434\u0430\u043b\u044f\u0442\u044c \u043b\u044e\u0431\u044b\u0435
+      \u043e\u0431\u044a\u0435\u043a\u0442\u044b \u043d\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f
+      \u0441\u0430\u0439\u0442\u0430, \u043f\u0440\u043e\u0442\u043e\u043a\u043e\u043b\u0438\u0440\u0443\u044f
+      \u0432\u0441\u0435 \u0441\u043e\u0432\u0435\u0440\u0448\u0451\u043d\u043d\u044b\u0435
+      \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f, \u0438 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442
+      \u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u0434\u043b\u044f \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f
+      \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f\u043c\u0438
+      \u0438 \u0433\u0440\u0443\u043f\u043f\u0430\u043c\u0438 (\u0441 \u043f\u043e\u043e\u0431\u044a\u0435\u043a\u0442\u043d\u044b\u043c
+      \u043d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435\u043c \u043f\u0440\u0430\u0432).</p>\r\n\r\n<p
+      style=\"margin: 0.4em 0px 0.5em; line-height: 19.1875px; color: rgb(0, 0, 0);
+      font-family: sans-serif;\">\u0412 \u0434\u0438\u0441\u0442\u0440\u0438\u0431\u0443\u0442\u0438\u0432
+      Django \u0442\u0430\u043a\u0436\u0435 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u044b
+      \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u0434\u043b\u044f
+      \u0441\u0438\u0441\u0442\u0435\u043c\u044b \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0435\u0432,
+      \u0441\u0438\u043d\u0434\u0438\u043a\u0430\u0446\u0438\u0438&nbsp;<a href=\"http://ru.wikipedia.org/wiki/RSS\"
+      style=\"text-decoration: none; color: rgb(11, 0, 128); background-image: none;
+      background-position: initial initial; background-repeat: initial initial;\"
+      title=\"RSS\">RSS</a>&nbsp;\u0438&nbsp;<a href=\"http://ru.wikipedia.org/wiki/Atom\"
+      style=\"text-decoration: none; color: rgb(11, 0, 128); background-image: none;
+      background-position: initial initial; background-repeat: initial initial;\"
+      title=\"Atom\">Atom</a>, &laquo;\u0441\u0442\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445
+      \u0441\u0442\u0440\u0430\u043d\u0438\u0446&raquo; (\u043a\u043e\u0442\u043e\u0440\u044b\u043c\u0438
+      \u043c\u043e\u0436\u043d\u043e \u0443\u043f\u0440\u0430\u0432\u043b\u044f\u0442\u044c
+      \u0431\u0435\u0437 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e\u0441\u0442\u0438
+      \u043f\u0438\u0441\u0430\u0442\u044c \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u043b\u0435\u0440\u044b
+      \u0438 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u044f),
+      \u043f\u0435\u0440\u0435\u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f
+      URL \u0438 \u0434\u0440\u0443\u0433\u043e\u0435.</p>\r\n"}'
+    - '2013-03-20 01:00:43.833085'
+    - '2013-03-20 01:37:50.557651'
+  - - 8
+    - Введение в разработку компьютерных игр
+    - 1.0
+    - 7
+    - Lecture
+    - ! '{"youtube_link":"rOLvLE_dvFw"}'
+    - '2013-03-20 01:00:43.853178'
+    - '2013-03-20 01:00:43.853178'
+  - - 9
+    - Разработка игр. Анатомия
+    - 2.0
+    - 7
+    - Lecture
+    - ! '{"youtube_link":"UD2fz4t6lQw"}'
+    - '2013-03-20 01:00:43.890364'
+    - '2013-03-20 01:00:43.890364'
+  - - 10
+    - Оптимизация OpenGL
+    - 8.0
+    - 7
+    - Document
+    - ! '{"body":"<div border:=\"\" clear:=\"\" color:=\"\" font-family:=\"\" font-size:=\"\"
+      font-style:=\"\" font-variant:=\"\" helvetica=\"\" line-height:=\"\" p=\"\"
+      padding:=\"\" style=\"\\&quot;margin:\" text-align:=\"\" u0430=\"\" u0435=\"\"
+      u0435:=\"\" u0438=\"\" u0439=\"\" u043a=\"\" u043e=\"\" u0440=\"\" u0441.=\"\"
+      u0442=\"\" u044b=\"\" u044c=\"\" u044e=\"\" u044f=\"\" vertical-align:=\"\">\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\"><b>\u041e\u043f\u0442\u0438\u043c\u0438\u0437\u0430\u0446\u0438\u044f
+      \u043d\u0430 \u0443\u0440\u043e\u0432\u043d\u0435 OpenGL.</b></p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">\u0421\u0440\u0430\u0437\u0443 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e
+      \u0437\u0430\u043c\u0435\u0442\u0438\u0442\u044c, \u0447\u0442\u043e \u0442\u043e\u043b\u044c\u043a\u043e
+      \u043e\u043f\u0442\u0438\u043c\u0438\u0437\u0430\u0446\u0438\u044f \u043d\u0430
+      \u0443\u0440\u043e\u0432\u043d\u0435 OpenGL \u043d\u0435 \u043c\u043e\u0436\u0435\u0442
+      \u0440\u0435\u0448\u0438\u0442\u044c \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0443
+      \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438
+      \u0432 \u0446\u0435\u043b\u043e\u043c. \u0411\u0435\u0437\u0443\u0441\u043b\u043e\u0432\u043d\u043e,
+      \u043f\u0440\u0438\u0440\u043e\u0441\u0442 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438
+      \u0431\u0443\u0434\u0435\u0442 \u043d\u043e \u043d\u0435 \u0432\u0441\u0435\u0433\u0434\u0430
+      \u0434\u043e\u0441\u0442\u0430\u0442\u043e\u0447\u043d\u044b\u0439. OpenGL \u043e\u043f\u0442\u0438\u043c\u0438\u0437\u0430\u0446\u0438\u044e
+      \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c
+      \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u043e\u043f\u0442\u0438\u043c\u0430\u043b\u044c\u043d\u044b\u043c
+      \u0430\u043b\u0433\u043e\u0440\u0438\u0442\u043c\u043e\u043c \u043e\u0442\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430. \u0425\u043e\u0442\u044f,
+      \u0435\u0441\u043b\u0438 \u0440\u0430\u0437\u043c\u0435\u0440 \u043a\u0430\u0440\u0442\u044b
+      \u043d\u0435 \u043f\u0440\u0435\u0432\u044b\u0448\u0430\u0435\u0442 128x128,
+      \u043c\u043e\u0436\u043d\u043e \u043e\u0431\u043e\u0439\u0442\u0438\u0441\u044c
+      \u043e\u043f\u0442\u0438\u043c\u0438\u0437\u0430\u0446\u0438\u0435\u0439 \u0442\u043e\u043b\u044c\u043a\u043e
+      \u043d\u0430 \u0443\u0440\u043e\u0432\u043d\u0435 OpenGL.</p>\r\n\r\n<p class=\"mar\"
+      style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\"><i>\u041f\u0435\u0440\u0432\u043e\u0435</i>, \u0447\u0442\u043e \u043c\u043e\u0436\u043d\u043e
+      \u0441\u0434\u0435\u043b\u0430\u0442\u044c \u043d\u0430 \u0443\u0440\u043e\u0432\u043d\u0435
+      OpenGL, \u044d\u0442\u043e \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u044c
+      \u0447\u0438\u0441\u043b\u043e \u0432\u0435\u0440\u0448\u0438\u043d \u043f\u0440\u0435\u0434\u0430\u0432\u0430\u0435\u043c\u044b\u0445
+      \u043d\u0430 \u043a\u043e\u043d\u0432\u0435\u0439\u0435\u0440\u0443 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f,
+      \u0434\u043b\u044f \u044d\u0442\u043e\u0433\u043e \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e
+      \u0437\u0430\u043c\u0435\u043d\u0438\u0442\u044c \u0440\u0438\u0441\u043e\u0432\u0430\u043d\u0438\u0435
+      \u0441 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u0435\u043c
+      GL_TRIANGLE_STRIP \u043d\u0430 \u044d\u043a\u0432\u0438\u0432\u0430\u043b\u0435\u043d\u0442\u043d\u044b\u0439
+      GL_TRIANGLE_FAN, \u043a\u0430\u043a \u043f\u043e\u043a\u0430\u0437\u0430\u043d\u043e
+      \u043d\u0430 \u0440\u0438\u0441\u0443\u043d\u043a\u0435:</p>\r\n<img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208f.gif\" style=\"border: 0px; max-width:
+      100%; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\" /><span style=\"color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">[td]</span><img
+      alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\" src=\"http://www.gamedev.ru/coding/20208g.gif\"
+      style=\"border: 0px; max-width: 100%; color: rgb(0, 0, 0); font-family: verdana,
+      arial, sans-serif; font-size: 12px; line-height: normal;\" /><br style=\"color:
+      rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\" />\r\n<span style=\"color: rgb(0, 0, 0); font-family: verdana, arial,
+      sans-serif; font-size: 12px; line-height: normal;\">[tr]GL_TRIANGLE_STRIP[td]GL_TRIANGLE_FAN</span>\r\n\r\n<table
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\">\r\n</table>\r\n\r\n<p class=\"mar\" style=\"margin-top:
+      10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u041f\u0440\u0430\u0432\u0434\u0430
+      \u0432 \u043f\u0440\u0438\u043c\u0435\u0440\u0435, \u044f \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043b
+      GL_TRINGLE_STRIP</p>\r\n\r\n<p class=\"mar\" style=\"margin-top: 10px; margin-bottom:
+      10px; text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\"><i>\u0412\u0442\u043e\u0440\u043e\u0435</i>,
+      \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c \u0434\u043b\u044f
+      \u043e\u0442\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u0444\u0443\u043d\u043a\u0446\u0438\u044e
+      glDrawElements. \u042d\u0442\u043e \u0444\u0443\u043d\u043a\u0446\u0438\u044f
+      \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u0440\u0435\u043d\u0434\u0435\u0440\u0438\u0442\u044c
+      \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u043e \u043f\u0440\u0438\u043c\u0438\u0442\u0438\u0432\u043e\u0432
+      \u0432\u044b\u0437\u043e\u0432\u043e\u043c \u043e\u0434\u043d\u043e\u0439 \u0444\u0443\u043d\u043a\u0446\u0438\u0438,
+      \u0442\u0435\u043c \u0441\u0430\u043c\u044b\u043c \u0443\u043c\u0435\u043d\u044c\u0448\u0430\u044f
+      \u0447\u0438\u0441\u043b\u043e \u0432\u044b\u0437\u043e\u0432\u043e\u0432 OpenGL
+      \u0444\u0443\u043d\u043a\u0446\u0438\u0439. \u0414\u043b\u044f \u0442\u043e\u0433\u043e,
+      \u0447\u0442\u043e \u0431\u044b \u0432\u044b\u043f\u043e\u043b\u043d\u0438\u0442\u044c
+      \u0440\u0438\u0441\u043e\u0432\u0430\u043d\u0438\u0435 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e
+      \u0444\u0443\u043d\u043a\u0446\u0438\u0438 glDrawElements \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e
+      \u0432\u044b\u043f\u043e\u043b\u043d\u0438\u0442 \u0442\u0440\u0438 \u0448\u0430\u0433\u0430:</p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">1. \u0410\u043a\u0442\u0438\u0432\u0438\u0440\u043e\u0432\u0430\u0442\u044c
+      \u043c\u0430\u0441\u0441\u0438\u0432\u044b \u0441 \u0434\u0430\u043d\u043d\u044b\u043c\u0438,
+      \u0432 \u043d\u0430\u0448\u0435\u043c \u0441\u043b\u0443\u0447\u0430\u0435 \u043c\u0430\u0441\u0441\u0438\u0432
+      \u0432\u0435\u0440\u0448\u0438\u043d \u0438 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440 (\u0430\u043d\u0430\u043b\u043e\u0433\u0438\u0447\u043d\u043e
+      \u043c\u043e\u0436\u043d\u043e \u043f\u043e\u0441\u0442\u0443\u043f\u0438\u0442\u044c
+      \u0441 \u0446\u0432\u0435\u0442\u0430\u043c\u0438, \u043d\u043e\u0440\u043c\u0430\u043b\u044f\u043c\u0438
+      \u0438 \u043d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u043c\u0438 \u0434\u0440\u0443\u0433\u0438\u043c\u0438
+      \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u0430\u043c\u0438). \u0414\u043b\u044f
+      \u044d\u0442\u043e\u0433\u043e \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e
+      \u0432\u043e\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c\u0441\u044f
+      \u0444\u0443\u043d\u043a\u0446\u0438\u0435\u0439 void glEnableClientState(GLenum
+      Array), \u0433\u0434\u0435 \u0432 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435
+      \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u0430 \u0443\u043a\u0430\u0437\u0430\u0442\u044c
+      GL_VERTEX_ARRAY, \u0430 \u0437\u0430\u0442\u0435\u043c GL_TEXTURE_COORD_ARRAY.</p>\r\n\r\n<div
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; padding: 5px; margin: 4px; line-height: normal; background-color: rgb(242,
+      242, 242);\">\r\n<pre style=\"font-size: 14px; font-family: ''courier new'',
+      courier, monospace; margin-top: 0px; margin-bottom: 0px;\">\r\nglEnableClientState<span
+      style=\"color: rgb(160, 96, 0);\">(</span>GL_VERTEX_ARRAY<span style=\"color:
+      rgb(160, 96, 0);\">)</span>; \r\nglEnableClientState<span style=\"color: rgb(160,
+      96, 0);\">(</span>GL_TEXTURE_COORD_ARRAY<span style=\"color: rgb(160, 96, 0);\">)</span>;</pre>\r\n</div>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">&nbsp;</p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">2. \u0417\u0430\u0434\u0430\u0442\u044c \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u044b
+      \u0434\u0430\u043d\u043d\u044b\u0445 \u0438 \u043c\u0430\u0441\u0441\u0438\u0432\u044b
+      \u0434\u043b\u044f \u0438\u0445 \u0445\u0440\u0430\u043d\u0435\u043d\u0438\u044f.
+      \u0414\u043b\u044f \u0437\u0430\u0434\u0430\u043d\u0438\u044f \u043c\u0430\u0441\u0441\u0438\u0432\u0430
+      \u0438 \u0442\u0438\u043f\u0430 \u0432\u0435\u0440\u0448\u0438\u043d \u0441\u043b\u0443\u0436\u0438\u0442
+      \u0444\u0443\u043d\u043a\u0446\u0438\u044f</p>\r\n\r\n<p class=\"mar\" style=\"margin-top:
+      10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">void glVertexPointer(
+      GLint Size, GLenum Type, GLsizei Stride, void *Ptr )&nbsp;<br />\r\n\u043a\u043e\u0442\u043e\u0440\u0430\u044f
+      \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u0435\u0442 \u0441\u043f\u043e\u0441\u043e\u0431
+      \u0445\u0440\u0430\u043d\u0435\u043d\u0438\u044f \u0438 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b
+      \u0432\u0435\u0440\u0448\u0438\u043d. \u041f\u0440\u0438 \u044d\u0442\u043e\u043c
+      Size \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u0435\u0442 \u0447\u0438\u0441\u043b\u043e
+      \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442 \u0432\u0435\u0440\u0448\u0438\u043d\u044b
+      (\u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0440\u0430\u0432\u0435\u043d
+      2, 3, 4), Type \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u0435\u0442
+      \u0442\u0438\u043f \u0434\u0430\u043d\u043d\u044b\u0445 (\u043c\u043e\u0436\u0435\u0442
+      \u0431\u044b\u0442\u044c \u0440\u0430\u0432\u0435\u043d GL_SHORT, GL_INT, GL_FLOAT,
+      GL_DOUBLE). \u0418\u043d\u043e\u0433\u0434\u0430 \u0443\u0434\u043e\u0431\u043d\u043e
+      \u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0432 \u043e\u0434\u043d\u043e\u043c
+      \u043c\u0430\u0441\u0441\u0438\u0432\u0435 \u0434\u0440\u0443\u0433\u0438\u0435
+      \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u044b \u0432\u0435\u0440\u0448\u0438\u043d\u044b,
+      \u0438 \u0442\u043e\u0433\u0434\u0430 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440
+      Stride \u0437\u0430\u0434\u0430\u0435\u0442 \u0441\u043c\u0435\u0449\u0435\u043d\u0438\u0435
+      \u043e\u0442 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442 \u043e\u0434\u043d\u043e\u0439
+      \u0432\u0435\u0440\u0448\u0438\u043d\u044b \u0434\u043e \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442
+      \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0435\u0439. \u0415\u0441\u043b\u0438
+      Stride \u0440\u0430\u0432\u0435\u043d \u043d\u0443\u043b\u044e, \u044d\u0442\u043e
+      \u0437\u043d\u0430\u0447\u0438\u0442, \u0447\u0442\u043e \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b
+      \u0440\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u044b \u043f\u043e\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u043e.
+      \u0412 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u0435 Ptr \u0443\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f
+      \u0430\u0434\u0440\u0435\u0441, \u0433\u0434\u0435 \u043d\u0430\u0445\u043e\u0434\u044f\u0442\u0441\u044f
+      \u0434\u0430\u043d\u043d\u044b\u0435.</p>\r\n\r\n<p class=\"mar\" style=\"margin-top:
+      10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0410\u043d\u0430\u043b\u043e\u0433\u0438\u0447\u043d\u043e
+      \u043c\u043e\u0436\u043d\u043e \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u0442\u044c
+      \u043c\u0430\u0441\u0441\u0438\u0432 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044f
+      \u043a\u043e\u043c\u0430\u043d\u0434\u0443</p>\r\n\r\n<p class=\"mar\" style=\"margin-top:
+      10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">void glTexCoordPointer(GLint
+      Size, GLenum Type, GLsizei Stride);</p>\r\n\r\n<div style=\"color: rgb(0, 0,
+      0); font-family: verdana, arial, sans-serif; font-size: 12px; padding: 5px;
+      margin: 4px; line-height: normal; background-color: rgb(242, 242, 242);\">\r\n<pre
+      style=\"font-size: 14px; font-family: ''courier new'', courier, monospace; margin-top:
+      0px; margin-bottom: 0px;\">\r\n<span style=\"color: rgb(128, 128, 128);\">//
+      \u041e\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u0435\u043c \u043c\u0430\u0441\u0441\u0438\u0432
+      \u0432\u0435\u0440\u0448\u0438\u043d</span>\r\nGLfloat VertexMap<span style=\"color:
+      rgb(160, 96, 0);\">[</span>MapSize<span style=\"color: rgb(160, 96, 0);\">]</span><span
+      style=\"color: rgb(160, 96, 0);\">[</span><span style=\"color: rgb(240, 64,
+      0);\">3</span><span style=\"color: rgb(160, 96, 0);\">]</span>;\r\n<span style=\"color:
+      rgb(128, 128, 128);\">// \u041c\u0430\u0441\u0441\u0438\u0432 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440</span>\r\nGLfloat TextureMap<span
+      style=\"color: rgb(160, 96, 0);\">[</span>MapSize<span style=\"color: rgb(160,
+      96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span><span style=\"color:
+      rgb(240, 64, 0);\">2</span><span style=\"color: rgb(160, 96, 0);\">]</span>;\r\n<span
+      style=\"color: rgb(128, 128, 128);\">// \u0423\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u043c
+      \u0447\u0442\u043e \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u043d\u043e \u0445\u0440\u0430\u043d\u0438\u0442
+      \u043c\u0430\u0441\u0441\u0438\u0432</span>\r\nglVertexPointer <span style=\"color:
+      rgb(160, 96, 0);\">(</span><span style=\"color: rgb(240, 64, 0);\">3</span>,
+      GL_FLOAT, <span style=\"color: rgb(240, 64, 0);\">0</span>, VertexMap<span style=\"color:
+      rgb(160, 96, 0);\">)</span>;\r\nglTexCoordPointer<span style=\"color: rgb(160,
+      96, 0);\">(</span><span style=\"color: rgb(240, 64, 0);\">2</span>, GL_FLOAT,
+      <span style=\"color: rgb(240, 64, 0);\">0</span>, TextureMap<span style=\"color:
+      rgb(160, 96, 0);\">)</span>;</pre>\r\n</div>\r\n\r\n<p style=\"margin-top: 10px;
+      margin-bottom: 10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">&nbsp;</p>\r\n\r\n<p class=\"mar\" style=\"margin-top:
+      10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">3. \u0417\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c
+      \u043c\u0430\u0441\u0441\u0438\u0432\u044b \u0434\u0430\u043d\u043d\u044b\u043c\u0438
+      \u0438 \u0432\u044b\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043e\u0442\u0440\u0438\u0441\u043e\u0432\u043a\u0443.
+      \u041a\u0430\u043a \u0443\u0436\u0435 \u0431\u044b\u043b\u043e \u0441\u043a\u0430\u0437\u0430\u043d\u043e,
+      \u0440\u0438\u0441\u043e\u0432\u0430\u043d\u0438\u0435 \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u0442\u0441\u044f
+      \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0444\u0443\u043d\u043a\u0446\u0438\u0438</p>\r\n\r\n<div
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; padding: 5px; margin: 4px; line-height: normal; background-color: rgb(242,
+      242, 242);\">\r\n<pre style=\"font-size: 14px; font-family: ''courier new'',
+      courier, monospace; margin-top: 0px; margin-bottom: 0px;\">\r\n<span style=\"color:
+      rgb(0, 48, 255);\">void</span> glDrawElements<span style=\"color: rgb(160, 96,
+      0);\">(</span>GLenum Mode, GLsizei Count, \r\n                      GLenum Type,
+      <span style=\"color: rgb(0, 48, 255);\">const</span> GLvoid *Indices<span style=\"color:
+      rgb(160, 96, 0);\">)</span>;</pre>\r\n</div>\r\n<span style=\"color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\">Mode - \u0443\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442 \u043a\u0430\u043a\u043e\u0439
+      \u043f\u0440\u0438\u043c\u0438\u0442\u0438\u0432 \u0431\u0443\u0434\u0435\u0442
+      \u0440\u0438\u0441\u043e\u0432\u0430\u0442\u044c\u0441\u044f, \u0432 \u043d\u0430\u0448\u0435\u043c
+      \u0441\u043b\u0443\u0447\u0430\u0435 GL_TRIANGLE_STRIP (\u0432 \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u0435
+      \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u043b\u044e\u0431\u043e\u0439
+      \u0434\u0440\u0443\u0433\u043e\u0439). Count - \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e
+      \u043f\u0440\u0438\u043c\u0438\u0442\u0438\u0432\u043e\u0432. Type - \u0442\u0438\u043f
+      \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0439 \u0432 Indices, \u043c\u043e\u0436\u0435\u0442
+      \u0431\u044b\u0442\u044c GL_UNSIGNED_BYTE, GL_UNSIGNED_SHORT \u0438\u043b\u0438
+      GL_UNSIGNED_INT. \u0412 \u043c\u0430\u0441\u0441\u0438\u0432\u0435 Indices \u0445\u0440\u0430\u043d\u044f\u0442\u0441\u044f
+      \u0438\u043d\u0434\u0435\u043a\u0441\u044b, \u0432 \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0438
+      \u0441 \u043a\u043e\u0442\u043e\u0440\u044b\u043c\u0438 \u0434\u0430\u043d\u043d\u044b\u0435
+      \u0431\u0443\u0434\u0443\u0442 \u0438\u0437\u0432\u043b\u0435\u043a\u0430\u0442\u044c\u0441\u044f
+      \u0438\u0437 \u043c\u0430\u0441\u0441\u0438\u0432\u0430 \u0432\u0435\u0440\u0448\u0438\u043d
+      \u0438 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442 \u0442\u0435\u043a\u0441\u0442\u0443\u0440.</span></div>\r\n"}'
+    - '2013-03-20 01:00:43.930265'
+    - '2013-03-20 01:22:37.129815'
+  - - 11
+    - Разработка игр. Визуализация.
+    - 4.0
+    - 7
+    - Lecture
+    - ! '{"youtube_link":"yBdkAYPaf4E"}'
+    - '2013-03-20 01:00:43.963661'
+    - '2013-03-20 01:00:43.963661'
+  - - 12
+    - Основы создания мягких теней (GLSL). Введение
+    - 9.0
+    - 7
+    - Document
+    - ! '{"body":"<h1 id=\"vvedenie\" style=\"color: rgb(0, 48, 75); font-size: 21px;
+      margin: 0px; font-family: verdana, arial, sans-serif; line-height: normal;\">\u0412\u0432\u0435\u0434\u0435\u043d\u0438\u0435</h1>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0427\u0442\u043e\u0431\u044b
+      \u043b\u0443\u0447\u0448\u0435 \u043f\u043e\u043d\u044f\u0442\u044c, \u043e
+      \u0447\u0435\u043c \u0438\u0434\u0435\u0442 \u0440\u0435\u0447\u044c, \u0438
+      \u0441 \u0447\u0435\u043c \u043c\u044b \u0431\u0443\u0434\u0435\u043c \u0431\u043e\u0440\u043e\u0442\u044c\u0441\u044f,
+      \u043f\u043e\u0441\u043c\u043e\u0442\u0440\u0438\u043c \u043d\u0430 \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0443:</p>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal; text-align:
+      center;\"><img alt=\"\u0421\u0442\u0443\u043f\u0435\u043d\u0447\u0430\u0442\u0430\u044f
+      \u0442\u0435\u043d\u044c | \u041e\u0441\u043d\u043e\u0432\u044b \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f
+      \u043c\u044f\u0433\u043a\u0438\u0445 \u0442\u0435\u043d\u0435\u0439 (GLSL)\"
+      src=\"http://www.gamedev.ru/files/images/42960_1245407525_image_01.jpg\" style=\"border:
+      0px; max-width: 100%;\" /></p>\r\n\r\n<p style=\"margin-top: 10px; margin-bottom:
+      10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\">\u0412\u0441\u043b\u0435\u0434\u0441\u0442\u0432\u0438\u0435
+      \u043a\u043e\u043d\u0435\u0447\u043d\u043e\u0433\u043e (\u043e\u0431\u044b\u0447\u043d\u043e
+      \u043d\u0435\u0431\u043e\u043b\u044c\u0448\u043e\u0433\u043e) \u0440\u0430\u0437\u043c\u0435\u0440\u0430
+      \u043a\u0430\u0440\u0442\u044b \u0442\u0435\u043d\u0435\u0439 \u043f\u043e\u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f
+      \u0442\u0430\u043a \u043d\u0430\u0437\u044b\u0432\u0430\u0435\u043c\u044b\u0435
+      \u043f\u043e\u0433\u0440\u0435\u0448\u043d\u043e\u0441\u0442\u0438 \u0434\u0438\u0441\u043a\u0440\u0435\u0442\u0438\u0437\u0430\u0446\u0438\u0438,
+      \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0432\u044b\u0437\u044b\u0432\u0430\u044e\u0442
+      \u043f\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u0435 \u0441\u0442\u0443\u043f\u0435\u043d\u0447\u0430\u0442\u043e\u0441\u0442\u0438
+      \u0442\u0435\u043d\u0435\u0439.</p>\r\n\r\n<p style=\"margin-top: 10px; margin-bottom:
+      10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\">\u0412 \u0434\u0430\u043d\u043d\u043e\u0439 \u0441\u0442\u0430\u0442\u044c\u0435
+      \u043c\u044b \u043f\u043e\u043f\u044b\u0442\u0430\u0435\u043c\u0441\u044f \u043d\u0430\u0439\u0442\u0438
+      \u0441\u043f\u043e\u0441\u043e\u0431 \u0443\u0441\u0442\u0440\u0430\u043d\u0438\u0442\u044c
+      \u0441\u0442\u0443\u043f\u0435\u043d\u0447\u0430\u0442\u043e\u0441\u0442\u044c
+      \u0442\u0435\u043d\u0438 \u0438 \u043f\u0440\u0438\u0434\u0430\u0442\u044c \u0438\u043c
+      \u0431\u043e\u043b\u0435\u0435 \u0433\u043b\u0430\u0434\u043a\u0438\u0439 \u0438
+      \u043f\u0440\u0438\u044f\u0442\u043d\u044b\u0439 \u0432\u0438\u0434. \u0421\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442
+      \u043c\u043d\u043e\u0433\u043e \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432
+      \u043f\u0440\u0438\u0434\u0430\u043d\u0438\u044f \u0433\u043b\u0430\u0434\u043a\u043e\u0441\u0442\u0438
+      \u0442\u0435\u043d\u044f\u043c, \u043d\u043e \u044f \u0431\u044b \u0445\u043e\u0442\u0435\u043b
+      \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c\u0441\u044f \u0432\u0441\u0435\u0433\u043e
+      \u043d\u0430 \u0434\u0432\u0443\u0445. \u042d\u0442\u0438 \u043c\u0435\u0442\u043e\u0434\u044b
+      \u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043f\u0440\u043e\u0441\u0442\u0435\u0439\u0448\u0438\u043c\u0438,
+      \u043d\u043e \u0432 \u0442\u043e\u0436\u0435 \u0432\u0440\u0435\u043c\u044f
+      \u0434\u0430\u044e\u0442 \u043d\u0435\u043f\u043b\u043e\u0445\u043e\u0439 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442,
+      \u0438 \u043d\u0435 \u043e\u0447\u0435\u043d\u044c \u0432\u043b\u0438\u044f\u044e\u0442
+      \u043d\u0430 \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u043e\u0442\u0440\u0438\u0441\u043e\u0432\u043a\u0438.
+      \u0414\u043b\u044f \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f \u043c\u044f\u0433\u043a\u0438\u0445
+      \u0442\u0435\u043d\u0435\u0439, \u043d\u0430\u043c \u043f\u043e\u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f
+      \u043d\u0435\u043c\u043d\u043e\u0433\u043e \u0431\u043e\u043b\u044c\u0448\u0435
+      \u0434\u0430\u043d\u043d\u044b\u0445, \u043d\u0435\u0436\u0435\u043b\u0438 \u0432
+      \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u0435,
+      \u043e\u043f\u0438\u0441\u0430\u043d\u043d\u043e\u0439 \u0432 \u043f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0435\u0439
+      \u0441\u0442\u0430\u0442\u044c\u0435.</p>\r\n\r\n<p style=\"margin-top: 10px;
+      margin-bottom: 10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\"><i>\u0427\u0442\u043e \u043d\u0430\u043c
+      \u043f\u043e\u043d\u0430\u0434\u043e\u0431\u0438\u0442\u044c\u0441\u044f \u043a\u0440\u043e\u043c\u0435
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b \u0441 \u0433\u043b\u0443\u0431\u0438\u043d\u043e\u0439
+      \u0441\u0446\u0435\u043d\u044b</i>: \u0432\u0441\u0435\u0433\u043e \u043b\u0438\u0448\u044c
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0430, \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0430\u044f
+      \u0441\u043b\u0443\u0447\u0430\u0439\u043d\u044b\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f
+      (\u0448\u0443\u043c) \u0434\u043b\u044f \u043f\u0435\u0440\u0432\u043e\u0433\u043e
+      \u043c\u0435\u0442\u043e\u0434\u0430 \u0438 \u0435\u0449\u0435 \u043e\u0434\u0438\u043d
+      rendertarget \u0434\u043b\u044f \u0432\u0442\u043e\u0440\u043e\u0433\u043e.</p>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0418\u0442\u0430\u043a,
+      \u043d\u0430\u0447\u043d\u0435\u043c!</p>\r\n"}'
+    - '2013-03-20 01:00:43.991846'
+    - '2013-03-20 01:22:26.317937'
+  - - 13
+    - Разработка игр. Движок
+    - 1.0
+    - 8
+    - Lecture
+    - ! '{"youtube_link":"w34obELZnKE"}'
+    - '2013-03-20 01:00:44.028017'
+    - '2013-03-20 01:00:44.028017'
+  - - 14
+    - Ландшафт шаг за шагом 1
+    - 2.0
+    - 8
+    - Document
+    - ! '{"body":"<p><b style=\"color: rgb(0, 0, 0); font-family: verdana, arial,
+      sans-serif; font-size: 12px; line-height: normal;\">\u0412\u0432\u0435\u0434\u0435\u043d\u0438\u0435.</b></p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">\u042d\u0442\u043e\u0442 \u0442\u0443\u0442\u043e\u0440\u0438\u0430\u043b
+      \u043e\u0445\u0432\u0430\u0442\u044b\u0432\u0430\u0435\u0442 \u0430\u0437\u044b
+      \u0442\u0435\u0445\u043d\u0438\u043a\u0438 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u043e\u0432. \u042f \u0440\u0430\u0441\u0441\u043c\u043e\u0442\u0440\u044e
+      \u043a\u0430\u0440\u0442\u0443 \u0432\u044b\u0441\u043e\u0442, \u043f\u0440\u043e\u0441\u0442\u0435\u0439\u0448\u0438\u0439
+      \u0430\u043b\u0433\u043e\u0440\u0438\u0442\u043c \u0432\u0438\u0437\u0443\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438,
+      \u0440\u0430\u0441\u043a\u0440\u0430\u0441\u043a\u0443 (\u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435)
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430, \u0430 \u0442\u0430\u043a
+      \u0436\u0435 \u043e\u043f\u0442\u0438\u043c\u0438\u0437\u0430\u0446\u0438\u044e
+      \u043d\u0430 \u0443\u0440\u043e\u0432\u043d\u0435 OpenGL. \u0427\u0442\u043e
+      \u043a\u0430\u0441\u0430\u0435\u0442\u0441\u044f \u043f\u0440\u0438\u043c\u0435\u0440\u043e\u0432,
+      \u044f \u0441\u0447\u0438\u0442\u0430\u044e, \u0447\u0442\u043e \u0435\u0441\u043b\u0438
+      \u0440\u0430\u0437\u043c\u0435\u0440 \u043f\u0440\u0438\u043c\u0435\u0440\u0430
+      (\u043d\u0435 \u0441\u0447\u0438\u0442\u0430\u044f \u0438\u043d\u0438\u0446\u0438\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438
+      OpenGL \u0438 \u0442.\u043f.) \u0431\u043e\u043b\u044c\u0448\u0435 8-10 \u041a\u0431
+      \u0442\u043e \u044d\u0442\u043e \u0447\u0442\u043e \u0443\u0433\u043e\u0434\u043d\u043e,
+      \u043d\u043e \u0442\u043e\u043b\u044c\u043a\u043e \u043d\u0435 \u043f\u0440\u0438\u043c\u0435\u0440.
+      \u041f\u043e\u044d\u0442\u043e\u043c\u0443 \u044f \u0441\u0442\u0430\u0440\u0430\u043b\u0441\u044f
+      \u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u044c \u044d\u0442\u043e\u043c\u0443
+      \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u0443.</p>\r\n\r\n<p class=\"mar\"
+      style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\"><b>\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430, \u043a\u0430\u0440\u0442\u0430
+      \u0432\u044b\u0441\u043e\u0442.</b></p>\r\n\r\n<p class=\"mar\" style=\"margin-top:
+      10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0414\u043b\u044f
+      \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u044f
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430 \u043c\u044b \u0431\u0443\u0434\u0435\u043c
+      \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c \u043a\u0430\u0440\u0442\u0443
+      \u0432\u044b\u0441\u043e\u0442.</p>\r\n\r\n<p class=\"mar\" style=\"margin-top:
+      10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u041a\u0430\u0440\u0442\u0430
+      \u0432\u044b\u0441\u043e\u0442 - \u044d\u0442\u043e \u0434\u0432\u0443\u043c\u0435\u0440\u043d\u044b\u0439
+      \u043c\u0430\u0441\u0441\u0438\u0432 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0439
+      \u0432\u044b\u0441\u043e\u0442 \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430,
+      \u0432\u0437\u044f\u0442\u044b\u0445 \u0441 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u043d\u044b\u043c
+      \u0438\u043d\u0442\u0435\u0440\u0432\u0430\u043b\u043e\u043c. \u0422.\u0435.
+      \u043c\u044b \u043a\u0430\u0436\u0434\u043e\u043c\u0443 \u0434\u0438\u0441\u043a\u0440\u0435\u0442\u043d\u043e\u043c\u0443
+      \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044e \u0425 \u0438 Y \u0432 \u0433\u043e\u0440\u0438\u0437\u043e\u043d\u0442\u0430\u043b\u044c\u043d\u043e\u0439
+      \u043f\u043b\u043e\u0441\u043a\u043e\u0441\u0442\u0438 \u0441\u043e\u043f\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u043c
+      \u0432\u044b\u0441\u043e\u0442\u0443.</p>\r\n\r\n<p align=\"center\" style=\"margin-top:
+      10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family: verdana, arial,
+      sans-serif; font-size: 12px; line-height: normal;\"><img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208a.gif\" style=\"border: 0px; max-width:
+      100%;\" />&nbsp;<br />\r\n\u043c\u0430\u0441\u0441\u0438\u0432</p>\r\n\r\n<p
+      align=\"center\" style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\"><img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208b.gif\" style=\"border: 0px; max-width:
+      100%;\" />&nbsp;<br />\r\n\u0413\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u043e\u0435
+      \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435
+      \u043c\u0430\u0441\u0441\u0438\u0432\u0430</p>\r\n\r\n<p class=\"mar\" style=\"margin-top:
+      10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0421\u043e\u0437\u0434\u0430\u0442\u044c
+      \u043a\u0430\u0440\u0442\u0443 \u0432\u044b\u0441\u043e\u0442 \u043c\u043e\u0436\u043d\u043e
+      \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e
+      \u0440\u0435\u0434\u0430\u043a\u0442\u043e\u0440\u0430 (\u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e
+      \u043f\u043e\u0434\u043e\u0439\u0434\u0435\u0442 Photoshop) \u0438\u043b\u0438
+      \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c
+      \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u043e \u0434\u043b\u044f
+      \u044d\u0442\u043e\u0433\u043e \u043f\u0440\u0435\u0434\u043d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044b\u0445,
+      \u043d\u0430\u043f\u0440\u0438\u043c\u0435\u0440 TerraGen. \u0414\u043b\u044f
+      \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f \u043a\u0430\u0440\u0442\u044b
+      \u0432\u044b\u0441\u043e\u0442 \u0432 Photoshop&#39;\u0435 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e
+      \u0432\u044b\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u0444\u0438\u043b\u044c\u0442\u0440
+      Clouds, \u0430 \u0437\u0430\u0442\u0435\u043c \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e
+      \u0440\u0430\u0437 \u0444\u0438\u043b\u044c\u0442\u0440 Different clouds. \u0418
+      \u0441\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u043d\u0443\u044e
+      \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0443 \u043a\u0430\u043a Grayscale
+      \u0444\u0430\u0439\u043b \u0432 \u0444\u043e\u0440\u043c\u0430\u0442\u0435 RAW
+      (\u0432 \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u0435 \u043c\u043e\u0436\u043d\u043e
+      \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c \u0434\u0440\u0443\u0433\u043e\u0439
+      \u0444\u043e\u0440\u043c\u0430\u0442, \u043d\u043e \u043e\u0431 \u044d\u0442\u043e\u043c
+      \u043f\u043e\u0433\u043e\u0432\u043e\u0440\u0438\u043c \u043f\u043e\u0437\u0436\u0435).
+      \u0420\u0430\u0437\u043c\u0435\u0440 \u043a\u0430\u0440\u0442\u044b \u043c\u043e\u0436\u0435\u0442
+      \u0431\u044b\u0442\u044c \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u043b\u044c\u043d\u044b\u0439,
+      \u043d\u043e \u0443\u0434\u043e\u0431\u043d\u0435\u0439 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c
+      \u043a\u0432\u0430\u0434\u0440\u0430\u0442\u043d\u0443\u044e, \u0441 \u0440\u0430\u0437\u043c\u0435\u0440\u043e\u043c
+      \u0441\u0442\u043e\u0440\u043e\u043d\u044b \u043a\u0440\u0430\u0442\u043d\u044b\u043c
+      \u0447\u0438\u0441\u043b\u0443 \u0441\u0442\u0435\u043f\u0435\u043d\u0438 \u0434\u0432\u043e\u0439\u043a\u0438:
+      128\u0445128, 256\u0445256 \u0438 \u0442.\u0434.</p>\r\n\r\n<p class=\"mar\"
+      style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\">\u0411\u0443\u0434\u0435\u043c \u0441\u0447\u0438\u0442\u0430\u0442\u044c,
+      \u0447\u0442\u043e \u043d\u0430 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0445
+      \u043f\u0440\u0438\u043c\u0435\u0440\u0430\u0445 \u0441\u0432\u0435\u0442\u043b\u044b\u0435
+      \u043e\u0431\u043b\u0430\u0441\u0442\u0438 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u044e\u0442
+      \u0441\u043e\u0431\u043e\u0439 \u0432\u043e\u0437\u0432\u044b\u0448\u0435\u043d\u0438\u044f,
+      \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e
+      \u0442\u0435\u043c\u043d\u044b\u0435 - \u043d\u0438\u0437\u043c\u0435\u043d\u043d\u043e\u0441\u0442\u044c.</p>\r\n\r\n<p><img
+      alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\" src=\"http://www.gamedev.ru/coding/20208a.jpg\"
+      style=\"border: 0px; max-width: 100%; color: rgb(0, 0, 0); font-family: verdana,
+      arial, sans-serif; font-size: 12px; line-height: normal;\" /><span style=\"color:
+      rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\">[td]</span><img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208b.jpg\" style=\"border: 0px; max-width:
+      100%; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\" /><br style=\"color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\" />\r\n<span
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\">[tr]Photoshop[td]TerraGen</span></p>\r\n"}'
+    - '2013-03-20 01:00:44.050320'
+    - '2013-03-20 01:10:54.352460'
+  - - 15
+    - Рердеринг ланшафта
+    - 3.0
+    - 8
+    - Document
+    - ! '{"body":"<p><b style=\"color: rgb(0, 0, 0); font-family: verdana, arial,
+      sans-serif; font-size: 12px; line-height: normal;\">\u0420\u0435\u043d\u0434\u0435\u0440\u0438\u043d\u0433
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430.</b></p>\r\n\r\n<p style=\"margin-top:
+      10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family: verdana, arial,
+      sans-serif; font-size: 12px; line-height: normal;\">&nbsp;</p>\r\n\r\n<p class=\"mar\"
+      style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\">\u0418\u0442\u0430\u043a, \u043d\u0430\u0447\u043d\u0435\u043c. \u041a\u0430\u043a
+      \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e, \u043b\u044e\u0431\u0430\u044f
+      \u043f\u043e\u0432\u0435\u0440\u0445\u043d\u043e\u0441\u0442\u044c \u043c\u043e\u0436\u0435\u0442
+      \u0431\u044b\u0442\u044c \u0434\u043e\u0441\u0442\u0430\u0442\u043e\u0447\u043d\u043e
+      \u0442\u043e\u0447\u043d\u043e \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0430
+      \u0442\u0440\u0435\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a\u0430\u043c\u0438.
+      \u041f\u043e\u044d\u0442\u043e\u043c\u0443 \u043b\u044e\u0431\u044b\u0435 \u0447\u0435\u0442\u044b\u0440\u0435
+      \u0440\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0435
+      \u0440\u044f\u0434\u043e\u043c \u0442\u043e\u0447\u043a\u0438 \u043a\u0430\u0440\u0442\u044b
+      \u0432\u044b\u0441\u043e\u0442 \u0437\u0430\u0434\u0430\u044e\u0442 \u043f\u0440\u044f\u043c\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a,
+      \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043c\u044b \u0440\u0430\u0437\u0431\u0438\u0432\u0430\u0435\u043c
+      \u043d\u0430 \u0434\u0432\u0430 \u0442\u0440\u0435\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a\u0430
+      \u0438 \u0440\u0438\u0441\u0443\u0435\u043c.</p>\r\n\r\n<p align=\"center\"
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\"><img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208c.gif\" style=\"border: 0px; max-width:
+      100%;\" /></p>\r\n\r\n<p class=\"mar\" style=\"margin-top: 10px; margin-bottom:
+      10px; text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">\u0412 \u043f\u0440\u0438\u043c\u0435\u0440\u0435
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442 \u0440\u0435\u0430\u043b\u0438\u0437\u043e\u0432\u0430\u043d
+      \u0432 \u0432\u0438\u0434\u0435 \u043a\u043b\u0430\u0441\u0441\u0430 Terrain.
+      \u041f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u043d\u044b\u0439 \u043d\u0438\u0436\u0435
+      \u043a\u0443\u0441\u043e\u0447\u0435\u043a \u043a\u043e\u0434\u0430 - \u0447\u0430\u0441\u0442\u044c
+      \u0444\u0443\u043d\u043a\u0446\u0438\u0438 Terrain::RenderLandscape() \u0434\u0435\u043c\u043e\u043d\u0441\u0442\u0440\u0438\u0440\u0443\u0435\u0442
+      \u043f\u0440\u043e\u0441\u0442\u0435\u0439\u0448\u0443\u044e \u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044e
+      \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u044b \u0440\u0438\u0441\u043e\u0432\u0430\u043d\u0438\u044f.</p>\r\n\r\n<div
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; padding: 5px; margin: 4px; line-height: normal; background-color: rgb(242,
+      242, 242);\">\r\n<pre style=\"font-size: 14px; font-family: ''courier new'',
+      courier, monospace; margin-top: 0px; margin-bottom: 0px;\">\r\n<span style=\"color:
+      rgb(128, 128, 128);\">//...</span>\r\n<span style=\"color: rgb(0, 48, 255);\">const</span>
+      <span style=\"color: rgb(0, 48, 255);\">unsigned</span> MapSize = <span style=\"color:
+      rgb(240, 64, 0);\">128</span>; <span style=\"color: rgb(128, 128, 128);\">//
+      \u041e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u0435 \u0438\u0437 Terrain.H
+      </span>\r\n<span style=\"color: rgb(128, 128, 128);\">//...</span>\r\n<span
+      style=\"color: rgb(0, 48, 255);\">for</span> <span style=\"color: rgb(160, 96,
+      0);\">(</span>i= <span style=\"color: rgb(240, 64, 0);\">0</span>;i<span style=\"color:
+      rgb(160, 96, 0);\">&lt;</span>MapSize-<span style=\"color: rgb(240, 64, 0);\">1</span>;i++<span
+      style=\"color: rgb(160, 96, 0);\">)</span> <span style=\"color: rgb(128, 128,
+      128);\">// \u0427\u0430\u0441\u0442\u044c \u043a\u043e\u0434\u0430 \u0438\u0437
+      Terrain.Cpp</span>\r\n{\r\n  <span style=\"color: rgb(0, 48, 255);\">for</span>
+      <span style=\"color: rgb(160, 96, 0);\">(</span>j=<span style=\"color: rgb(240,
+      64, 0);\">0</span>;j<span style=\"color: rgb(160, 96, 0);\">&lt;</span>MapSize-<span
+      style=\"color: rgb(240, 64, 0);\">1</span>;j++<span style=\"color: rgb(160,
+      96, 0);\">)</span>\r\n  { \r\n    x=i*Zoom;\r\n    y=j*Zoom;\r\n\r\n    glBegin<span
+      style=\"color: rgb(160, 96, 0);\">(</span>GL_TRIANGLE_STRIP<span style=\"color:
+      rgb(160, 96, 0);\">)</span>; \r\n\r\n      glVertex3f<span style=\"color: rgb(160,
+      96, 0);\">(</span>x, y, HeightMap<span style=\"color: rgb(160, 96, 0);\">[</span>i<span
+      style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96,
+      0);\">[</span>j<span style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color:
+      rgb(160, 96, 0);\">)</span>;\r\n      glVertex3f<span style=\"color: rgb(160,
+      96, 0);\">(</span>x+Zoom, y, HeightMap<span style=\"color: rgb(160, 96, 0);\">[</span>i+<span
+      style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96,
+      0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j<span style=\"color:
+      rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n      glVertex3f<span
+      style=\"color: rgb(160, 96, 0);\">(</span>x, y+Zoom, HeightMap<span style=\"color:
+      rgb(160, 96, 0);\">[</span>i<span style=\"color: rgb(160, 96, 0);\">]</span><span
+      style=\"color: rgb(160, 96, 0);\">[</span>j+<span style=\"color: rgb(240, 64,
+      0);\">1</span><span style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color:
+      rgb(160, 96, 0);\">)</span>;\r\n      glVertex3f<span style=\"color: rgb(160,
+      96, 0);\">(</span>x+Zoom, y+Zoom, HeightMap<span style=\"color: rgb(160, 96,
+      0);\">[</span>i+<span style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color:
+      rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j+<span
+      style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96,
+      0);\">]</span><span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n\r\n    glEnd<span
+      style=\"color: rgb(160, 96, 0);\">(</span><span style=\"color: rgb(160, 96,
+      0);\">)</span>; \r\n  }\r\n}\r\n\r\n<span style=\"color: rgb(128, 128, 128);\">//...</span></pre>\r\n</div>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">&nbsp;</p>\r\n\r\n<p
+      align=\"center\" style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\"><img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208d.gif\" style=\"border: 0px; max-width:
+      100%;\" />&nbsp;<br />\r\n\u041f\u0440\u0438\u043c\u0435\u0440 (40 \u043a\u0411)</p>\r\n"}'
+    - '2013-03-20 01:00:44.072408'
+    - '2013-03-20 01:17:10.563877'
+  - - 16
+    - Раскраска (текстурирование) ландшафта. Интерполяция цветов
+    - 4.0
+    - 8
+    - Document
+    - ! '{"body":"<p class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px;
+      text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\"><b>\u0420\u0430\u0441\u043a\u0440\u0430\u0441\u043a\u0430
+      (\u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435)
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430.</b></p>\r\n\r\n<p class=\"mar\"
+      style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\">\u042f \u0440\u0430\u0441\u0441\u043a\u0430\u0436\u0443 \u043e \u0434\u0432\u0443\u0445
+      \u0441\u043f\u043e\u0441\u043e\u0431\u0430\u0445 \u0437\u0430\u043a\u0440\u0430\u0441\u043a\u0438
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430 (\u0438 \u0432\u043e
+      \u0432\u0442\u043e\u0440\u043e\u043c \u0441\u043b\u0443\u0447\u0430\u0435 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f).
+      \u042d\u0442\u043e \u043e\u0447\u0435\u043d\u044c \u043a\u0440\u0430\u0442\u043a\u043e\u0435
+      \u043e\u0431\u044a\u044f\u0441\u043d\u0435\u043d\u0438\u0435, \u043d\u0435 \u0437\u0430\u0442\u0440\u0430\u0433\u0438\u0432\u0430\u044e\u0449\u0435\u0435
+      \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u043e \u0430\u0441\u043f\u0435\u043a\u0442\u043e\u0432,
+      \u0442\u0430\u043a\u0438\u0445 \u043a\u0430\u043a \u043c\u0443\u043b\u044c\u0442\u0438\u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435,
+      \u0431\u043b\u0435\u043d\u0434\u0438\u043d\u0433 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u0445
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440, \u0438 \u0442.\u043f. \u041e\u0431\u043e
+      \u0432\u0441\u0435\u043c \u044d\u0442\u043e\u043c \u044f \u043d\u0430\u043f\u0438\u0448\u0443
+      \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u0443\u044e \u0441\u0442\u0430\u0442\u044c\u044e.</p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\"><b>\u0421\u043f\u043e\u0441\u043e\u0431 \u043f\u0435\u0440\u0432\u044b\u0439
+      &mdash; \u0438\u043d\u0442\u0435\u0440\u043f\u043e\u043b\u044f\u0446\u0438\u044f
+      \u0446\u0432\u0435\u0442\u043e\u0432.</b></p>\r\n\r\n<p class=\"mar\" style=\"margin-top:
+      10px; margin-bottom: 10px; text-indent: 2em; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u041f\u0435\u0440\u0432\u044b\u0439
+      \u0441\u043f\u043e\u0441\u043e\u0431 \u0440\u0430\u0441\u043a\u0440\u0430\u0441\u043a\u0438
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430 \u0441\u043e\u0441\u0442\u043e\u0438\u0442
+      \u0432 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u0438
+      \u0438\u043d\u0442\u0435\u0440\u043f\u043e\u043b\u044f\u0446\u0438\u0438 \u0446\u0432\u0435\u0442\u043e\u0432.
+      \u0427\u0442\u043e \u0442\u0430\u043a\u043e\u0435 \u0438\u043d\u0442\u0435\u0440\u043f\u043e\u043b\u044f\u0446\u0438\u044f
+      \u0446\u0432\u0435\u0442\u043e\u0432, \u043d\u0430\u0432\u0435\u0440\u043d\u043e\u0435,
+      \u0437\u043d\u0430\u0435\u0442 \u043a\u0430\u0436\u0434\u044b\u0439, \u043d\u043e
+      \u0435\u0441\u043b\u0438 \u043a\u0442\u043e-\u0442\u043e \u043d\u0435 \u0437\u043d\u0430\u0435\u0442,
+      \u043a\u0440\u0430\u0442\u043a\u0438\u0439 \u043f\u0440\u0438\u043c\u0435\u0440.
+      \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u0435\u0441\u043b\u0438,
+      \u0440\u0438\u0441\u0443\u044f \u0442\u0440\u0435\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a,
+      \u043a\u0430\u0436\u0434\u043e\u0439 \u0432\u0435\u0440\u0448\u0438\u043d\u0435
+      \u0437\u0430\u0434\u0430\u0442\u044c \u0440\u0430\u0437\u043d\u044b\u0439 \u0446\u0432\u0435\u0442,
+      \u043f\u043e\u043b\u0443\u0447\u0438\u043c \u043a\u0430\u0440\u0442\u0438\u043d\u0443
+      \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u043d\u0443\u044e \u043d\u0438\u0436\u0435.
+      \u041f\u0440\u0438 \u044d\u0442\u043e\u043c OpenGL \u0441\u0430\u043c \u0432\u044b\u043f\u043e\u043b\u043d\u0438\u0442
+      \u0438\u043d\u0442\u0435\u0440\u043f\u043e\u043b\u044f\u0446\u0438\u044e, \u043e\u0442
+      \u043d\u0430\u0441 \u0442\u043e\u043b\u044c\u043a\u043e \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f
+      \u0432\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0438\u043d\u0442\u0435\u0440\u043f\u043e\u043b\u044f\u0446\u0438\u044e,
+      \u0447\u0442\u043e \u0434\u0435\u043b\u0430\u0435\u0442\u0441\u044f \u043f\u0440\u043e\u0441\u0442\u043e:</p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">glShadeModel(GL_SMOOTH);</p>\r\n\r\n<p align=\"center\"
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\"><img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208c.jpg\" style=\"border: 0px; max-width:
+      100%;\" /></p>\r\n\r\n<p class=\"mar\" style=\"margin-top: 10px; margin-bottom:
+      10px; text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">\u043d\u0438\u0436\u0435 \u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d
+      \u043a\u043e\u0434 \u0434\u0435\u043c\u043e\u043d\u0441\u0442\u0440\u0438\u0440\u0443\u044e\u0449\u0438\u0439
+      \u0440\u0438\u0441\u043e\u0432\u0430\u043d\u0438\u0435 \u0442\u0440\u0435\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a\u0430
+      \u0441 \u0438\u043d\u0442\u0435\u0440\u043f\u043e\u043b\u044f\u0446\u0438\u0435\u0439
+      \u0446\u0432\u0435\u0442\u043e\u0432:</p>\r\n\r\n<div style=\"color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; padding: 5px;
+      margin: 4px; line-height: normal; background-color: rgb(242, 242, 242);\">\r\n<pre
+      style=\"font-size: 14px; font-family: ''courier new'', courier, monospace; margin-top:
+      0px; margin-bottom: 0px;\">\r\n<span style=\"color: rgb(128, 128, 128);\">//...</span>\r\nglBegin<span
+      style=\"color: rgb(160, 96, 0);\">(</span>GL_TRIANGLE<span style=\"color: rgb(160,
+      96, 0);\">)</span>;\r\n  glColor3f<span style=\"color: rgb(160, 96, 0);\">(</span><span
+      style=\"color: rgb(240, 64, 0);\">1</span>,<span style=\"color: rgb(240, 64,
+      0);\">0</span>,<span style=\"color: rgb(240, 64, 0);\">0</span><span style=\"color:
+      rgb(160, 96, 0);\">)</span>; glVertex3f<span style=\"color: rgb(160, 96, 0);\">(</span><span
+      style=\"color: rgb(240, 64, 0);\">0</span>,<span style=\"color: rgb(240, 64,
+      0);\">0</span>,<span style=\"color: rgb(240, 64, 0);\">0</span><span style=\"color:
+      rgb(160, 96, 0);\">)</span>;\r\n  glColor3f<span style=\"color: rgb(160, 96,
+      0);\">(</span><span style=\"color: rgb(240, 64, 0);\">0</span>,<span style=\"color:
+      rgb(240, 64, 0);\">1</span>,<span style=\"color: rgb(240, 64, 0);\">0</span><span
+      style=\"color: rgb(160, 96, 0);\">)</span>; glVertex3f<span style=\"color: rgb(160,
+      96, 0);\">(</span><span style=\"color: rgb(240, 64, 0);\">0</span>,<span style=\"color:
+      rgb(240, 64, 0);\">1</span>,<span style=\"color: rgb(240, 64, 0);\">0</span><span
+      style=\"color: rgb(160, 96, 0);\">)</span>;\r\n  glColor3f<span style=\"color:
+      rgb(160, 96, 0);\">(</span><span style=\"color: rgb(240, 64, 0);\">0</span>,<span
+      style=\"color: rgb(240, 64, 0);\">0</span>,<span style=\"color: rgb(240, 64,
+      0);\">1</span><span style=\"color: rgb(160, 96, 0);\">)</span>; glVertex3f<span
+      style=\"color: rgb(160, 96, 0);\">(</span><span style=\"color: rgb(240, 64,
+      0);\">1</span>,<span style=\"color: rgb(240, 64, 0);\">1</span>,<span style=\"color:
+      rgb(240, 64, 0);\">0</span><span style=\"color: rgb(160, 96, 0);\">)</span>;\r\nglEnd<span
+      style=\"color: rgb(160, 96, 0);\">(</span><span style=\"color: rgb(160, 96,
+      0);\">)</span>;\r\n<span style=\"color: rgb(128, 128, 128);\">//...</span></pre>\r\n</div>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">&nbsp;</p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">\u041d\u043e \u0432\u0435\u0440\u043d\u0435\u043c\u0441\u044f
+      \u043a \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0443. \u0414\u043b\u044f
+      \u0440\u0430\u0441\u043a\u0440\u0430\u0441\u043a\u0438 \u043d\u0430\u043c \u043e\u043f\u044f\u0442\u044c
+      \u043f\u043e\u043d\u0430\u0434\u043e\u0431\u0438\u0442\u044c\u0441\u044f \u043a\u0430\u0440\u0442\u0430,
+      \u044f \u043d\u0430\u0437\u044b\u0432\u0430\u044e \u0435\u0435 \u043a\u0430\u0440\u0442\u043e\u0439
+      \u0446\u0432\u0435\u0442\u043e\u0432. \u0414\u0430\u043d\u043d\u044b\u043c\u0438
+      \u0434\u043b\u044f \u043a\u0430\u0440\u0442\u044b \u0446\u0432\u0435\u0442\u043e\u0432
+      \u0441\u043b\u0443\u0436\u0430\u0442 \u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u0438\u0435
+      \u0444\u0430\u0439\u043b\u044b \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e
+      \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0435\u0433\u043e \u0432\u0438\u0434\u0430:</p>\r\n\r\n<p
+      align=\"center\" style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\"><img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208d.jpg\" style=\"border: 0px; max-width:
+      100%;\" /></p>\r\n\r\n<p class=\"mar\" style=\"margin-top: 10px; margin-bottom:
+      10px; text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">\u0413\u0440\u0443\u0431\u043e \u0433\u043e\u0432\u043e\u0440\u044f,
+      \u043b\u044e\u0431\u0430\u044f RGB \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0430
+      \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u043d\u0430\u044f, \u043a\u0430\u043a
+      Raw-\u0444\u0430\u0439\u043b, \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c
+      \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0430 \u0432
+      \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043a\u0430\u0440\u0442\u044b
+      \u0446\u0432\u0435\u0442\u043e\u0432. \u0412\u0430\u0436\u043d\u043e \u0437\u0430\u043c\u0435\u0442\u0438\u0442\u044c,
+      \u0447\u0442\u043e \u0448\u0438\u0440\u0438\u043d\u0430 \u0438 \u0432\u044b\u0441\u043e\u0442\u0430
+      \u044d\u0442\u0438\u0445 \u0444\u0430\u0439\u043b\u043e\u0432 \u0434\u043e\u043b\u0436\u043d\u044b
+      \u0431\u044b\u0442\u044c \u0440\u0430\u0432\u043d\u044b\u043c\u0438 \u0440\u0430\u0437\u043c\u0435\u0440\u0443
+      \u043a\u0430\u0440\u0442\u044b \u0432\u044b\u0441\u043e\u0442!</p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">\u041a\u0430\u043a \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e
+      \u0432 RGB \u0440\u0435\u0436\u0438\u043c\u0435 \u043e\u0434\u043d\u0430 \u0442\u043e\u0447\u043a\u0430
+      \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442\u0441\u044f
+      \u0442\u0440\u0435\u043c\u044f \u0431\u0430\u0439\u0442\u0430\u043c\u0438 -
+      \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 Red, Green, Blue \u043a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u044b
+      \u0446\u0432\u0435\u0442\u0430. \u0422\u0430\u043a\u0438\u043c \u0436\u0435
+      \u043e\u0431\u0440\u0430\u0437\u043e\u043c \u0442\u043e\u0447\u043a\u0438 \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0438
+      \u0445\u0440\u0430\u043d\u044f\u0442\u0441\u044f \u0438 \u0432 Raw-\u0444\u0430\u0439\u043b\u0435.</p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">\u0425\u0440\u0430\u043d\u0438\u0442\u044c \u043a\u0430\u0440\u0442\u0443
+      \u0446\u0432\u0435\u0442\u043e\u0432 (\u043a\u0430\u043a \u0438 \u043a\u0430\u0440\u0442\u0443
+      \u0432\u044b\u0441\u043e\u0442) \u043c\u044b \u0431\u0443\u0434\u0435\u043c
+      \u0432 \u043c\u0430\u0441\u0441\u0438\u0432\u0435, \u0442\u043e\u043b\u044c\u043a\u043e
+      \u0432 \u043a\u0430\u0440\u0442\u0435 \u0432\u044b\u0441\u043e\u0442 \u043e\u0434\u043d\u043e\u043c\u0443
+      \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0443 \u043c\u0430\u0441\u0441\u0438\u0432\u0430
+      \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442
+      \u043e\u0434\u043d\u043e \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u0432\u044b\u0441\u043e\u0442\u044b,
+      \u0430 \u0432 \u043a\u0430\u0440\u0442\u0435 \u0446\u0432\u0435\u0442\u043e\u0432
+      \u0442\u0440\u0438 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f - \u0438\u043d\u0442\u0435\u043d\u0441\u0438\u0432\u043d\u043e\u0441\u0442\u044c
+      \u043a\u0440\u0430\u0441\u043d\u043e\u0439, \u0437\u0435\u043b\u0435\u043d\u043e\u0439
+      \u0438 \u0441\u0438\u043d\u0435\u0439 \u0441\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u044e\u0449\u0435\u0439
+      \u0446\u0432\u0435\u0442\u0430. \u041f\u043e\u044d\u0442\u043e\u043c\u0443 \u0432\u0432\u0435\u0434\u0435\u043c
+      \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0443\u044e \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0443,
+      \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0438 \u0431\u0443\u0434\u0435\u0442
+      \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u043c \u043c\u0430\u0441\u0441\u0438\u0432\u0430
+      \u0446\u0432\u0435\u0442\u043e\u0432:</p>\r\n\r\n<div style=\"color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; padding: 5px;
+      margin: 4px; line-height: normal; background-color: rgb(242, 242, 242);\">\r\n<pre
+      style=\"font-size: 14px; font-family: ''courier new'', courier, monospace; margin-top:
+      0px; margin-bottom: 0px;\">\r\n<span style=\"color: rgb(0, 48, 255);\">struct</span>
+      RGB\r\n{ \r\n  GLubyte Red, Green, Blue; <span style=\"color: rgb(128, 128,
+      128);\">// \u0418\u043d\u0442\u0435\u043d\u0441\u0438\u0432\u043d\u043e\u0441\u0442\u0438
+      \u0441\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u044e\u0449\u0438\u0445 \u0446\u0432\u0435\u0442\u0430</span>\r\n};
+      \r\n\r\n<span style=\"color: rgb(0, 48, 255);\">const</span> <span style=\"color:
+      rgb(0, 48, 255);\">unsigned</span> MapSize = <span style=\"color: rgb(240, 64,
+      0);\">128</span>;\r\n\r\n<span style=\"color: rgb(128, 128, 128);\">//...</span>\r\nRGB
+      Colors<span style=\"color: rgb(160, 96, 0);\">[</span>MapSize<span style=\"color:
+      rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>
+      MapSize<span style=\"color: rgb(160, 96, 0);\">]</span>; <span style=\"color:
+      rgb(128, 128, 128);\">// \u041c\u0430\u0441\u0441\u0438\u0432 \u0446\u0432\u0435\u0442\u043e\u0432</span></pre>\r\n</div>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">&nbsp;</p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">\u041f\u0440\u0438 \u044d\u0442\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430
+      \u0440\u0438\u0441\u043e\u0432\u0430\u043d\u0438\u044f (\u044f \u0443\u0431\u0440\u0430\u043b
+      \u0440\u0438\u0441\u043e\u0432\u0430\u043d\u0438\u0435 &quot;\u043f\u0440\u043e\u0432\u043e\u043b\u043e\u0447\u043d\u043e\u0439&quot;
+      \u043c\u043e\u0434\u0435\u043b\u0438) \u043f\u0440\u0435\u0442\u0435\u0440\u043f\u0435\u043b\u0430
+      \u043c\u0438\u043d\u0438\u043c\u0430\u043b\u044c\u043d\u044b\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f:</p>\r\n\r\n<div
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; padding: 5px; margin: 4px; line-height: normal; background-color: rgb(242,
+      242, 242);\">\r\n<pre style=\"font-size: 14px; font-family: ''courier new'',
+      courier, monospace; margin-top: 0px; margin-bottom: 0px;\">\r\n<span style=\"color:
+      rgb(0, 48, 255);\">for</span> <span style=\"color: rgb(160, 96, 0);\">(</span>i=<span
+      style=\"color: rgb(240, 64, 0);\">0</span>;i<span style=\"color: rgb(160, 96,
+      0);\">&lt;</span>MapSize-<span style=\"color: rgb(240, 64, 0);\">1</span>;i++<span
+      style=\"color: rgb(160, 96, 0);\">)</span>\r\n{\r\n  <span style=\"color: rgb(0,
+      48, 255);\">for</span> <span style=\"color: rgb(160, 96, 0);\">(</span>j=<span
+      style=\"color: rgb(240, 64, 0);\">0</span>;j<span style=\"color: rgb(160, 96,
+      0);\">&lt;</span>MapSize-<span style=\"color: rgb(240, 64, 0);\">1</span>;j++<span
+      style=\"color: rgb(160, 96, 0);\">)</span>\r\n  { \r\n    x=i*Zoom;\r\n    y=j*Zoom;\r\n\r\n    glBegin<span
+      style=\"color: rgb(160, 96, 0);\">(</span>GL_TRIANGLE_STRIP<span style=\"color:
+      rgb(160, 96, 0);\">)</span>; \r\n      glColor3ub<span style=\"color: rgb(160,
+      96, 0);\">(</span>ColorsMap<span style=\"color: rgb(160, 96, 0);\">[</span>i<span
+      style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96,
+      0);\">[</span>j<span style=\"color: rgb(160, 96, 0);\">]</span>.Red, \r\n                 ColorsMap<span
+      style=\"color: rgb(160, 96, 0);\">[</span>i<span style=\"color: rgb(160, 96,
+      0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j<span style=\"color:
+      rgb(160, 96, 0);\">]</span>.Green, ColorsMap<span style=\"color: rgb(160, 96,
+      0);\">[</span>i<span style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color:
+      rgb(160, 96, 0);\">[</span>j<span style=\"color: rgb(160, 96, 0);\">]</span>.Blue<span
+      style=\"color: rgb(160, 96, 0);\">)</span>;\r\n      glVertex3f<span style=\"color:
+      rgb(160, 96, 0);\">(</span>x, y, Land<span style=\"color: rgb(160, 96, 0);\">[</span>i<span
+      style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96,
+      0);\">[</span>j<span style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color:
+      rgb(160, 96, 0);\">)</span>;\r\n      glColor3ub<span style=\"color: rgb(160,
+      96, 0);\">(</span>ColorsMap<span style=\"color: rgb(160, 96, 0);\">[</span>i+<span
+      style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96,
+      0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j<span style=\"color:
+      rgb(160, 96, 0);\">]</span>.Red, \r\n                 ColorsMap<span style=\"color:
+      rgb(160, 96, 0);\">[</span>i+<span style=\"color: rgb(240, 64, 0);\">1</span><span
+      style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96,
+      0);\">[</span>j<span style=\"color: rgb(160, 96, 0);\">]</span>.Green, ColorsMap<span
+      style=\"color: rgb(160, 96, 0);\">[</span>i+<span style=\"color: rgb(240, 64,
+      0);\">1</span><span style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color:
+      rgb(160, 96, 0);\">[</span>j<span style=\"color: rgb(160, 96, 0);\">]</span>.Blue<span
+      style=\"color: rgb(160, 96, 0);\">)</span>;\r\n      glVertex3f<span style=\"color:
+      rgb(160, 96, 0);\">(</span>x+Zoom, y, Land<span style=\"color: rgb(160, 96,
+      0);\">[</span>i+<span style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color:
+      rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j<span
+      style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96,
+      0);\">)</span>; \r\n      glColor3ub<span style=\"color: rgb(160, 96, 0);\">(</span>ColorsMap<span
+      style=\"color: rgb(160, 96, 0);\">[</span>i<span style=\"color: rgb(160, 96,
+      0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j+<span style=\"color:
+      rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96, 0);\">]</span>.Red,
+      \r\n                 ColorsMap<span style=\"color: rgb(160, 96, 0);\">[</span>i<span
+      style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96,
+      0);\">[</span>j+<span style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color:
+      rgb(160, 96, 0);\">]</span>.Green, ColorsMap<span style=\"color: rgb(160, 96,
+      0);\">[</span>i<span style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color:
+      rgb(160, 96, 0);\">[</span>j+<span style=\"color: rgb(240, 64, 0);\">1</span><span
+      style=\"color: rgb(160, 96, 0);\">]</span>.Blue<span style=\"color: rgb(160,
+      96, 0);\">)</span>;\r\n      glVertex3f<span style=\"color: rgb(160, 96, 0);\">(</span>x,
+      y+Zoom, Land<span style=\"color: rgb(160, 96, 0);\">[</span>i<span style=\"color:
+      rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j+<span
+      style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96,
+      0);\">]</span><span style=\"color: rgb(160, 96, 0);\">)</span>; \r\n      glColor3ub<span
+      style=\"color: rgb(160, 96, 0);\">(</span>ColorsMap<span style=\"color: rgb(160,
+      96, 0);\">[</span>i+<span style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color:
+      rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j+<span
+      style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96,
+      0);\">]</span>.Red, \r\n                 ColorsMap<span style=\"color: rgb(160,
+      96, 0);\">[</span>i+<span style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color:
+      rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j+<span
+      style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96,
+      0);\">]</span>.Green, ColorsMap<span style=\"color: rgb(160, 96, 0);\">[</span>i+<span
+      style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96,
+      0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j+<span style=\"color:
+      rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96, 0);\">]</span>.Blue<span
+      style=\"color: rgb(160, 96, 0);\">)</span>;\r\n      glVertex3f<span style=\"color:
+      rgb(160, 96, 0);\">(</span>x+Zoom, y+Zoom, Land<span style=\"color: rgb(160,
+      96, 0);\">[</span>i+<span style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color:
+      rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j+<span
+      style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96,
+      0);\">]</span><span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n    glEnd<span
+      style=\"color: rgb(160, 96, 0);\">(</span><span style=\"color: rgb(160, 96,
+      0);\">)</span>; \r\n  }\r\n}</pre>\r\n</div>\r\n\r\n<p style=\"margin-top: 10px;
+      margin-bottom: 10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">&nbsp;</p>\r\n\r\n<p align=\"center\"
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\"><img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208e.jpg\" style=\"border: 0px; max-width:
+      100%;\" /></p>\r\n"}'
+    - '2013-03-20 01:00:44.088294'
+    - '2013-03-20 01:17:22.607710'
+  - - 17
+    - Раскраска (текстурирование) ландшафта. Текстурирование
+    - 5.0
+    - 8
+    - Document
+    - ! '{"body":"<p class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px;
+      text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\"><b>\u0421\u043f\u043e\u0441\u043e\u0431
+      \u0432\u0442\u043e\u0440\u043e\u0439 &mdash; \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435.</b></p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">\u0421\u0443\u0442\u044c \u0432\u0442\u043e\u0440\u043e\u0433\u043e
+      \u0441\u043f\u043e\u0441\u043e\u0431\u0430 \u0441\u043e\u0441\u0442\u043e\u0438\u0442
+      \u0432 \u043d\u0430\u043b\u043e\u0436\u0435\u043d\u0438\u0438 \u043d\u0430 \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b. \u0414\u043b\u044f \u044d\u0442\u043e\u0433\u043e
+      \u043d\u0430\u043c \u043f\u043e\u043d\u0430\u0434\u043e\u0431\u0438\u0442\u0441\u044f
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0430, \u0442\u043e\u0447\u043d\u043e
+      \u0442\u0430\u043a\u0430\u044f \u0436\u0435 \u043a\u0430\u043a \u0444\u0430\u0439\u043b
+      \u0434\u043b\u044f \u043a\u0430\u0440\u0442\u044b \u0446\u0432\u0435\u0442\u043e\u0432,
+      \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c
+      \u0435\u0433\u043e \u043d\u0430\u0434\u043e \u043a\u0430\u043a TGA \u0444\u0430\u0439\u043b
+      (\u043f\u043e\u043d\u044f\u0442\u043d\u043e, \u0447\u0442\u043e \u0432\u044b\u0431\u043e\u0440
+      \u0444\u043e\u0440\u043c\u0430\u0442\u0430 - \u044d\u0442\u043e \u0434\u0435\u043b\u043e
+      \u0432\u043a\u0443\u0441\u0430, \u043d\u043e \u0432 \u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u043d\u044b\u0445
+      \u043c\u043d\u043e\u044e \u043f\u0440\u0438\u043c\u0435\u0440\u0430\u0445 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442\u0441\u044f
+      TGA-\u0444\u0430\u0439\u043b\u044b). \u042f \u043f\u0440\u0435\u0434\u043f\u043e\u043b\u0430\u0433\u0430\u044e
+      \u0447\u0442\u043e \u0432\u044b \u0437\u043d\u0430\u043a\u043e\u043c\u044b \u0441
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435,
+      \u0438 \u043d\u0435 \u0431\u0443\u0434\u0443 \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0442\u044c
+      \u043f\u0440\u043e\u0446\u0435\u0441\u0441 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438
+      \u0438 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b
+      \u0432 OpenGL.</p>\r\n\r\n<p class=\"mar\" style=\"margin-top: 10px; margin-bottom:
+      10px; text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">\u0420\u0430\u0437\u043c\u0435\u0440
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b, \u043c\u043e\u0436\u0435\u0442
+      \u0438 \u043d\u0435 \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u043e\u0432\u0430\u0442\u044c
+      \u0440\u0430\u0437\u043c\u0435\u0440\u0443 \u043a\u0430\u0440\u0442\u044b \u0432\u044b\u0441\u043e\u0442.
+      \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440 \u0434\u043b\u044f \u043a\u0430\u0440\u0442\u044b
+      \u0432\u044b\u0441\u043e\u0442 128x128 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c
+      \u0432\u044b\u0431\u0440\u0430\u043d\u0430 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0430
+      \u0440\u0430\u0437\u043c\u0435\u0440\u043e\u043c 64x64 \u0438\u043b\u0438 512x512
+      \u0442\u043e\u0447\u0435\u043a. \u0412 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u043c
+      \u0441\u043b\u0443\u0447\u0430\u0435 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u043e
+      \u0431\u0443\u0434\u0435 \u043b\u0443\u0447\u0448\u0435. \u041d\u0430 \u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0435
+      \u0434\u043e\u0441\u0442\u0430\u0442\u043e\u0447\u043d\u043e \u0432\u044b\u0431\u0440\u0430\u0442\u044c
+      \u0440\u0430\u0437\u043c\u0435\u0440 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b
+      \u0440\u0430\u0432\u043d\u044b\u0439 \u0440\u0430\u0437\u043c\u0435\u0440\u0443
+      \u043a\u0430\u0440\u0442\u044b \u0432\u044b\u0441\u043e\u0442.</p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">\u0421\u0443\u0442\u044c \u043c\u0435\u0442\u043e\u0434\u0430
+      \u0441\u043e\u0441\u0442\u043e\u0438\u0442 \u0432 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435
+      \u043e\u0434\u043d\u043e\u0439 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u043e\u0439
+      \u0432\u0441\u0435\u0445 \u0442\u0440\u0435\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a\u043e\u0432
+      \u043d\u0430\u0448\u0435\u0433\u043e \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430,
+      \u0440\u0430\u0441\u0441\u0447\u0438\u0442\u044b\u0432\u0430\u044f \u043a\u0430\u0436\u0434\u043e\u043c\u0443
+      \u0442\u0440\u0435\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a\u0443 \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0435
+      \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b.</p>\r\n\r\n<p
+      class=\"mar\" style=\"margin-top: 10px; margin-bottom: 10px; text-indent: 2em;
+      color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px;
+      line-height: normal;\">\u0418\u0442\u0430\u043a, \u043f\u0440\u0435\u0436\u0434\u0435
+      \u0447\u0435\u043c \u043f\u0440\u0438\u0441\u0442\u0443\u043f\u0438\u0442\u044c
+      \u043a \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044e
+      \u043c\u044b \u0434\u043e\u043b\u0436\u043d\u044b \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u0442
+      \u0448\u0430\u0433 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b. \u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e
+      \u0432\u044b\u0447\u0438\u0441\u043b\u0438\u0442\u044c \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435
+      1.0/MapSize (MapSize - \u0440\u0430\u0437\u043c\u0435\u0440 \u043a\u0430\u0440\u0442\u044b
+      \u0432\u044b\u0441\u043e\u0442). \u0418 \u0442\u043e\u0433\u0434\u0430 \u0443\u043c\u043d\u043e\u0436\u0430\u044f
+      \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b x \u0438 y \u0442\u0440\u0435\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a\u0430
+      \u043d\u0430 \u044d\u0442\u043e\u0442 \u0448\u0430\u0433, \u043c\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043c
+      \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b
+      \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0435
+      \u044d\u0442\u043e\u043c\u0443 \u0442\u0440\u0435\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a\u0443.
+      \u041d\u0438\u0436\u0435 \u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d \u0440\u0438\u0441\u0443\u043d\u043e\u043a
+      \u0438\u043b\u043b\u044e\u0441\u0442\u0440\u0438\u0440\u0443\u044e\u0449\u0438\u0439
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435,
+      \u0438 \u043f\u0440\u0438\u043c\u0435\u0440 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u044b
+      \u0440\u0438\u0441\u043e\u0432\u0430\u043d\u0438\u044f.</p>\r\n\r\n<p align=\"center\"
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\"><img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208e.gif\" style=\"border: 0px; max-width:
+      100%;\" /></p>\r\n\r\n<p class=\"mar\" style=\"margin-top: 10px; margin-bottom:
+      10px; text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">\u0415\u0441\u043b\u0438 \u0432\u044b
+      \u0445\u043e\u0442\u0438\u0442\u0435, \u0447\u0442\u043e\u0431\u044b \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0430
+      \u043d\u0435 &quot;\u0440\u0430\u0441\u0442\u044f\u0433\u0438\u0432\u0430\u043b\u0430\u0441\u044c&quot;
+      \u043d\u0430 \u0432\u0435\u0441\u044c \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442,
+      \u0430 \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u043e\u0432\u0430\u043b\u0430
+      \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u043d\u043e\u0439 \u0435\u0433\u043e
+      \u0447\u0430\u0441\u0442\u0438, \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e
+      \u043f\u0440\u0438 \u0432\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u0438
+      \u0448\u0430\u0433\u0430, \u0432\u043c\u0435\u0441\u0442\u043e 1 \u043f\u043e\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u044c
+      \u043d\u0443\u0436\u043d\u043e\u0435 \u0432\u0430\u043c \u0447\u0438\u0441\u043b\u043e,
+      \u0438 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0430 \u043f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u044c\u0441\u044f
+      \u0437\u0430\u0434\u0430\u043d\u043d\u043e\u0435 \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e
+      \u0440\u0430\u0437.</p>\r\n\r\n<p class=\"mar\" style=\"margin-top: 10px; margin-bottom:
+      10px; text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">\u0428\u0430\u0433 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f
+      \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b
+      \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d \u043a\u0430\u043a \u043a\u043e\u043d\u0441\u0442\u0430\u043d\u0442\u0430
+      \u0432 Terrain.H.</p>\r\n\r\n<p class=\"mar\" style=\"margin-top: 10px; margin-bottom:
+      10px; text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">const GLfloat TextureBit = 1.0f/(float)MapSize;&nbsp;<br
+      />\r\n\u0430 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u043d\u0430\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430
+      \u0440\u0438\u0441\u043e\u0432\u0430\u043d\u0438\u044f \u0432\u044b\u0433\u043b\u044f\u0434\u0438\u0442
+      \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u043c \u043e\u0431\u0440\u0430\u0437\u043e\u043c:</p>\r\n\r\n<div
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; padding: 5px; margin: 4px; line-height: normal; background-color: rgb(242,
+      242, 242);\">\r\n<pre style=\"font-size: 14px; font-family: ''courier new'',
+      courier, monospace; margin-top: 0px; margin-bottom: 0px;\">\r\n<span style=\"color:
+      rgb(0, 48, 255);\">for</span> <span style=\"color: rgb(160, 96, 0);\">(</span>i=<span
+      style=\"color: rgb(240, 64, 0);\">0</span>;i<span style=\"color: rgb(160, 96,
+      0);\">&lt;</span>MapSize-<span style=\"color: rgb(240, 64, 0);\">1</span>;i++<span
+      style=\"color: rgb(160, 96, 0);\">)</span>\r\n{\r\n  <span style=\"color: rgb(0,
+      48, 255);\">for</span> <span style=\"color: rgb(160, 96, 0);\">(</span>j=<span
+      style=\"color: rgb(240, 64, 0);\">0</span>;j<span style=\"color: rgb(160, 96,
+      0);\">&lt;</span>MapSize-<span style=\"color: rgb(240, 64, 0);\">1</span>;j++<span
+      style=\"color: rgb(160, 96, 0);\">)</span>\r\n  { \r\n    x=i*Zoom;\r\n    y=j*Zoom;
+      \r\n    glBegin<span style=\"color: rgb(160, 96, 0);\">(</span>GL_TRIANGLE_STRIP<span
+      style=\"color: rgb(160, 96, 0);\">)</span>; \r\n      glTexCoord2f<span style=\"color:
+      rgb(160, 96, 0);\">(</span>i*TextureBit, j*TextureBit<span style=\"color: rgb(160,
+      96, 0);\">)</span>;\r\n      glVertex3f<span style=\"color: rgb(160, 96, 0);\">(</span>x,
+      y, HeightMap<span style=\"color: rgb(160, 96, 0);\">[</span>i<span style=\"color:
+      rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">[</span>j<span
+      style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96,
+      0);\">)</span>;\r\n      glTexCoord2f<span style=\"color: rgb(160, 96, 0);\">(</span><span
+      style=\"color: rgb(160, 96, 0);\">(</span>i + <span style=\"color: rgb(240,
+      64, 0);\">1</span><span style=\"color: rgb(160, 96, 0);\">)</span>*TextureBit,
+      j*TextureBit<span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n      glVertex3f<span
+      style=\"color: rgb(160, 96, 0);\">(</span>x+Zoom, y, HeightMap<span style=\"color:
+      rgb(160, 96, 0);\">[</span>i+<span style=\"color: rgb(240, 64, 0);\">1</span><span
+      style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96,
+      0);\">[</span>j<span style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color:
+      rgb(160, 96, 0);\">)</span>; \r\n      glTexCoord2f<span style=\"color: rgb(160,
+      96, 0);\">(</span>i*TextureBit,<span style=\"color: rgb(160, 96, 0);\">(</span>j
+      + <span style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160,
+      96, 0);\">)</span>*TextureBit<span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n      glVertex3f<span
+      style=\"color: rgb(160, 96, 0);\">(</span>x, y+Zoom, HeightMap<span style=\"color:
+      rgb(160, 96, 0);\">[</span>i<span style=\"color: rgb(160, 96, 0);\">]</span><span
+      style=\"color: rgb(160, 96, 0);\">[</span>j+<span style=\"color: rgb(240, 64,
+      0);\">1</span><span style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color:
+      rgb(160, 96, 0);\">)</span>; \r\n      glTexCoord2f<span style=\"color: rgb(160,
+      96, 0);\">(</span><span style=\"color: rgb(160, 96, 0);\">(</span>i + <span
+      style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160, 96,
+      0);\">)</span>*TextureBit,<span style=\"color: rgb(160, 96, 0);\">(</span>j
+      + <span style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color: rgb(160,
+      96, 0);\">)</span>*TextureBit<span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n      glVertex3f<span
+      style=\"color: rgb(160, 96, 0);\">(</span>x+Zoom, y+Zoom, HeightMap<span style=\"color:
+      rgb(160, 96, 0);\">[</span>i+<span style=\"color: rgb(240, 64, 0);\">1</span><span
+      style=\"color: rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96,
+      0);\">[</span>j+<span style=\"color: rgb(240, 64, 0);\">1</span><span style=\"color:
+      rgb(160, 96, 0);\">]</span><span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n    glEnd<span
+      style=\"color: rgb(160, 96, 0);\">(</span><span style=\"color: rgb(160, 96,
+      0);\">)</span>; \r\n  }\r\n}</pre>\r\n</div>\r\n\r\n<p style=\"margin-top: 10px;
+      margin-bottom: 10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">&nbsp;</p>\r\n\r\n<p align=\"center\"
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\"><img alt=\"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"
+      src=\"http://www.gamedev.ru/coding/20208f.jpg\" style=\"border: 0px; max-width:
+      100%;\" /></p>\r\n\r\n<p class=\"mar\" style=\"margin-top: 10px; margin-bottom:
+      10px; text-indent: 2em; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif;
+      font-size: 12px; line-height: normal;\">\u0421\u043b\u0435\u0434\u0443\u0435\u0442
+      \u0441\u043a\u0430\u0437\u0430\u0442\u044c \u043f\u0430\u0440\u0443 \u0441\u043b\u043e\u0432
+      \u043e \u0444\u0438\u043b\u044c\u0442\u0440\u0430\u0446\u0438\u0438 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b.
+      \u0412 \u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u043d\u043e\u043c \u043f\u0440\u0438\u043c\u0435\u0440\u0435
+      \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u043b\u0438\u043d\u0435\u0439\u043d\u0430\u044f
+      \u0444\u0438\u043b\u044c\u0442\u0440\u0430\u0446\u0438\u044f, \u0447\u0442\u043e
+      \u043d\u0430\u043c\u043e\u0439 \u0432\u0437\u0433\u043b\u044f\u0434, \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f
+      \u043e\u043f\u0442\u0438\u043c\u0430\u043b\u044c\u043d\u044b\u043c \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u043c.
+      \u0424\u0438\u043b\u044c\u0442\u0440\u0430\u0446\u0438\u044f \u0431\u043b\u0438\u0436\u0430\u0439\u0448\u0438\u0439
+      \u0441\u043e\u0441\u0435\u0434 (GL_NEAREST) \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e
+      \u0443\u0445\u0443\u0434\u0448\u0430\u0435\u0442 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u043e,
+      \u0432 \u0442\u043e \u0432\u0440\u0435\u043c\u044f \u043a\u0430\u043a \u043c\u0438\u043f\u043c\u0430\u043f\u043f\u0438\u043d\u0433
+      \u043f\u0440\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u0435\u0433\u043e
+      \u043d\u0435 \u0443\u043b\u0443\u0447\u0448\u0430\u0435\u0442. \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u0435
+      \u043c\u0438\u043f\u043c\u0430\u043f\u043f\u0438\u043d\u0433\u0430 \u0431\u0443\u0434\u0435\u0442
+      \u0438\u043c\u0435\u0442\u044c \u0441\u043c\u044b\u0441\u043b, \u0435\u0441\u043b\u0438
+      \u0440\u0430\u0437\u043c\u0435\u0440 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b
+      \u043f\u0440\u0435\u0432\u044b\u0448\u0430\u0435\u0442 \u0440\u0430\u0437\u043c\u0435\u0440
+      \u043b\u0430\u043d\u0434\u0448\u0430\u0444\u0442\u0430 \u0445\u043e\u0442\u044f
+      \u0431\u044b \u0432 \u0434\u0432\u0430 \u0440\u0430\u0437\u0430, \u0438\u043b\u0438
+      \u0435\u0441\u043b\u0438 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0430 \u043f\u043e\u0432\u0442\u043e\u0440\u044f\u0435\u0442\u0441\u044f.</p>\r\n"}'
+    - '2013-03-20 01:00:44.110146'
+    - '2013-03-20 01:17:33.495113'
+  - - 18
+    - Основы создания мягких теней (GLSL). Несколько выборок, вместо одной
+    - 10.0
+    - 7
+    - Document
+    - ! '{"body":"<p style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\">\u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u0430\u044f
+      \u0442\u0435\u0445\u043d\u0438\u043a\u0430 shadow maps \u0432\u043e \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u043d\u043e\u043c
+      \u0448\u0435\u0439\u0434\u0435\u0440\u0435 \u043e\u0431\u044b\u0447\u043d\u043e
+      \u0440\u0435\u0430\u043b\u0438\u0437\u0443\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e
+      \u043b\u0438\u0448\u044c \u043e\u0434\u043d\u043e\u0439 \u0432\u044b\u0431\u043e\u0440\u043a\u043e\u0439
+      \u0438\u0437 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b:</p>\r\n\r\n<div
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; padding: 5px; margin: 4px; line-height: normal; background-color: rgb(242,
+      242, 242);\">\r\n<pre style=\"font-size: 14px; font-family: ''courier new'',
+      courier, monospace; margin-top: 0px; margin-bottom: 0px;\">\r\nshadow2DProj<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_proj_tc<span
+      style=\"color: rgb(160, 96, 0);\">)</span>,</pre>\r\n</div>\r\n\r\n<p style=\"margin-top:
+      10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family: verdana, arial,
+      sans-serif; font-size: 12px; line-height: normal;\">\u0433\u0434\u0435 shadow_proj_tc
+      &ndash; \u044d\u0442\u043e \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b
+      \u0432 \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0435
+      \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0430 \u0441\u0432\u0435\u0442\u0430.
+      \u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u0434\u043b\u044f \u0443\u0434\u043e\u0431\u0441\u0442\u0432\u0430
+      \u0437\u0430\u0432\u0435\u0440\u043d\u0435\u043c \u044d\u0442\u043e \u0434\u0435\u043b\u043e
+      \u0432 \u0444\u0443\u043d\u043a\u0446\u0438\u044e:</p>\r\n\r\n<div style=\"color:
+      rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; padding:
+      5px; margin: 4px; line-height: normal; background-color: rgb(242, 242, 242);\">\r\n<pre
+      style=\"font-size: 14px; font-family: ''courier new'', courier, monospace; margin-top:
+      0px; margin-bottom: 0px;\">\r\n<span style=\"color: rgb(0, 48, 255);\">float</span>
+      SampleShadow<span style=\"color: rgb(160, 96, 0);\">(</span>vec3 shadow_tc<span
+      style=\"color: rgb(160, 96, 0);\">)</span>\r\n{\r\n <span style=\"color: rgb(0,
+      48, 255);\">return</span> shadow2D<span style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture,
+      shadow_tc<span style=\"color: rgb(160, 96, 0);\">)</span>.x;\r\n}</pre>\r\n</div>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0412\u043c\u0435\u0441\u0442\u043e
+      \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u044f
+      shadow2DProj \u0431\u0443\u0434\u0435\u0442 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c
+      shadow2D, \u0430 \u043f\u0435\u0440\u0435\u0434\u0430\u0432\u0430\u0442\u044c
+      \u0432 \u0444\u0443\u043d\u043a\u0446\u0438\u044e \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435
+      shadow_proj_tc.xyz / shadow_proj_tc.w. \u0414\u0430\u043d\u043d\u0430\u044f
+      \u0444\u0443\u043d\u043a\u0446\u0438\u044f \u0438 \u0431\u0443\u0434\u0435\u0442
+      \u043d\u0430\u043c \u0440\u0435\u0430\u043b\u0438\u0437\u043e\u0432\u044b\u0432\u0430\u0442\u044c
+      \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u0443\u044e \u0442\u0435\u0445\u043d\u0438\u043a\u0443.
+      \u0422\u0430\u043a\u0438\u043c \u043e\u0431\u0440\u0430\u0437\u043e\u043c \u043c\u044b
+      \u043f\u043e\u043b\u0443\u0447\u0438\u043c \u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u043d\u0443\u044e
+      \u0432\u044b\u0448\u0435 \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0443. \u0422\u0435\u043f\u0435\u0440\u044c
+      \u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u043f\u043e\u0434\u0443\u043c\u0430\u0435\u043c:
+      \u0430 \u0447\u0442\u043e, \u0435\u0441\u043b\u0438 \u0432\u044b\u0431\u043e\u0440\u043e\u043a
+      \u0431\u0443\u0434\u0435\u0442 \u043d\u0435 \u043e\u0434\u043d\u0430, \u0430
+      \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e? \u0423\u043b\u0443\u0447\u0448\u0438\u0442
+      \u043b\u0438 \u044d\u0442\u043e \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435
+      \u0432\u0435\u0449\u0435\u0439?</p>\r\n\r\n<p style=\"margin-top: 10px; margin-bottom:
+      10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\">\u041a\u043e\u043d\u0435\u0447\u043d\u043e \u0434\u0430!
+      \u0412\u0435\u0434\u044c \u0435\u0441\u043b\u0438 \u0441\u0434\u0435\u043b\u0430\u0442\u044c
+      \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0432\u044b\u0431\u043e\u0440\u043e\u043a
+      \u0432\u043e\u043a\u0440\u0443\u0433 \u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0439
+      \u0442\u043e\u0447\u043a\u0438 \u0438 \u043f\u043e\u0442\u043e\u043c \u0443\u0441\u0440\u0435\u0434\u043d\u0438\u0442\u044c
+      \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 &ndash; \u043f\u043e\u043b\u0443\u0447\u0438\u043c
+      \u043d\u0435\u043a\u043e\u0435 \u043f\u043e\u0434\u043e\u0431\u0438\u0435 \u0440\u0430\u0437\u043c\u044b\u0442\u0438\u044f.
+      \u041d\u043e \u0442\u0430\u043a \u043a\u0430\u043a \u0434\u043b\u044f \u043a\u0430\u0436\u0434\u043e\u0439
+      \u0442\u043e\u0447\u043a\u0438 \u043c\u044b \u0431\u0443\u0434\u0435\u043c \u0441\u0434\u0432\u0438\u0433\u0430\u0442\u044c
+      \u043d\u0430 \u043f\u043e\u0441\u0442\u043e\u044f\u043d\u043d\u044b\u0439 \u0448\u0430\u0433
+      &ndash; \u0442\u043e \u043f\u043e\u043b\u0443\u0447\u0438\u043c \u0434\u043e\u0432\u043e\u043b\u044c\u043d\u043e
+      \u043e\u0434\u043d\u043e\u043e\u0431\u0440\u0430\u0437\u043d\u0443\u044e \u0442\u0435\u043d\u044c,
+      \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0442\u0430\u043a\u0436\u0435 \u0431\u0443\u0434\u0435\u0442
+      \u0438\u043c\u0435\u0442\u044c \u0437\u0430\u0437\u0443\u0431\u0440\u0438\u043d\u044b
+      \u043d\u0430 \u043a\u0440\u0430\u044f\u0445, \u0445\u043e\u0442\u044c \u043e\u043d\u0438
+      \u0431\u0443\u0434\u0443\u0442 \u0438 \u043d\u0435\u043c\u043d\u043e\u0433\u043e
+      \u0441\u043c\u0430\u0437\u0430\u043d\u044b. \u0414\u043b\u044f \u0442\u043e\u0433\u043e
+      \u0447\u0442\u043e\u0431\u044b \u0443\u0441\u0442\u0440\u0430\u043d\u0438\u0442\u044c
+      \u044d\u0442\u043e\u0442 \u044d\u0444\u0444\u0435\u043a\u0442 \u0431\u0443\u0434\u0435\u043c
+      \u0434\u0435\u043b\u0430\u0442\u044c \u0448\u0430\u0433 \u0432 \u043a\u0430\u0436\u0434\u043e\u0439
+      \u0442\u043e\u0447\u043a\u0435 \u0432 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u043b\u044c\u043d\u043e\u043c
+      \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0438. \u0414\u043b\u044f
+      \u044d\u0442\u043e\u0433\u043e \u043d\u0430\u043c \u043f\u043e\u043d\u0430\u0434\u043e\u0431\u0438\u0442\u0441\u044f
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0430, \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0430\u044f
+      \u0448\u0443\u043c &ndash; \u0441\u043b\u0443\u0447\u0430\u0439\u043d\u044b\u0435
+      \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f. \u0422\u0430\u043a\u0443\u044e
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0443 \u043c\u043e\u0436\u043d\u043e
+      \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c \u0438\u0437 \u0444\u0430\u0439\u043b\u0430
+      \u0438\u043b\u0438 \u0433\u0435\u043d\u0435\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c
+      \u0432 \u0440\u0435\u0430\u043b\u044c\u043d\u043e\u043c \u0432\u0440\u0435\u043c\u0435\u043d\u0438
+      (\u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c, \u043f\u0440\u0438 \u0438\u043d\u0438\u0446\u0438\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438).
+      \u0413\u0435\u043d\u0435\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435
+      \u043a\u043e\u043d\u0435\u0447\u043d\u043e \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0442\u0438\u0442\u0435\u043b\u044c\u043d\u0435\u0435,
+      \u0442\u0430\u043a \u043a\u0430\u043a \u043a\u0430\u0436\u0434\u044b\u0439 \u0440\u0430\u0437
+      \u0431\u0443\u0434\u0435\u0442 \u043d\u043e\u0432\u044b\u0439 \u0448\u0443\u043c,
+      \u0438 \u043e\u0441\u0432\u043e\u0431\u043e\u0434\u0438\u0442\u044c\u0441\u044f
+      \u043d\u0435\u043c\u043d\u043e\u0433\u043e \u043c\u0435\u0441\u0442\u0430 \u043d\u0430
+      \u0434\u0438\u0441\u043a\u0435.</p>\r\n\r\n<p style=\"margin-top: 10px; margin-bottom:
+      10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\">\u0413\u0435\u043d\u0435\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0443 \u043c\u043e\u0436\u043d\u043e
+      \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u0442\u0430\u043a:</p>\r\n\r\n<table
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      middle;\">\r\n\t\t\t<div style=\"padding: 5px; margin: 4px; background-color:
+      rgb(242, 242, 242);\">\r\n\t\t\t<pre style=\"font-size: 14px; font-family: ''courier
+      new'', courier, monospace; margin-top: 0px; margin-bottom: 0px;\">\r\n<span
+      style=\"color: rgb(0, 48, 255);\">procedure</span> BuildNoiseTexture<span style=\"color:
+      rgb(160, 96, 0);\">(</span>name:<span style=\"color: rgb(0, 48, 255);\">string</span>;
+      <span style=\"color: rgb(0, 48, 255);\">var</span> texID:cardinal; \r\n                                dimension:integer;
+      use_normal:boolean<span style=\"color: rgb(160, 96, 0);\">)</span>; \r\n<span
+      style=\"color: rgb(0, 48, 255);\">var</span> D : PRGBData;\r\n    x : integer;\r\n    v
+      : Vector3;\r\n<span style=\"color: rgb(0, 48, 255);\">begin</span>\r\n D:=AllocMem<span
+      style=\"color: rgb(160, 96, 0);\">(</span> dimension * dimension * <span style=\"color:
+      rgb(240, 64, 0);\">3</span> <span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n
+      <span style=\"color: rgb(0, 48, 255);\">for</span> x:=<span style=\"color: rgb(240,
+      64, 0);\">0</span> <span style=\"color: rgb(0, 48, 255);\">to</span> pred<span
+      style=\"color: rgb(160, 96, 0);\">(</span>dimension*dimension<span style=\"color:
+      rgb(160, 96, 0);\">)</span> <span style=\"color: rgb(0, 48, 255);\">do</span>
+      <span style=\"color: rgb(0, 48, 255);\">begin</span>\r\n  v:=v.random_vec;\r\n  <span
+      style=\"color: rgb(0, 48, 255);\">if</span> use_normal\r\n   <span style=\"color:
+      rgb(0, 48, 255);\">then</span> v:=v.normalize;\r\n  D^<span style=\"color: rgb(160,
+      96, 0);\">[</span>x<span style=\"color: rgb(160, 96, 0);\">]</span>.r:=trunc<span
+      style=\"color: rgb(160, 96, 0);\">(</span> <span style=\"color: rgb(160, 96,
+      0);\">(</span>v.x * <span style=\"color: rgb(240, 64, 0);\">0</span>.<span style=\"color:
+      rgb(240, 64, 0);\">5</span> + <span style=\"color: rgb(240, 64, 0);\">0</span>.<span
+      style=\"color: rgb(240, 64, 0);\">5</span><span style=\"color: rgb(160, 96,
+      0);\">)</span> * <span style=\"color: rgb(240, 64, 0);\">255</span> <span style=\"color:
+      rgb(160, 96, 0);\">)</span>;\r\n  D^<span style=\"color: rgb(160, 96, 0);\">[</span>x<span
+      style=\"color: rgb(160, 96, 0);\">]</span>.g:=trunc<span style=\"color: rgb(160,
+      96, 0);\">(</span> <span style=\"color: rgb(160, 96, 0);\">(</span>v.y * <span
+      style=\"color: rgb(240, 64, 0);\">0</span>.<span style=\"color: rgb(240, 64,
+      0);\">5</span> + <span style=\"color: rgb(240, 64, 0);\">0</span>.<span style=\"color:
+      rgb(240, 64, 0);\">5</span><span style=\"color: rgb(160, 96, 0);\">)</span>
+      * <span style=\"color: rgb(240, 64, 0);\">255</span> <span style=\"color: rgb(160,
+      96, 0);\">)</span>;\r\n  D^<span style=\"color: rgb(160, 96, 0);\">[</span>x<span
+      style=\"color: rgb(160, 96, 0);\">]</span>.b:=trunc<span style=\"color: rgb(160,
+      96, 0);\">(</span> <span style=\"color: rgb(160, 96, 0);\">(</span>v.z * <span
+      style=\"color: rgb(240, 64, 0);\">0</span>.<span style=\"color: rgb(240, 64,
+      0);\">5</span> + <span style=\"color: rgb(240, 64, 0);\">0</span>.<span style=\"color:
+      rgb(240, 64, 0);\">5</span><span style=\"color: rgb(160, 96, 0);\">)</span>
+      * <span style=\"color: rgb(240, 64, 0);\">255</span> <span style=\"color: rgb(160,
+      96, 0);\">)</span>;\r\n <span style=\"color: rgb(0, 48, 255);\">end</span>;\r\n\r\n
+      BuildTexture2D<span style=\"color: rgb(160, 96, 0);\">(</span>name, texID, dimension,
+      dimension, GL_RGB, GL_RGB, GL_UNSIGNED_BYTE, D<span style=\"color: rgb(160,
+      96, 0);\">)</span>;\r\n ReallocMem<span style=\"color: rgb(160, 96, 0);\">(</span>D,
+      <span style=\"color: rgb(240, 64, 0);\">0</span><span style=\"color: rgb(160,
+      96, 0);\">)</span>;\r\n<span style=\"color: rgb(0, 48, 255);\">end</span>;</pre>\r\n\t\t\t</div>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u042d\u0442\u0443
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0443 \u0438 \u0431\u0443\u0434\u0435\u043c
+      \u043f\u0435\u0440\u0435\u0434\u0430\u0432\u0430\u0442\u044c \u0432 \u0448\u0435\u0439\u0434\u0435\u0440.</p>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0422\u0435\u043f\u0435\u0440\u044c
+      \u043d\u0430\u043f\u0438\u0448\u0435\u043c \u0444\u0443\u043d\u043a\u0446\u0438\u044e,
+      \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0431\u0443\u0434\u0435\u0442 \u0440\u0435\u0430\u043b\u0438\u0437\u043e\u0432\u044b\u0432\u0430\u0442\u044c
+      \u043d\u0430\u043c \u0442\u0435\u043d\u044c \u0441 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u043c\u0438
+      \u0432\u044b\u0431\u043e\u0440\u043a\u0430\u043c\u0438:</p>\r\n\r\n<div style=\"color:
+      rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; padding:
+      5px; margin: 4px; line-height: normal; background-color: rgb(242, 242, 242);\">\r\n<pre
+      style=\"font-size: 14px; font-family: ''courier new'', courier, monospace; margin-top:
+      0px; margin-bottom: 0px;\">\r\n<span style=\"color: rgb(0, 48, 255);\">float</span>
+      SampleShadow<span style=\"color: rgb(160, 96, 0);\">(</span>vec3 shadow_tc,
+      vec2 noise, vec2 shadowmap_texel<span style=\"color: rgb(160, 96, 0);\">)</span>\r\n{\r\n
+      noise = vec2<span style=\"color: rgb(160, 96, 0);\">(</span><span style=\"color:
+      rgb(240, 64, 0);\">1</span>.<span style=\"color: rgb(240, 64, 0);\">0</span><span
+      style=\"color: rgb(160, 96, 0);\">)</span>;\r\n vec3 dx = vec3<span style=\"color:
+      rgb(160, 96, 0);\">(</span>noise.x * shadowmap_texel.x, <span style=\"color:
+      rgb(240, 64, 0);\">0</span>.<span style=\"color: rgb(240, 64, 0);\">0</span>,
+      <span style=\"color: rgb(240, 64, 0);\">0</span>.<span style=\"color: rgb(240,
+      64, 0);\">0</span><span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n vec3
+      dy = vec3<span style=\"color: rgb(160, 96, 0);\">(</span><span style=\"color:
+      rgb(240, 64, 0);\">0</span>.<span style=\"color: rgb(240, 64, 0);\">0</span>,
+      noise.y * shadowmap_texel.y, <span style=\"color: rgb(240, 64, 0);\">0</span>.<span
+      style=\"color: rgb(240, 64, 0);\">0</span><span style=\"color: rgb(160, 96,
+      0);\">)</span>;\r\n vec3 dxdy_p = <span style=\"color: rgb(160, 96, 0);\">(</span>dx
+      + dy<span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n vec3 dxdy_n = <span
+      style=\"color: rgb(160, 96, 0);\">(</span>dx - dy<span style=\"color: rgb(160,
+      96, 0);\">)</span>;\r\n\r\n <span style=\"color: rgb(0, 48, 255);\">float</span>
+      result = shadow2D<span style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture,
+      shadow_tc + dx<span style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc - dx<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc + dy<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc - dy<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc + dxdy_p<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc - dxdy_p<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc + dxdy_n<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc - dxdy_n<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x ;\r\n\r\n <span style=\"color:
+      rgb(0, 48, 255);\">return</span> <span style=\"color: rgb(240, 64, 0);\">0</span>.<span
+      style=\"color: rgb(240, 64, 0);\">125</span> * result;\r\n}</pre>\r\n</div>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u042f \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u044e
+      \u0432\u043e\u043e\u0431\u0449\u0435 \u043d\u0435 \u0443\u0447\u0438\u0442\u044b\u0432\u0430\u0442\u044c
+      \u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0443\u044e \u0442\u043e\u0447\u043a\u0443
+      &ndash; \u044d\u0442\u043e \u0434\u0430\u0441\u0442 \u043d\u0430\u043c \u0435\u0449\u0435
+      \u0431\u043e\u043b\u0435\u0435 \u0433\u043b\u0430\u0434\u043a\u0438\u0435 \u0442\u0435\u043d\u0438.
+      \u0422\u0435\u043f\u0435\u0440\u044c \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e
+      \u043f\u043e\u044f\u0441\u043d\u0438\u0442\u044c &ndash; \u0447\u0442\u043e
+      \u043c\u044b \u0431\u0443\u0434\u0435\u043c \u043f\u0435\u0440\u0435\u0434\u0430\u0432\u0430\u0442\u044c
+      \u0432 \u044d\u0442\u0443 \u0444\u0443\u043d\u043a\u0446\u0438\u044e. \u041f\u0435\u0440\u0432\u044b\u0439
+      \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440 \u043d\u0430\u043c \u0443\u0436\u0435
+      \u0437\u043d\u0430\u043a\u043e\u043c. \u0412\u0442\u043e\u0440\u043e\u0439 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440
+      &ndash; \u044d\u0442\u043e \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043d\u043d\u044b\u0439
+      \u0438\u0437 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b \u0448\u0443\u043c.
+      \u0422\u0440\u0435\u0442\u0438\u0439 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440
+      &ndash; \u044d\u0442\u043e \u0440\u0430\u0437\u043c\u0435\u0440 \u0442\u0435\u043a\u0441\u0435\u043b\u044f
+      \u043a\u0430\u0440\u0442\u044b \u0442\u0435\u043d\u0435\u0439 &ndash; vec2(1.0
+      / sm_size_X, 1.0 / sm_size_Y). \u0418\u0437 \u043e\u0441\u043d\u043e\u0432\u043d\u043e\u0433\u043e
+      \u0448\u0435\u0439\u0434\u0435\u0440\u0430 \u0431\u0443\u0434\u0435\u043c \u0432\u044b\u0437\u044b\u0432\u0430\u0442\u044c
+      \u043d\u0430\u0448\u0443 \u0444\u0443\u043d\u043a\u0446\u0438\u044e \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e
+      \u0442\u0430\u043a\u0438\u043c \u043e\u0431\u0440\u0430\u0437\u043e\u043c:</p>\r\n\r\n<div
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; padding: 5px; margin: 4px; line-height: normal; background-color: rgb(242,
+      242, 242);\">\r\n<pre style=\"font-size: 14px; font-family: ''courier new'',
+      courier, monospace; margin-top: 0px; margin-bottom: 0px;\">\r\nvec2 noise  =
+      <span style=\"color: rgb(240, 64, 0);\">2</span>.<span style=\"color: rgb(240,
+      64, 0);\">0</span> * texture2D<span style=\"color: rgb(160, 96, 0);\">(</span>noise_texture,
+      gl_TexCoord<span style=\"color: rgb(160, 96, 0);\">[</span><span style=\"color:
+      rgb(240, 64, 0);\">0</span><span style=\"color: rgb(160, 96, 0);\">]</span>.xy
+      *\r\n              vNoiseScale<span style=\"color: rgb(160, 96, 0);\">)</span>.xy
+      &ndash; vec2<span style=\"color: rgb(160, 96, 0);\">(</span><span style=\"color:
+      rgb(240, 64, 0);\">1</span>.<span style=\"color: rgb(240, 64, 0);\">0</span><span
+      style=\"color: rgb(160, 96, 0);\">)</span>;\r\n<span style=\"color: rgb(0, 48,
+      255);\">float</span> fShadow = SampleShadow<span style=\"color: rgb(160, 96,
+      0);\">(</span>shadow_proj_tc.xyz / \r\n                shadow_proj_tc.w, noise,
+      shadow_texel.xy<span style=\"color: rgb(160, 96, 0);\">)</span>;</pre>\r\n</div>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">&nbsp;</p>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0413\u0434\u0435
+      vNoiseScale &ndash; \u044d\u0442\u043e \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e
+      \u043f\u043e\u0432\u0442\u043e\u0440\u0435\u043d\u0438\u0439 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b
+      \u0448\u0443\u043c\u0430 \u043d\u0430 \u044d\u043a\u0440\u0430\u043d\u0435.
+      \u041c\u043e\u0436\u043d\u043e \u0432\u044b\u0447\u0438\u0441\u043b\u0438\u0442\u044c
+      \u043a\u0430\u043a vec2(screen_size_X / noise_tex_size_X, screen_size_Y / noise_tex_size_Y).</p>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u043e\u043c
+      \u0440\u0430\u0431\u043e\u0442\u044b \u0442\u0430\u043a\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u0438
+      \u0431\u0443\u0434\u0435\u0442 \u0442\u0435\u043d\u044c, \u0441 \u043f\u0440\u0435\u0442\u0435\u043d\u0437\u0438\u0435\u0439
+      \u043d\u0430 \u043c\u044f\u0433\u043a\u043e\u0441\u0442\u044c:</p>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal; text-align:
+      center;\"><img alt=\"\u0422\u0435\u043d\u044c, \u0441 \u043f\u0440\u0435\u0442\u0435\u043d\u0437\u0438\u0435\u0439
+      \u043d\u0430 \u043c\u044f\u0433\u043a\u043e\u0441\u0442\u044c | \u041e\u0441\u043d\u043e\u0432\u044b
+      \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f \u043c\u044f\u0433\u043a\u0438\u0445
+      \u0442\u0435\u043d\u0435\u0439 (GLSL)\" src=\"http://www.gamedev.ru/files/images/42964_1245407698_image_02.jpg\"
+      style=\"border: 0px; max-width: 100%;\" /></p>\r\n"}'
+    - '2013-03-20 01:21:33.862326'
+    - '2013-03-20 01:22:19.631645'
+  - - 19
+    - Основы создания мягких теней (GLSL). Forward-render хорошо, а post-process-то
+      лучше
+    - 11.0
+    - 7
+    - Document
+    - ! '{"body":"<h1 id=\"p2__forward-render_horosho__a_post\" style=\"color: rgb(0,
+      48, 75); font-size: 21px; margin: 0px; font-family: verdana, arial, sans-serif;
+      line-height: normal;\">2. Forward-render \u0445\u043e\u0440\u043e\u0448\u043e,
+      \u0430 post-process-\u0442\u043e \u043b\u0443\u0447\u0448\u0435 :)</h1>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u041e\u043f\u0438\u0441\u0430\u043d\u043d\u044b\u0435
+      \u0432\u044b\u0448\u0435 \u043c\u0435\u0442\u043e\u0434\u044b \u0440\u0430\u0431\u043e\u0442\u0430\u043b\u0438
+      \u0432 \u0442\u0430\u043a \u043d\u0430\u0437\u044b\u0432\u0430\u0435\u043c\u043e\u0439
+      \u043f\u0440\u044f\u043c\u043e\u0439 \u043e\u0442\u0440\u0438\u0441\u043e\u0432\u043a\u0435
+      &ndash; \u0442\u043e \u0435\u0441\u0442\u044c \u043d\u0435\u043f\u043e\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u043e
+      \u043f\u0440\u0438 \u0440\u0438\u0441\u043e\u0432\u0430\u043d\u0438\u0438 \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u0432.
+      \u0410 \u0447\u0442\u043e, \u0435\u0441\u043b\u0438 \u0442\u0435\u043d\u0438
+      \u0440\u0430\u0441\u0441\u0447\u0438\u0442\u044b\u0432\u0430\u0442\u044c \u0437\u0430\u0440\u0430\u043d\u0435\u0435,
+      \u0430 \u043f\u0440\u0438 \u043e\u0442\u0440\u0438\u0441\u043e\u0432\u043a\u0435
+      \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u0432 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c
+      \u0443\u0436\u0435 \u0440\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u043d\u043d\u0443\u044e
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0443? \u041a\u0430\u043a\u0430\u044f
+      \u043e\u0442 \u044d\u0442\u043e\u0433\u043e \u0432\u044b\u0433\u043e\u0434\u0430?
+      \u0412\u044b\u0433\u043e\u0434\u0430 \u0435\u0441\u0442\u044c. \u0412\u043e
+      \u043f\u0435\u0440\u0432\u044b\u0445 &ndash; \u044d\u0442\u043e \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u044c
+      \u0441\u0433\u043b\u0430\u0434\u0438\u0442\u044c \u0442\u0435\u043d\u0438 (\u043f\u0440\u043e\u0433\u043e\u0432\u043e\u0440\u0438\u043b\u0441\u044f,
+      \u043e \u0447\u0435\u043c \u043f\u043e\u0439\u0434\u0435\u0442 \u0440\u0435\u0447\u044c
+      \u0434\u0430\u043b\u044c\u0448\u0435 :)), \u0432\u043e \u0432\u0442\u043e\u0440\u044b\u0445
+      &ndash; \u0435\u0441\u043b\u0438 \u0448\u0435\u0439\u0434\u0435\u0440 \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u0432
+      \u0438 \u0442\u0430\u043a \u0434\u043e\u0441\u0442\u0430\u0442\u043e\u0447\u043d\u043e
+      \u0442\u044f\u0436\u0435\u043b\u044b\u0439, \u0437\u0430\u0447\u0435\u043c \u0435\u0433\u043e
+      \u0435\u0449\u0435 \u0443\u0441\u043b\u043e\u0436\u043d\u044f\u0442\u044c 8-\u044e
+      \u0432\u044b\u0431\u043e\u0440\u043a\u0430\u043c\u0438 \u0438\u0437 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b?
+      \u0418 \u043f\u043e\u0442\u043e\u043c \u043d\u0435 \u043d\u0443\u0436\u043d\u043e
+      \u0431\u0443\u0434\u0435\u0442 \u0434\u043b\u044f \u043a\u0430\u0436\u0434\u043e\u0439
+      \u0432\u0435\u0440\u0448\u0438\u043d\u044b \u043e\u0431\u044a\u0435\u043a\u0442\u0430
+      \u0432\u044b\u0447\u0438\u0441\u043b\u044f\u0442\u044c \u043c\u0430\u0442\u0440\u0438\u0446\u0443
+      \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430 \u0432 \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u043e
+      \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0430 \u0441\u0432\u0435\u0442\u0430.
+      \u041f\u043b\u044e\u0441 \u043a\u043e \u0432\u0441\u0435\u043c\u0443 \u043c\u043e\u0436\u043d\u043e
+      \u0432\u044b\u0447\u0438\u0441\u043b\u0438\u0442\u044c \u0442\u0435\u043d\u0438
+      \u043e\u0442 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u0445 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u043e\u0432
+      \u0441\u0432\u0435\u0442\u0430, \u0438 \u0437\u0430\u043f\u0438\u0441\u0430\u0442\u044c
+      \u0438\u0445 \u0432 \u043e\u0434\u043d\u0443 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0443.
+      \u0412\u044b\u0433\u043e\u0434\u0430 \u043e\u0447\u0435\u0432\u0438\u0434\u043d\u0430!
+      \u0422\u0435\u043f\u0435\u0440\u044c \u0440\u0430\u0441\u0441\u043c\u043e\u0442\u0440\u0438\u043c
+      \u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044e.</p>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0412\u0441\u0435,
+      \u0447\u0442\u043e \u043d\u0430\u043c \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u043e
+      \u043f\u043e\u043d\u0430\u0434\u043e\u0431\u0438\u0442\u044c\u0441\u044f \u0434\u043b\u044f
+      \u0442\u0430\u043a\u043e\u0433\u043e \u0440\u0430\u0441\u0447\u0435\u0442\u0430
+      \u0442\u0435\u043d\u0435\u0439 &ndash; \u044d\u0442\u043e \u043e\u0434\u0438\u043d
+      \u043f\u043e\u043b\u043d\u043e\u044d\u043a\u0440\u0430\u043d\u043d\u044b\u0439
+      \u043f\u0440\u044f\u043c\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a
+      \u0438 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0430, \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0430\u044f
+      \u0433\u043b\u0443\u0431\u0438\u043d\u0443 \u0441\u0446\u0435\u043d\u044b. \u0414\u043b\u044f
+      \u0442\u043e\u0433\u043e, \u0447\u0442\u043e\u0431\u044b \u043d\u0430\u0440\u0438\u0441\u043e\u0432\u0430\u0442\u044c
+      \u043f\u043e\u043b\u043d\u043e\u044d\u043a\u0440\u0430\u043d\u043d\u044b\u0439
+      \u043f\u0440\u044f\u043c\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a
+      \u043d\u0435\u0442 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e\u0441\u0442\u0438
+      \u043c\u0435\u043d\u044f\u0442\u044c \u043c\u0430\u0442\u0440\u0438\u0446\u044b.
+      \u041c\u043e\u0436\u043d\u043e \u0432\u043e\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c\u0441\u044f
+      \u0432\u043e\u0442 \u0442\u0430\u043a\u0438\u043c \u0432\u0435\u0440\u0448\u0438\u043d\u043d\u044b\u043c
+      \u0448\u0435\u0439\u0434\u0435\u0440\u043e\u043c:</p>\r\n\r\n<div style=\"color:
+      rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; padding:
+      5px; margin: 4px; line-height: normal; background-color: rgb(242, 242, 242);\">\r\n<pre
+      style=\"font-size: 14px; font-family: ''courier new'', courier, monospace; margin-top:
+      0px; margin-bottom: 0px;\">\r\nvarying vec4 vertex;\r\n\r\n<span style=\"color:
+      rgb(0, 48, 255);\">void</span> main<span style=\"color: rgb(160, 96, 0);\">(</span><span
+      style=\"color: rgb(160, 96, 0);\">)</span>\r\n{ \r\n  gl_TexCoord<span style=\"color:
+      rgb(160, 96, 0);\">[</span><span style=\"color: rgb(240, 64, 0);\">0</span><span
+      style=\"color: rgb(160, 96, 0);\">]</span> = gl_MultiTexCoord0;\r\n  gl_Position
+      = vec4<span style=\"color: rgb(160, 96, 0);\">(</span>gl_Vertex.x, gl_Vertex.y,
+      gl_Vertex.z, <span style=\"color: rgb(240, 64, 0);\">1</span>.<span style=\"color:
+      rgb(240, 64, 0);\">0</span><span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n  vertex
+      = gl_Position;\r\n}</pre>\r\n</div>\r\n\r\n<p style=\"margin-top: 10px; margin-bottom:
+      10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\">\u0410 \u0440\u0438\u0441\u043e\u0432\u0430\u0442\u044c
+      \u0435\u0433\u043e \u0442\u0430\u043a:</p>\r\n\r\n<table style=\"color: rgb(0,
+      0, 0); font-family: verdana, arial, sans-serif; font-size: 12px; line-height:
+      normal;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align: middle;\">\r\n\t\t\t<div
+      style=\"padding: 5px; margin: 4px; background-color: rgb(242, 242, 242);\">\r\n\t\t\t<pre
+      style=\"font-size: 14px; font-family: ''courier new'', courier, monospace; margin-top:
+      0px; margin-bottom: 0px;\">\r\nglBegin<span style=\"color: rgb(160, 96, 0);\">(</span>GL_QUADS<span
+      style=\"color: rgb(160, 96, 0);\">)</span>;\r\n  glTexCoord2f<span style=\"color:
+      rgb(160, 96, 0);\">(</span><span style=\"color: rgb(240, 64, 0);\">0</span>.<span
+      style=\"color: rgb(240, 64, 0);\">0</span>, <span style=\"color: rgb(240, 64,
+      0);\">0</span>.<span style=\"color: rgb(240, 64, 0);\">0</span><span style=\"color:
+      rgb(160, 96, 0);\">)</span>; glVertex3f<span style=\"color: rgb(160, 96, 0);\">(</span>-<span
+      style=\"color: rgb(240, 64, 0);\">1</span>.<span style=\"color: rgb(240, 64,
+      0);\">0</span>, -<span style=\"color: rgb(240, 64, 0);\">1</span>.<span style=\"color:
+      rgb(240, 64, 0);\">0</span>, z<span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n  glTexCoord2f<span
+      style=\"color: rgb(160, 96, 0);\">(</span><span style=\"color: rgb(240, 64,
+      0);\">1</span>.<span style=\"color: rgb(240, 64, 0);\">0</span>, <span style=\"color:
+      rgb(240, 64, 0);\">0</span>.<span style=\"color: rgb(240, 64, 0);\">0</span><span
+      style=\"color: rgb(160, 96, 0);\">)</span>; glVertex3f<span style=\"color: rgb(160,
+      96, 0);\">(</span> <span style=\"color: rgb(240, 64, 0);\">1</span>.<span style=\"color:
+      rgb(240, 64, 0);\">0</span>, -<span style=\"color: rgb(240, 64, 0);\">1</span>.<span
+      style=\"color: rgb(240, 64, 0);\">0</span>, z<span style=\"color: rgb(160, 96,
+      0);\">)</span>;\r\n  glTexCoord2f<span style=\"color: rgb(160, 96, 0);\">(</span><span
+      style=\"color: rgb(240, 64, 0);\">1</span>.<span style=\"color: rgb(240, 64,
+      0);\">0</span>, <span style=\"color: rgb(240, 64, 0);\">1</span>.<span style=\"color:
+      rgb(240, 64, 0);\">0</span><span style=\"color: rgb(160, 96, 0);\">)</span>;
+      glVertex3f<span style=\"color: rgb(160, 96, 0);\">(</span> <span style=\"color:
+      rgb(240, 64, 0);\">1</span>.<span style=\"color: rgb(240, 64, 0);\">0</span>,  <span
+      style=\"color: rgb(240, 64, 0);\">1</span>.<span style=\"color: rgb(240, 64,
+      0);\">0</span>, z<span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n  glTexCoord2f<span
+      style=\"color: rgb(160, 96, 0);\">(</span><span style=\"color: rgb(240, 64,
+      0);\">0</span>.<span style=\"color: rgb(240, 64, 0);\">0</span>, <span style=\"color:
+      rgb(240, 64, 0);\">1</span>.<span style=\"color: rgb(240, 64, 0);\">0</span><span
+      style=\"color: rgb(160, 96, 0);\">)</span>; glVertex3f<span style=\"color: rgb(160,
+      96, 0);\">(</span>-<span style=\"color: rgb(240, 64, 0);\">1</span>.<span style=\"color:
+      rgb(240, 64, 0);\">0</span>,  <span style=\"color: rgb(240, 64, 0);\">1</span>.<span
+      style=\"color: rgb(240, 64, 0);\">0</span>, z<span style=\"color: rgb(160, 96,
+      0);\">)</span>;\r\n glEnd;\r\n<span style=\"color: rgb(128, 128, 128);\">//
+      \u0441\u0435\u0439\u0447\u0430\u0441 \u043c\u0435\u043d\u044f \u0431\u0443\u0434\u0443\u0442
+      \u0440\u0443\u0433\u0430\u0442\u044c \u0437\u0430 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u0435
+      deprecated-\u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u0430,
+      \u043d\u0443 \u0434\u0430 \u043b\u0430\u0434\u043d\u043e :)</span></pre>\r\n\t\t\t</div>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0410 \u0432\u044b\u0447\u0438\u0441\u043b\u044f\u0442\u044c
+      \u0442\u0435\u043d\u0438 \u043c\u044b \u0431\u0443\u0434\u0435\u043c \u043d\u0435\u043f\u043e\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u043e
+      \u0432\u043e \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u043d\u043e\u043c
+      \u0448\u0435\u0439\u0434\u0435\u0440\u0435. \u0412\u043e\u0442 \u0442\u0430\u043a\u043e\u043c:</p>\r\n\r\n<table
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      middle;\">\r\n\t\t\t<div style=\"padding: 5px; margin: 4px; background-color:
+      rgb(242, 242, 242);\">\r\n\t\t\t<pre style=\"font-size: 14px; font-family: ''courier
+      new'', courier, monospace; margin-top: 0px; margin-bottom: 0px;\">\r\n<span
+      style=\"color: rgb(128, 128, 128);\">// \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0430
+      \u0441 \u0433\u043b\u0443\u0431\u0438\u043d\u043e\u0439 \u0441\u0446\u0435\u043d\u044b</span>\r\nuniform
+      sampler2D depth_texture;\r\n<span style=\"color: rgb(128, 128, 128);\">// shadow
+      maps</span>\r\nuniform sampler2DShadow shadow_texture;\r\n<span style=\"color:
+      rgb(128, 128, 128);\">// \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0430 \u0448\u0443\u043c\u0430</span>\r\nuniform
+      sampler2D noise_texture;\r\n\r\nuniform vec4 distort_shadow_texel;\r\n<span
+      style=\"color: rgb(128, 128, 128);\">// \u043f\u0435\u0440\u0432\u044b\u0435
+      \u0434\u0432\u0435 \u043a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u044b
+      &ndash; \u043a\u043e\u043b-\u0432\u043e \u043f\u043e\u0432\u0442\u043e\u0440\u0435\u043d\u0438\u0439
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b \u0448\u0443\u043c\u0430 \u043d\u0430
+      \u044d\u043a\u0440\u0430\u043d\u0435</span>\r\n<span style=\"color: rgb(128,
+      128, 128);\">// \u0432\u0442\u043e\u0440\u044b\u0435 \u0434\u0432\u0435 &ndash;
+      \u0440\u0430\u0437\u043c\u0435\u0440 \u0442\u0435\u043a\u0441\u0435\u043b\u044f
+      \u043a\u0430\u0440\u0442\u044b \u0442\u0435\u043d\u0435\u0439</span>\r\n\r\nuniform
+      mat4 shadow_matrix;\r\n\r\nvarying vec4 vertex;\r\n\r\n<span style=\"color:
+      rgb(0, 48, 255);\">float</span> SampleShadow<span style=\"color: rgb(160, 96,
+      0);\">(</span>vec3 shadow_tc, vec2 noise, vec2 shadowmap_texel<span style=\"color:
+      rgb(160, 96, 0);\">)</span>\r\n{\r\n vec3 dx = vec3<span style=\"color: rgb(160,
+      96, 0);\">(</span>noise.x * shadowmap_texel.x, <span style=\"color: rgb(240,
+      64, 0);\">0</span>.<span style=\"color: rgb(240, 64, 0);\">0</span>, <span style=\"color:
+      rgb(240, 64, 0);\">0</span>.<span style=\"color: rgb(240, 64, 0);\">0</span><span
+      style=\"color: rgb(160, 96, 0);\">)</span>;\r\n vec3 dy = vec3<span style=\"color:
+      rgb(160, 96, 0);\">(</span><span style=\"color: rgb(240, 64, 0);\">0</span>.<span
+      style=\"color: rgb(240, 64, 0);\">0</span>, noise.y * shadowmap_texel.y, <span
+      style=\"color: rgb(240, 64, 0);\">0</span>.<span style=\"color: rgb(240, 64,
+      0);\">0</span><span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n vec3 dxdy_p
+      = <span style=\"color: rgb(160, 96, 0);\">(</span>dx + dy<span style=\"color:
+      rgb(160, 96, 0);\">)</span>;\r\n vec3 dxdy_n = <span style=\"color: rgb(160,
+      96, 0);\">(</span>dx - dy<span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n\r\n
+      <span style=\"color: rgb(0, 48, 255);\">float</span> result = shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc + dx<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc - dx<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc + dy<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc - dy<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc + dxdy_p<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc - dxdy_p<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc + dxdy_n<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x +\r\n                shadow2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>shadow_texture, shadow_tc - dxdy_n<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.x ;\r\n\r\n <span style=\"color:
+      rgb(0, 48, 255);\">return</span> <span style=\"color: rgb(240, 64, 0);\">0</span>.<span
+      style=\"color: rgb(240, 64, 0);\">125</span> * result;\r\n}\r\n\r\n<span style=\"color:
+      rgb(0, 48, 255);\">void</span> main<span style=\"color: rgb(160, 96, 0);\">(</span><span
+      style=\"color: rgb(160, 96, 0);\">)</span>\r\n{\r\n<span style=\"color: rgb(128,
+      128, 128);\">// \u043f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0433\u043b\u0443\u0431\u0438\u043d\u0443
+      \u0441\u0446\u0435\u043d\u044b \u0432 \u0442\u043e\u0447\u043a\u0435</span>\r\n
+      <span style=\"color: rgb(0, 48, 255);\">float</span> fDepth  = texture2D<span
+      style=\"color: rgb(160, 96, 0);\">(</span>depth_texture, gl_TexCoord<span style=\"color:
+      rgb(160, 96, 0);\">[</span><span style=\"color: rgb(240, 64, 0);\">0</span><span
+      style=\"color: rgb(160, 96, 0);\">]</span>.st<span style=\"color: rgb(160, 96,
+      0);\">)</span>.x;\r\n<span style=\"color: rgb(128, 128, 128);\">// \u043f\u043e\u043b\u0443\u0447\u0430\u0435\u043c
+      \u0432\u0435\u043a\u0442\u043e\u0440 \u0441 \u0448\u0443\u043c\u043e\u043c</span>\r\n
+      vec2 noise = <span style=\"color: rgb(240, 64, 0);\">2</span>.<span style=\"color:
+      rgb(240, 64, 0);\">0</span>*texture2D<span style=\"color: rgb(160, 96, 0);\">(</span>noise_texture,
+      gl_TexCoord<span style=\"color: rgb(160, 96, 0);\">[</span><span style=\"color:
+      rgb(240, 64, 0);\">0</span><span style=\"color: rgb(160, 96, 0);\">]</span>.xy*distort_shadow_texel.xy<span
+      style=\"color: rgb(160, 96, 0);\">)</span>.xy\r\n              - vec2<span style=\"color:
+      rgb(160, 96, 0);\">(</span><span style=\"color: rgb(240, 64, 0);\">1</span>.<span
+      style=\"color: rgb(240, 64, 0);\">0</span><span style=\"color: rgb(160, 96,
+      0);\">)</span>;\r\n<span style=\"color: rgb(128, 128, 128);\">// \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u043c
+      \u043c\u0438\u0440\u043e\u0432\u044b\u0435 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b
+      \u0442\u043e\u0447\u043a\u0438</span>\r\n<span style=\"color: rgb(128, 128,
+      128);\">// \u043d\u0430\u043c \u043e\u0447\u0435\u043d\u044c \u043f\u043e\u0432\u0435\u0437\u043b\u043e,
+      \u0447\u0442\u043e \u043c\u044b \u043d\u0435 \u043c\u0435\u043d\u044f\u043b\u0438
+      \u043c\u0430\u0442\u0440\u0438\u0446\u044b \u043f\u0440\u0438 \u043e\u0442\u0440\u0438\u0441\u043e\u0432\u043a\u0435
+      \u043f\u0440\u044f\u043c\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a\u0430
+      :)</span>\r\n vec4 inv_proj = gl_ModelViewProjectionMatrixInverse * \r\n                 vec4<span
+      style=\"color: rgb(160, 96, 0);\">(</span>vertex.xy, <span style=\"color: rgb(240,
+      64, 0);\">2</span>.<span style=\"color: rgb(240, 64, 0);\">0</span> * fDepth
+      - <span style=\"color: rgb(240, 64, 0);\">1</span>.<span style=\"color: rgb(240,
+      64, 0);\">0</span>, <span style=\"color: rgb(240, 64, 0);\">1</span>.<span style=\"color:
+      rgb(240, 64, 0);\">0</span><span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n<span
+      style=\"color: rgb(128, 128, 128);\">// \u043d\u0430\u0445\u043e\u0434\u0438\u043c
+      \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b \u0442\u043e\u0447\u043a\u0438
+      \u0432 \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0435
+      \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0430 \u0441\u0432\u0435\u0442\u0430</span>\r\n
+      vec4 shadow_proj = shadow_matrix * <span style=\"color: rgb(160, 96, 0);\">(</span>inv_proj
+      / inv_proj.w<span style=\"color: rgb(160, 96, 0);\">)</span>;\r\n<span style=\"color:
+      rgb(128, 128, 128);\">// \u0432\u044b\u0447\u0438\u0441\u043b\u044f\u0435\u043c
+      \u0442\u0435\u043d\u044c</span>\r\n <span style=\"color: rgb(0, 48, 255);\">float</span>
+      fShadow = SampleShadow<span style=\"color: rgb(160, 96, 0);\">(</span>shadow_proj.xyz
+      / shadow_proj.w, \r\n                 noise, distort_shadow_texel.zw<span style=\"color:
+      rgb(160, 96, 0);\">)</span>;\r\n\r\n gl_FragColor = vec4<span style=\"color:
+      rgb(160, 96, 0);\">(</span> fShadow, <span style=\"color: rgb(240, 64, 0);\">1</span>.<span
+      style=\"color: rgb(240, 64, 0);\">0</span>, <span style=\"color: rgb(240, 64,
+      0);\">1</span>.<span style=\"color: rgb(240, 64, 0);\">0</span>, <span style=\"color:
+      rgb(240, 64, 0);\">1</span>.<span style=\"color: rgb(240, 64, 0);\">0</span><span
+      style=\"color: rgb(160, 96, 0);\">)</span>;\r\n}</pre>\r\n\t\t\t</div>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0412 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u043d\u043e\u0439
+      \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0435 \u0443 \u043d\u0430\u0441 \u0431\u0443\u0434\u0435\u0442
+      \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0442\u044c\u0441\u044f \u0447\u0442\u043e-\u0442\u043e
+      \u0432\u0440\u043e\u0434\u0435:</p>\r\n\r\n<p style=\"margin-top: 10px; margin-bottom:
+      10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal; text-align: center;\"><img alt=\"\u0422\u0435\u043a\u0441\u0442\u0443\u0440\u0430
+      \u0441 \u0442\u0435\u043d\u044c\u044e | \u041e\u0441\u043d\u043e\u0432\u044b
+      \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f \u043c\u044f\u0433\u043a\u0438\u0445
+      \u0442\u0435\u043d\u0435\u0439 (GLSL)\" src=\"http://www.gamedev.ru/files/images/42967_1245408043_image_03.jpg\"
+      style=\"border: 0px; max-width: 100%;\" /></p>\r\n\r\n<p style=\"margin-top:
+      10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family: verdana, arial,
+      sans-serif; font-size: 12px; line-height: normal;\">\u0422\u0435\u043f\u0435\u0440\u044c
+      \u043c\u043e\u0436\u043d\u043e \u043e\u0442\u043a\u0430\u0437\u0430\u0442\u044c\u0441\u044f
+      \u043e\u0442 \u0432\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u044f \u0442\u0435\u043d\u0435\u0439
+      \u043f\u0440\u0438 \u043e\u0442\u0440\u0438\u0441\u043e\u0432\u043a\u0435 \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u0432,
+      \u0430 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c
+      \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u043d\u0443\u044e \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0443
+      \u043f\u043e \u0430\u043d\u0430\u043b\u043e\u0433\u0438\u0438 \u0441 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0435\u0439
+      &ldquo;Light maps&rdquo;. \u0422\u0430\u043a\u0438\u043c \u043e\u0431\u0440\u0430\u0437\u043e\u043c,
+      \u0448\u0435\u0439\u0434\u0435\u0440 \u043e\u0442\u0440\u0438\u0441\u043e\u0432\u043a\u0438
+      \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u0432 \u043f\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044f
+      \u0432 \u043d\u0435\u0447\u0442\u043e \u043f\u043e\u0434\u043e\u0431\u043d\u043e\u0435:</p>\r\n\r\n<div
+      style=\"color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; padding: 5px; margin: 4px; line-height: normal; background-color: rgb(242,
+      242, 242);\">\r\n<pre style=\"font-size: 14px; font-family: ''courier new'',
+      courier, monospace; margin-top: 0px; margin-bottom: 0px;\">\r\nuniform sampler2D
+      lightmap_texture;\r\n&hellip;\r\nvec2 proj_tc = <span style=\"color: rgb(240,
+      64, 0);\">0</span>.<span style=\"color: rgb(240, 64, 0);\">5</span> * proj_coords.xy
+      / proj_coords.w + <span style=\"color: rgb(240, 64, 0);\">0</span>.<span style=\"color:
+      rgb(240, 64, 0);\">5</span>;\r\n<span style=\"color: rgb(0, 48, 255);\">float</span>
+      fShadow = texture2D<span style=\"color: rgb(160, 96, 0);\">(</span>lightmap_texture,
+      proj_tc<span style=\"color: rgb(160, 96, 0);\">)</span>.x;</pre>\r\n</div>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0433\u0434\u0435
+      proj_coords &ndash; \u043f\u0440\u043e\u0435\u043a\u0442\u0438\u0432\u043d\u044b\u0435
+      \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b.</p>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal;\">\u0422\u0430\u043a\u0438\u043c
+      \u043e\u0431\u0440\u0430\u0437\u043e\u043c \u043c\u044b \u0438\u0437\u0431\u0430\u0432\u0438\u043b\u0438\u0441\u044c
+      \u043e\u0442 \u0432\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u044f \u0442\u0435\u043d\u0435\u0439
+      \u043d\u0435\u043f\u043e\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u043e
+      \u043f\u0440\u0438 \u043e\u0442\u0440\u0438\u0441\u043e\u0432\u043a\u0435 \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u0432
+      \u0438 \u043f\u043b\u044e\u0441 \u043a \u044d\u0442\u043e\u043c\u0443 \u0442\u0435\u043d\u0438
+      \u0443 \u043d\u0430\u0441 \u0445\u0440\u0430\u043d\u044f\u0442\u044c\u0441\u044f
+      \u0432 \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u043e\u0439 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0435,
+      \u043a\u043e\u0442\u043e\u0440\u0443\u044e \u043d\u0430\u043c \u043d\u0438\u043a\u0442\u043e
+      \u043d\u0435 \u043c\u0435\u0448\u0430\u0435\u0442 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e
+      \u0440\u0430\u0437\u043c\u044b\u0442\u044c. \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044f&nbsp;<a
+      href=\"http://www.gamedev.ru/terms/DepthBasedBlur\" style=\"color: rgb(49, 141,
+      196);\" title=\"Depth-based blur\">\u0440\u0430\u0437\u043c\u044b\u0442\u0438\u0435
+      \u0441 \u0443\u0447\u0435\u0442\u043e\u043c \u0433\u043b\u0443\u0431\u0438\u043d\u044b</a>,
+      \u043c\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043c \u0441\u0430\u043c\u044b\u0435
+      \u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0438\u0435 \u043c\u044f\u0433\u043a\u0438\u0435
+      \u0442\u0435\u043d\u0438. \u0412\u043e\u0442 \u0442\u0430\u043a\u0438\u0435:</p>\r\n\r\n<p
+      style=\"margin-top: 10px; margin-bottom: 10px; color: rgb(0, 0, 0); font-family:
+      verdana, arial, sans-serif; font-size: 12px; line-height: normal; text-align:
+      center;\"><img alt=\"\u0420\u0430\u0437\u043c\u044b\u0442\u0438\u0435 \u0442\u0435\u043d\u0435\u0439
+      \u0441 \u0443\u0447\u0435\u0442\u043e\u043c \u0433\u043b\u0443\u0431\u0438\u043d\u044b
+      | \u041e\u0441\u043d\u043e\u0432\u044b \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f
+      \u043c\u044f\u0433\u043a\u0438\u0445 \u0442\u0435\u043d\u0435\u0439 (GLSL)\"
+      src=\"http://www.gamedev.ru/files/images/42968_1245408087_image_04.jpg\" style=\"border:
+      0px; max-width: 100%;\" /></p>\r\n\r\n<p style=\"margin-top: 10px; margin-bottom:
+      10px; color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; font-size:
+      12px; line-height: normal;\">\u041a\u043e\u043d\u0435\u0447\u043d\u043e, \u0442\u0430\u043a\u0438\u0435
+      \u0442\u0435\u043d\u0438 \u043f\u043e\u0442\u0440\u0435\u0431\u0443\u044e\u0442
+      \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0445
+      \u0432\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u0439, \u043d\u043e,
+      \u044f \u0434\u0443\u043c\u0430\u044e, \u043e\u043d\u043e \u0442\u043e\u0433\u043e
+      \u0441\u0442\u043e\u0438\u0442. \u041f\u0440\u0438\u0447\u0435\u043c \u0441\u0430\u043c\u044b\u043c
+      \u0441\u043b\u043e\u0436\u043d\u044b\u043c \u0432 \u0432\u044b\u0447\u0438\u0441\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u043c
+      \u043f\u043b\u0430\u043d\u0435 \u0437\u0434\u0435\u0441\u044c \u0431\u0443\u0434\u0435\u0442
+      \u0440\u0430\u0437\u043c\u044b\u0442\u0438\u0435 \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u044b
+      \u0441 \u0442\u0435\u043d\u044f\u043c\u0438. \u0422\u0430\u043a\u0438\u043c
+      \u043e\u0431\u0440\u0430\u0437\u043e\u043c, \u043c\u044b \u0434\u043e\u0431\u0438\u043b\u0438\u0441\u044c
+      \u043c\u044f\u0433\u043a\u0438\u0445 \u0442\u0435\u043d\u0435\u0439, \u0441
+      \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043d\u0435\u0431\u043e\u043b\u044c\u0448\u0438\u043c\u0438
+      \u0437\u0430\u0442\u0440\u0430\u0442\u0430\u043c\u0438. \u041d\u0430\u0434\u0435\u044e\u0441\u044c,
+      \u0441\u0442\u0430\u0442\u044c\u044f \u0431\u044b\u043b\u0430 \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0439.
+      \u0423\u0434\u0430\u0447\u0438!</p>\r\n"}'
+    - '2013-03-20 01:22:09.688555'
+    - '2013-03-20 01:22:46.042565'
+  - - 20
+    - Установка Ruby
+    - 1.0
+    - 3
+    - Lecture
+    - ! '{"youtube_link":"WJlfVjGt6Hg"}'
+    - '2013-03-20 01:27:16.131075'
+    - '2013-03-20 01:27:16.131075'
+  - - 21
+    - Установка Rails
+    - 2.0
+    - 3
+    - Lecture
+    - ! '{"youtube_link":"NmWYZVUln4E"}'
+    - '2013-03-20 01:27:45.992247'
+    - '2013-03-20 01:27:45.992247'
+  - - 22
+    - Ещё раз в текстовом формате
+    - 3.0
+    - 3
+    - Document
+    - ! '{"body":"<div class=\"sub\" style=\"float: left; width: 200px; text-align:
+      right; font-family: verdana, ''Lucida Grande'', arial, helvetica, sans-serif;
+      font-size: medium; line-height: normal;\">\r\n<h1 style=\"padding: 0px; margin:
+      0px 0px 20px; color: rgb(0, 0, 0); font-size: 28px; line-height: 33px; font-family:
+      georgia;\">Ruby</h1>\r\n</div>\r\n\r\n<div class=\"main\" style=\"float: right;
+      width: 450px; font-family: verdana, ''Lucida Grande'', arial, helvetica, sans-serif;
+      font-size: medium; line-height: normal;\"><img align=\"right\" src=\"http://www.rubyonrails.ru/assets/download/ruby-25361dbf792a5eddfb18ed9f74e6b4f5.png\"
+      style=\"border-width: 0px; margin: 0px 10px 5px;\" />\r\n<p style=\"font-size:
+      18px; line-height: 25px; margin-top: 0px; font-family: georgia; margin-bottom:
+      25px;\">\u0414\u043b\u044f \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u044f
+      \u0441&nbsp;Rails \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u0442\u0441\u044f
+      Ruby \u0432\u0435\u0440\u0441\u0438\u0438&nbsp;<span class=\"highlight\" style=\"background-color:
+      rgb(255, 255, 204);\">1.8.7</span>&nbsp;\u0438\u043b\u0438&nbsp;<span class=\"highlight\"
+      style=\"background-color: rgb(255, 255, 204);\">1.9.3</span>. \u0414\u043b\u044f
+      \u043d\u043e\u0432\u044b\u0445 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439
+      \u043b\u0443\u0447\u0448\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c
+      \u0432\u0435\u0440\u0441\u0438\u044e Ruby&nbsp;<span class=\"highlight\" style=\"background-color:
+      rgb(255, 255, 204);\">1.9.3</span>. \u041d\u0435 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044e\u0442\u0441\u044f
+      \u0432\u0435\u0440\u0441\u0438\u0438 Ruby 1.8.6 \u0438 \u043d\u0438\u0436\u0435,
+      \u0430 \u0442\u0430\u043a\u0436\u0435 Ruby 1.9.1.</p>\r\n\r\n<p style=\"font-size:
+      18px; line-height: 25px; margin-top: 0px; font-family: georgia; margin-bottom:
+      25px;\"><a href=\"http://www.ruby-lang.org/en/downloads/\" style=\"color: rgb(51,
+      102, 153);\">\u0418\u0437 \u0438\u0441\u0445\u043e\u0434\u043d\u0438\u043a\u043e\u0432:</a>&nbsp;&laquo;\u0421\u0434\u0435\u043b\u0430\u0439
+      \u0441\u0430\u043c&raquo;&nbsp;<br />\r\n<a href=\"http://rubyforge.org/projects/rubyinstaller/\"
+      style=\"color: rgb(51, 102, 153);\">\u0418\u043d\u0441\u0442\u0430\u043b\u043b\u044f\u0442\u043e\u0440
+      \u0434\u043b\u044f&nbsp;Windows:</a>&nbsp;Ruby, \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u044b\u0435
+      \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u0438\u044f, \u0440\u0435\u0434\u0430\u043a\u0442\u043e\u0440&nbsp;<br
+      />\r\n<b>OS&nbsp;X Leopard \u0438 \u0432\u044b\u0448\u0435:</b>&nbsp;\u041f\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442\u0441\u044f&nbsp;<i>\u0432
+      \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0435</i>&nbsp;\u0441 Ruby,
+      RubyGems \u0438 Ruby on Rails! \u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430
+      \u043d\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f.&nbsp;<br
+      />\r\n<b>OS&nbsp;X Tiger:</b>&nbsp;\u041f\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442\u0441\u044f&nbsp;<span
+      class=\"highlight\" style=\"background-color: rgb(255, 255, 204);\">\u0441&nbsp;\u043d\u0435\u0440\u0430\u0431\u043e\u0442\u043e\u0441\u043f\u043e\u0441\u043e\u0431\u043d\u044b\u043c</span>&nbsp;Ruby,<a
+      href=\"http://hivelogic.com/articles/2005/12/01/ruby_rails_lighttpd_mysql_tiger\"
+      style=\"color: rgb(51, 102, 153);\">\u0441\u043c. \u044d\u0442\u043e \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e</a>.&nbsp;</p>\r\n</div>\r\n\r\n<div
+      class=\"clearall\" style=\"margin: 0px 0px 10px; padding: 10px 0px 0px; clear:
+      both; font-size: 2px; font-family: verdana, ''Lucida Grande'', arial, helvetica,
+      sans-serif; line-height: normal;\">&nbsp;</div>\r\n\r\n<div class=\"sub\" style=\"float:
+      left; width: 200px; text-align: right; font-family: verdana, ''Lucida Grande'',
+      arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<h1
+      style=\"padding: 0px; margin: 0px 0px 20px; color: rgb(0, 0, 0); font-size:
+      28px; line-height: 33px; font-family: georgia;\">RubyGems</h1>\r\n</div>\r\n\r\n<div
+      class=\"main\" style=\"float: right; width: 450px; font-family: verdana, ''Lucida
+      Grande'', arial, helvetica, sans-serif; font-size: medium; line-height: normal;\"><img
+      align=\"right\" src=\"http://www.rubyonrails.ru/assets/download/rubygems-2c393d29186042d7cd4716b6d48994d9.png\"
+      style=\"border-width: 0px; margin: 0px 10px 5px;\" />\r\n<p style=\"font-size:
+      18px; line-height: 25px; margin-top: 0px; font-family: georgia; margin-bottom:
+      25px;\"><a href=\"http://docs.rubygems.org/\" style=\"color: rgb(51, 102, 153);\">RubyGems</a>&nbsp;&nbsp;&mdash;&nbsp;<span
+      class=\"highlight\" style=\"background-color: rgb(255, 255, 204);\">\u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u0439
+      \u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440 \u043f\u0430\u043a\u0435\u0442\u043e\u0432
+      \u0434\u043b\u044f Ruby</span>. \u041e\u043d&nbsp;\u043f\u043e\u0445\u043e\u0436
+      \u043d\u0430&nbsp;apt-get, yum, emerge, \u0438&nbsp;\u0434\u0440\u0443\u0433\u0438\u0435
+      \u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440\u044b \u043f\u0430\u043a\u0435\u0442\u043e\u0432
+      \u041e\u0421&nbsp;*nix.</p>\r\n\r\n<p style=\"font-size: 18px; line-height:
+      25px; margin-top: 0px; font-family: georgia; margin-bottom: 25px;\">\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c:&nbsp;<a
+      href=\"http://rubyforge.org/frs/?group_id=126\" style=\"color: rgb(51, 102,
+      153);\">\u0441 RubyForge</a>&nbsp;<br />\r\n<small>(\u0440\u0430\u0441\u043f\u0430\u043a\u0443\u0439\u0442\u0435
+      \u0438 \u0437\u0430\u043f\u0443\u0441\u0442\u0438\u0442\u0435 &laquo;ruby setup.rb&raquo;).</small></p>\r\n</div>\r\n\r\n<div
+      class=\"clearall\" style=\"margin: 0px 0px 10px; padding: 10px 0px 0px; clear:
+      both; font-size: 2px; font-family: verdana, ''Lucida Grande'', arial, helvetica,
+      sans-serif; line-height: normal;\">&nbsp;</div>\r\n\r\n<div class=\"sub\" style=\"float:
+      left; width: 200px; text-align: right; font-family: verdana, ''Lucida Grande'',
+      arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<h1
+      style=\"padding: 0px; margin: 0px 0px 20px; color: rgb(0, 0, 0); font-size:
+      28px; line-height: 33px; font-family: georgia;\">Rails</h1>\r\n</div>\r\n\r\n<div
+      class=\"main\" style=\"float: right; width: 450px; font-family: verdana, ''Lucida
+      Grande'', arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<p
+      style=\"font-size: 18px; line-height: 25px; margin-top: 0px; font-family: georgia;
+      margin-bottom: 25px;\">\u0415\u0441\u043b\u0438 RubyGems \u0443\u0436\u0435
+      \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d, \u0432\u044b&nbsp;\u043c\u043e\u0436\u0435\u0442\u0435
+      \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c Rails \u0441\u043e&nbsp;\u0432\u0441\u0435\u043c\u0438
+      \u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u044f\u043c\u0438
+      \u043e\u0434\u043d\u043e\u0439 \u043a\u043e\u043c\u0430\u043d\u0434\u043e\u0439:</p>\r\n\r\n<p
+      style=\"font-size: 18px; line-height: 25px; margin-top: 0px; font-family: georgia;
+      margin-bottom: 25px; margin-left: 20px;\"><b>gem install rails --include-dependencies</b></p>\r\n\r\n<p
+      style=\"font-size: 18px; line-height: 25px; margin-top: 0px; font-family: georgia;
+      margin-bottom: 25px;\">\u041d\u043e\u0432\u044b\u0435 \u0432\u0435\u0440\u0441\u0438\u0438
+      Rails \u0443\u0441\u0442\u0430\u043d\u0430\u0432\u043b\u0438\u0432\u0430\u044e\u0442\u0441\u044f
+      \u0442\u0430\u043a\u0438\u043c&nbsp;\u0436\u0435 \u043e\u0431\u0440\u0430\u0437\u043e\u043c.
+      \u041a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u044b Rails \u0442\u0430\u043a\u0436\u0435
+      \u043c\u043e\u0436\u043d\u043e&nbsp;<a href=\"http://rubyforge.org/frs/?group_id=307\"
+      style=\"color: rgb(51, 102, 153);\">\u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c
+      \u0438&nbsp;\u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u043e</a>.</p>\r\n</div>\r\n\r\n<div
+      class=\"clearall\" style=\"margin: 0px 0px 10px; padding: 10px 0px 0px; clear:
+      both; font-size: 2px; font-family: verdana, ''Lucida Grande'', arial, helvetica,
+      sans-serif; line-height: normal;\">&nbsp;</div>\r\n"}'
+    - '2013-03-20 01:28:54.553606'
+    - '2013-03-20 01:28:54.553606'
+  - - 23
+    - Создание блога за считанные минуты
+    - 1.0
+    - 4
+    - Lecture
+    - ! '{"youtube_link":"JaL9ul17kx0"}'
+    - '2013-03-20 01:30:06.222075'
+    - '2013-03-20 01:30:06.222075'
+  - - 24
+    - Книги
+    - 2.0
+    - 4
+    - Document
+    - ! '{"body":"<div class=\"sub\" style=\"float: left; width: 200px; text-align:
+      right; font-family: verdana, ''Lucida Grande'', arial, helvetica, sans-serif;
+      font-size: medium; line-height: normal;\">\r\n<h1 style=\"padding: 0px; margin:
+      0px 0px 20px; color: rgb(0, 0, 0); font-size: 28px; line-height: 33px; font-family:
+      georgia;\">\u041a\u043d\u0438\u0433\u0438</h1>\r\n</div>\r\n\r\n<div class=\"main\"
+      style=\"float: right; width: 450px; font-family: verdana, ''Lucida Grande'',
+      arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<p
+      style=\"font-size: 18px; line-height: 25px; margin-top: 0px; font-family: georgia;
+      margin-bottom: 25px;\">\u041a\u043d\u0438\u0433\u0430&nbsp;<a href=\"http://www.pragmaticprogrammer.com/titles/rails/index.html\"
+      style=\"color: rgb(51, 102, 153);\">&laquo;Agile Web Development with Rails&raquo;</a>&nbsp;\u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442
+      \u0432\u0441\u0435 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e\u0435
+      \u0434\u043b\u044f \u0442\u043e\u0433\u043e, \u0447\u0442\u043e\u0431\u044b
+      \u0441\u0440\u0430\u0437\u0443 \u043d\u0430\u0447\u0430\u0442\u044c \u0440\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0442\u044c
+      \u0432\u0435\u0431-\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f
+      \u043d\u0430 Ruby on Rails. \u041a\u043d\u0438\u0433\u0430&nbsp;<a href=\"http://pragmaticprogrammer.com/titles/fr_rr/\"
+      style=\"color: rgb(51, 102, 153);\">&laquo;Rails Recipes&raquo;</a>\u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442
+      \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u043e \u043f\u0440\u0438\u043c\u0435\u0440\u043e\u0432
+      \u0438 \u0438\u0434\u0435\u0439 \u0434\u043b\u044f \u0432\u0430\u0448\u0435\u0433\u043e
+      \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f. \u041a\u0430\u043a
+      \u0441\u0434\u0435\u043b\u0430\u0442\u044c \u0430\u0443\u0442\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u044e
+      \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439?
+      \u041a\u0430\u043a \u0434\u043e\u0431\u0430\u0432\u0438\u0442\u044c AJAX-\u044d\u0444\u0444\u0435\u043a\u0442\u044b?
+      \u041a\u0430\u043a \u0434\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0443
+      \u0442\u0435\u0433\u043e\u0432? \u0412\u0441\u0435 \u043e\u043f\u0438\u0441\u0430\u043d\u043e
+      \u0432 \u044d\u0442\u043e\u0439 \u043a\u043d\u0438\u0433\u0435.</p>\r\n\r\n<p
+      style=\"font-size: 18px; line-height: 25px; margin-top: 0px; font-family: georgia;
+      margin-bottom: 25px; text-align: center;\"><a class=\"no_link_hover\" href=\"http://www.pragmaticprogrammer.com/titles/rails/index.html\"
+      style=\"color: rgb(51, 102, 153);\"><img class=\"bordered\" height=\"150\" src=\"http://www.rubyonrails.ru/assets/books/awdr2-d3885432f741507641b65fb03cf2b7c8.gif\"
+      style=\"border: 2px solid rgb(204, 204, 204); padding: 2px; margin: 0px 10px
+      5px 15px;\" width=\"140\" /></a>&nbsp;<a class=\"no_link_hover\" href=\"http://pragmaticprogrammer.com/titles/fr_rr/\"
+      style=\"color: rgb(51, 102, 153);\"><img class=\"bordered\" height=\"150\" src=\"http://www.rubyonrails.ru/assets/documentation/railsrecipes-5ddbd168920406305ae5bb069b6e089d.gif\"
+      style=\"border: 2px solid rgb(204, 204, 204); padding: 2px; margin: 0px 10px
+      5px 15px;\" width=\"140\" /></a></p>\r\n\r\n<p style=\"font-size: 18px; line-height:
+      25px; margin-top: 0px; font-family: georgia; margin-bottom: 25px;\">\u041e\u0431\u0435
+      \u043a\u043d\u0438\u0433\u0438 \u043c\u043e\u0436\u043d\u043e \u043a\u0443\u043f\u0438\u0442\u044c
+      \u0432 \u0444\u043e\u0440\u043c\u0430\u0442\u0435 PDF.</p>\r\n\r\n<p style=\"font-size:
+      18px; line-height: 25px; margin-top: 0px; font-family: georgia; margin-bottom:
+      25px;\">\u0422\u0435\u043f\u0435\u0440\u044c \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b
+      \u0438 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u044b \u044d\u0442\u0438\u0445
+      \u043a\u043d\u0438\u0433 \u043d\u0430 \u0440\u0443\u0441\u0441\u043a\u0438\u0439
+      \u044f\u0437\u044b\u043a!</p>\r\n<img class=\"bordered\" height=\"140\" src=\"http://www.rubyonrails.ru/assets/books/awdr2_ru-984f6608b817f37a05ee79cc63ce7fb5.jpg\"
+      style=\"border: 2px solid rgb(204, 204, 204); padding: 2px; margin: 0px 10px
+      5px 0px;\" width=\"99\" />&nbsp;<br />\r\n\u0414. \u0422\u043e\u043c\u0430\u0441,
+      \u0414. \u0425. \u0425\u044d\u043d\u0441\u0441\u043e\u043d&nbsp;<br />\r\n<b>\u0413\u0438\u0431\u043a\u0430\u044f
+      \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u0432\u0435\u0431-\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439
+      \u0432 \u0441\u0440\u0435\u0434\u0435 Rails</b>&nbsp;<br />\r\n\u0418\u0437\u0434\u0430\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e:
+      \u041f\u0438\u0442\u0435\u0440, 2007 \u0433.&nbsp;<br />\r\n\u041c\u044f\u0433\u043a\u0430\u044f
+      \u043e\u0431\u043b\u043e\u0436\u043a\u0430, 720 \u0441\u0442\u0440. ISBN 978-5-91180-009-3&nbsp;<br
+      />\r\n<br />\r\n<img class=\"bordered\" height=\"140\" src=\"http://www.rubyonrails.ru/assets/books/receipes_ru-6edf5e75ded4332124c32c59dd65d9d2.jpg\"
+      style=\"border: 2px solid rgb(204, 204, 204); padding: 2px; margin: 0px 10px
+      5px 0px;\" width=\"99\" />&nbsp;<br />\r\n\u0424\u043e\u0443\u043b\u0435\u0440
+      \u0427.&nbsp;<br />\r\n<b>Rails. \u0421\u0431\u043e\u0440\u043d\u0438\u043a
+      \u0440\u0435\u0446\u0435\u043f\u0442\u043e\u0432</b>&nbsp;<br />\r\n\u0418\u0437\u0434\u0430\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e:
+      \u041f\u0438\u0442\u0435\u0440, 2007 \u0433.&nbsp;<br />\r\n1-\u0435 \u0438\u0437\u0434\u0430\u043d\u0438\u0435,
+      2007 \u0433\u043e\u0434, 256 \u0441\u0442\u0440., \u0444\u043e\u0440\u043c\u0430\u0442
+      17x24 \u0441\u043c, \u0442\u0432\u0435\u0440\u0434\u0430\u044f \u043e\u0431\u043b\u043e\u0436\u043a\u0430,
+      ISBN 978-5-91180-652-1&nbsp;</div>\r\n"}'
+    - '2013-03-20 01:30:37.526707'
+    - '2013-03-20 01:30:37.526707'
+  - - 25
+    - Сообщество
+    - 4.0
+    - 4
+    - Document
+    - ! '{"body":"<div class=\"sub\" style=\"float: left; width: 200px; text-align:
+      right; font-family: verdana, ''Lucida Grande'', arial, helvetica, sans-serif;
+      font-size: medium; line-height: normal;\">\r\n<h1 style=\"padding: 0px; margin:
+      0px 0px 20px; color: rgb(0, 0, 0); font-size: 28px; line-height: 33px; font-family:
+      georgia;\">\u0421\u043f\u0438\u0441\u043e\u043a \u0440\u0430\u0441\u0441\u044b\u043b\u043a\u0438</h1>\r\n</div>\r\n\r\n<div
+      class=\"main\" style=\"float: right; width: 450px; font-family: verdana, ''Lucida
+      Grande'', arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<p
+      style=\"font-size: 18px; line-height: 25px; margin-top: 0px; font-family: georgia;
+      margin-bottom: 25px;\"><span class=\"highlight\" style=\"background-color: rgb(255,
+      255, 204);\"><b>\u0420\u0443\u0441\u0441\u043a\u043e\u044f\u0437\u044b\u0447\u043d\u044b\u0439
+      \u0441\u043f\u0438\u0441\u043e\u043a \u0440\u0430\u0441\u0441\u044b\u043b\u043a\u0438</b>&nbsp;\u043f\u043e
+      Ruby on Rails&nbsp;</span>&nbsp;&mdash; \u044d\u0442\u043e \u0442\u043e \u043c\u0435\u0441\u0442\u043e,
+      \u0433\u0434\u0435 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0438
+      \u043f\u043e\u043c\u043e\u0433\u0430\u044e\u0442 \u0434\u0440\u0443\u0433 \u0434\u0440\u0443\u0433\u0443,
+      \u043e\u0431\u044a\u044f\u0432\u043b\u044f\u044e\u0442 \u043e \u043d\u043e\u0432\u044b\u0445
+      \u043f\u0440\u043e\u0435\u043a\u0442\u0430\u0445 \u0438 \u043e\u0431\u0441\u0443\u0436\u0434\u0430\u044e\u0442
+      \u0432\u0441\u0435, \u043e\u0442\u043d\u043e\u0441\u044f\u0449\u0435\u0435\u0441\u044f
+      \u043a \u0444\u0440\u0435\u0439\u043c\u0432\u043e\u0440\u043a\u0443 \u0438 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0443.
+      \u0412\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u043d\u0435\u043f\u043e\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u043e&nbsp;<a
+      href=\"http://groups.google.com/group/ror2ru/subscribe\" style=\"color: rgb(51,
+      102, 153);\">\u043f\u043e\u0434\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f
+      \u043d\u0430 \u043d\u0435\u0433\u043e</a>&nbsp;\u0447\u0435\u0440\u0435\u0437
+      Google Groups,&nbsp;<a href=\"http://groups.google.com/group/ror2ru\" style=\"color:
+      rgb(51, 102, 153);\">\u0447\u0438\u0442\u0430\u0442\u044c \u0435\u0433\u043e
+      \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0431\u0440\u043e\u0443\u0437\u0435\u0440\u0430</a>&nbsp;\u0438\u043b\u0438&nbsp;<a
+      href=\"http://groups.google.com/group/ror2ru/feed/rss_v2_0_msgs.xml?num=50\"
+      style=\"color: rgb(51, 102, 153);\">\u0447\u0438\u0442\u0430\u0442\u044c RSS-\u043f\u043e\u0442\u043e\u043a</a>.</p>\r\n\r\n<p
+      style=\"font-size: 18px; line-height: 25px; margin-top: 0px; font-family: georgia;
+      margin-bottom: 25px;\">\u041f\u0440\u0438\u0441\u043e\u0435\u0434\u0438\u043d\u044f\u0439\u0442\u0435\u0441\u044c!&nbsp;<br
+      />\r\n<a href=\"http://groups.google.com/group/ror2ru\" style=\"color: rgb(51,
+      102, 153);\">groups.google.com/group/ror2ru</a></p>\r\n</div>\r\n\r\n<div class=\"clearall\"
+      style=\"margin: 0px 0px 10px; padding: 10px 0px 0px; clear: both; font-size:
+      2px; font-family: verdana, ''Lucida Grande'', arial, helvetica, sans-serif;
+      line-height: normal;\">&nbsp;</div>\r\n\r\n<div class=\"sub\" style=\"float:
+      left; width: 200px; text-align: right; font-family: verdana, ''Lucida Grande'',
+      arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<h1
+      style=\"padding: 0px; margin: 0px 0px 20px; color: rgb(0, 0, 0); font-size:
+      28px; line-height: 33px; font-family: georgia;\">IRC</h1>\r\n</div>\r\n\r\n<div
+      class=\"main\" style=\"float: right; width: 450px; font-family: verdana, ''Lucida
+      Grande'', arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<p
+      style=\"font-size: 18px; line-height: 25px; margin-top: 0px; font-family: georgia;
+      margin-bottom: 25px;\">\u0418\u043d\u043e\u0433\u0434\u0430 \u043f\u0440\u043e\u0449\u0435
+      \u0432\u0441\u0435\u0433\u043e \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c
+      \u043f\u043e\u043c\u043e\u0449\u044c \u0438\u043b\u0438 \u043e\u0431\u0441\u0443\u0434\u0438\u0442\u044c
+      \u0447\u0442\u043e-\u0442\u043e \u0432 \u0440\u0435\u0430\u043b\u044c\u043d\u043e\u043c
+      \u0432\u0440\u0435\u043c\u0435\u043d\u0438. \u0414\u043b\u044f \u044d\u0442\u043e\u0433\u043e
+      \u0435\u0441\u0442\u044c \u043a\u0430\u043d\u0430\u043b<b>#rubyonrails</b>&nbsp;\u0432
+      \u0441\u0435\u0442\u0438&nbsp;<b>irc.freenode.net</b>.</p>\r\n</div>\r\n\r\n<div
+      class=\"clearall\" style=\"margin: 0px 0px 10px; padding: 10px 0px 0px; clear:
+      both; font-size: 2px; font-family: verdana, ''Lucida Grande'', arial, helvetica,
+      sans-serif; line-height: normal;\">&nbsp;</div>\r\n\r\n<div class=\"sub\" style=\"float:
+      left; width: 200px; text-align: right; font-family: verdana, ''Lucida Grande'',
+      arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<h1
+      style=\"padding: 0px; margin: 0px 0px 20px; color: rgb(0, 0, 0); font-size:
+      28px; line-height: 33px; font-family: georgia;\">\u041f\u0430\u0442\u0447\u0438
+      \u0438 \u043e\u0442\u0441\u043b\u0435\u0436\u0438\u0432\u0430\u043d\u0438\u0435
+      \u043e\u0448\u0438\u0431\u043e\u043a</h1>\r\n</div>\r\n\r\n<div class=\"main\"
+      style=\"float: right; width: 450px; font-family: verdana, ''Lucida Grande'',
+      arial, helvetica, sans-serif; font-size: medium; line-height: normal;\">\r\n<p
+      style=\"font-size: 18px; line-height: 25px; margin-top: 0px; font-family: georgia;
+      margin-bottom: 25px;\">\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430
+      Ruby on Rails \u0432\u0435\u0434\u0435\u0442\u0441\u044f \u0432 Git-\u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0438\u0438,
+      \u0440\u0430\u0437\u043c\u0435\u0449\u0435\u043d\u043d\u043e\u043c \u043d\u0430
+      GitHub:&nbsp;<a href=\"http://github.com/rails/rails\" style=\"color: rgb(51,
+      102, 153);\">github.com/rails/rails</a>.</p>\r\n\r\n<p style=\"font-size: 18px;
+      line-height: 25px; margin-top: 0px; font-family: georgia; margin-bottom: 25px;\">\u0414\u043b\u044f
+      \u0443\u0447\u0435\u0442\u0430 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0439
+      \u043e\u0431 \u043e\u0448\u0438\u0431\u043a\u0430\u0445 \u0438 \u043f\u0430\u0442\u0447\u0435\u0439
+      \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f Lighthouse:&nbsp;<a
+      href=\"http://rails.lighthouseapp.com/\" style=\"color: rgb(51, 102, 153);\">rails.lighthouseapp.com</a>.</p>\r\n</div>\r\n"}'
+    - '2013-03-20 01:32:13.960145'
+    - '2013-03-20 01:32:13.960145'
+
+---
+course_users:
+  columns:
+  - id
+  - course_id
+  - user_id
+  - material_id
+  - can_manage
+  - last_viewed
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 3
+    - 1
+    - 
+    - false
+    - 
+    - '2013-03-20 01:00:44.480903'
+    - '2013-03-20 01:00:44.480903'
+  - - 2
+    - 2
+    - 2
+    - 
+    - true
+    - 
+    - '2013-03-20 01:00:44.512301'
+    - '2013-03-20 01:00:44.555405'
+  - - 3
+    - 3
+    - 2
+    - 
+    - true
+    - 
+    - '2013-03-20 01:00:44.585205'
+    - '2013-03-20 01:00:44.612159'
+  - - 4
+    - 2
+    - 3
+    - 
+    - false
+    - 
+    - '2013-03-20 01:09:11.427003'
+    - '2013-03-20 01:09:11.427003'
+  - - 5
+    - 3
+    - 3
+    - 
+    - false
+    - 
+    - '2013-03-20 01:09:15.146413'
+    - '2013-03-20 01:09:15.146413'
+  - - 6
+    - 1
+    - 2
+    - 
+    - true
+    - 
+    - '2013-03-20 01:33:49.487355'
+    - '2013-03-20 01:33:49.487355'

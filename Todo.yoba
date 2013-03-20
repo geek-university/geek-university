@@ -2,6 +2,7 @@
 лэндинг пэйдж
 тестовые данные
 quiz
+forgot password убрал                             :recoverable в User
 
 
 добавить email в Feedback

@@ -19,7 +19,7 @@ class CoursesController < ApplicationController
     @sections = @course.sections
     @section ||= @sections.first
 
-    @materials = @section.materials
+    @materials = @section.nil? ? [] : @section.materials
     @material ||= @materials.first
   end
 

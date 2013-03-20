@@ -66,3 +66,5 @@ gem 'cancan'
 gem 'thin'
 
 gem 'ckeditor_rails'
+
+gem 'yaml_db'
