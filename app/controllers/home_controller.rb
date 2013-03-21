@@ -6,7 +6,7 @@ class HomeController < ApplicationController
         redirect_to courses_path
       end
     else
-      @courses = Course.all
+      @courses = Course.order('start_date desc')
     end
   end
 
