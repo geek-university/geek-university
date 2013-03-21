@@ -5,6 +5,9 @@ ru:
     attributes:
       feedback:
         body: "Текст сообщения"
+      user:
+        password: 'Пароль'
+        password_confirmation: 'Подтвердите пароль'
   navbar:
     courses: "Все курсы"
     about: "О нас"

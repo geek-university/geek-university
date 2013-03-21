@@ -15,6 +15,15 @@ ru:
         other: "%{resource}: сохранение не удалось из-за %{count} ошибки"
 
   devise:
+    header:
+      sign_up: 'Регистрация'
+    links:
+      sign_up: 'Регистрация'
+      sign_in: 'Вход'
+    actions:
+      sign_up: 'Зарегистрироваться'
+      sign_in: 'Войти'
+    remember_me: 'Запомнить меня'
     failure:
       already_authenticated: "Вы уже вошли в систему."
       unauthenticated: "Вам необходимо войти в систему или зарегистрироваться."
