@@ -2,6 +2,6 @@
 
 Geek University - платформа для онлайн образования, нацеленная на российские центры обучения.
 
-Coming soon page http://geek-university.org/
+Coming soon page http://geek-university.org
 
-Dev version of Geek University http://geek-university.herokuapp.com/
+Dev version of Geek University http://geek-university.herokuapp.com
