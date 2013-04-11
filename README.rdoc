@@ -5,3 +5,5 @@ Geek University - платформа для онлайн образования,
 Coming soon page http://geek-university.org
 
 Dev version of Geek University http://geek-university.herokuapp.com
+
+Coming soon page repo https://github.com/geek-university/landing-page-geek-university
