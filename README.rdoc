@@ -7,3 +7,7 @@ Coming soon page http://geek-university.org
 Dev version of Geek University http://geek-university.herokuapp.com
 
 Coming soon page repo https://github.com/geek-university/landing-page-geek-university
+
+Ищем людей, которым есть о чём рассказать, пишите на geek.university.org@gmail.com 
+
+Специально под вас будем делать фичи.
