@@ -8,4 +8,6 @@ Dev version of Geek University http://geek-university.herokuapp.com
 
 Coming soon page repo https://github.com/geek-university/landing-page-geek-university
 
+Lean canvas http://www.canvarise.com/canvas/0JpSQeJjJN
+
 Ищем людей, которым есть о чём рассказать, пишите на geek.university.org@gmail.com 
